@@ -1,0 +1,110 @@
+/***CSS*Shop*Page***Geoff*Stengel***/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: rgb(0, 123, 255);
+	/**background: #0a0212; **/
+	background-image: radial-gradient(circle at center center, rgba(33,33,33,0),rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 1px,transparent 1px, transparent 4px),repeating-linear-gradient(45deg, rgb(56,56,56) 0px, rgb(56,56,56) 5px,transparent 5px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+	width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+}
+
+h1{
+    color: #ddd;
+    font-family: 'nunito';
+    font-size: 36px;
+}
+
+p{
+    text-decoration: none;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1); /**special for text***/
+}
+
+/***Header Holds Nav Buttons & Logo*****/
+header{
+    display: grid;
+    width:100%;
+    height: 50px;
+    background-color: #DCF506;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+
+/**Nav Bar Holding Main Page Buttons***/
+#nav{
+    display: grid;
+    width: 90%;
+    height: 90%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 50px;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #ddd;
+    background-color: #E004B4;
+}
+
+#nav a{
+    text-decoration: none;
+}
+
+/****Main Section Tag Wrapping Content**Inside Body*******/
+#wrapper{
+    display: grid;
+    max-width:700px;
+    max-height: 100%;
+    grid-template-rows: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: #0075D9;
+    box-shadow: 0 0 10px black;
+}
+
+/****Grid Holding All Shopping Items**********/
+#shop_items_grid{
+    display: grid;
+    max-width: 100%;
+    max-height: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 13px;
+    padding: 10px;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: darkolivegreen;
+}
+
+#shop_items_grid div{
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*****Controls Adjustments To Item Images******/
+.img_item{
+	width: 100%;
+    max-height: 100%;
+	border-radius: 10px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 5px black;
+}
+
+/***Box Holds Items Also Nav Buttons Have That Class****/
+.box{
+    border-radius: 10px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;	
+	padding: 5px;
+    background-color: #ddd;
+}
