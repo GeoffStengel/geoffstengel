@@ -85,8 +85,8 @@ header{
     margin: 0 auto;
     justify-content: center;
     border-radius: 10px;
-    background-color: darkolivegreen;
     background-color: black;
+    background-color: darkolivegreen;
 }
 
 #shop_items_grid div{
