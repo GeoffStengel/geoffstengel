@@ -3,12 +3,13 @@
 	margin: 0;
 	padding: 0;
 }
-
+ 
 body{
     font-family: 18thCentury, Arial, Helvetica, sans-serif;
     background-image: radial-gradient(circle at 85% 1%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 96%,transparent 96%, transparent 100%),radial-gradient(circle at 14% 15%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 1%,transparent 1%, transparent 100%),radial-gradient(circle at 60% 90%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 20%,transparent 20%, transparent 100%),radial-gradient(circle at 79% 7%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 78%,transparent 78%, transparent 100%),radial-gradient(circle at 55% 65%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 52%,transparent 52%, transparent 100%),linear-gradient(135deg, rgb(37, 56, 222),rgb(96, 189, 244));
     margin: 0 auto;	
 	text-align: center;
+	padding: 5px;
 }
 
 a{
@@ -17,33 +18,35 @@ a{
 
 h1{
     margin: 1% 0 1% 0;
-    color: #ddd;
+    color: hotpink;
     font-family: 'nunito';
     font-size: 36px;
+    text-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+    
 }
 
 p{
     font-size: 16px;
 	line-height: 24px;
-	word-spacing: 8px;
+	word-spacing: 3px;
 	color: black;
 	font-family: 18century;
 	margin-top: 10px;
-    box-shadow: 10px 10px 30px rgba(0,0,0,0.1); /**special for text***/
+   /*** box-shadow: 10px 10px 30px rgba(0,0,0,0.1); /**special for text* from gary**/
 }
 
-/****Background Section Behind Content and Nav******************/
+/****Main Background Section Behind Content and Nav*****/
 section{
-	background-color: #0075D9; /***background**/
+	background-color: #ddd; /***background**/
 	background-position: center;
 	height: 100%;
-	max-width: 920px;
+	max-width: 1900px;
 	background-size: cover;
 	background-repeat: no-repeat;
     margin: 0 auto;
-	margin-top: 10px;
+	margin-top: 1px;
 	margin-bottom: 10px;
-	padding: 10px 0 10px 0;
+	padding: 10px 12px 10px 12px; /***Space inbetween Main Grid Container - Nav - Grid Space***/
 	border-radius: 10px;
     box-shadow: 0 0 10px black;
 }
@@ -52,27 +55,26 @@ section{
 /**Nav Bar Holding Main Page Buttons***/
 .nav{
 	display: grid;
-	max-height: 80px;
+	max-height: 70px;
 	max-width: 900px;
-	grid-template-columns: repeat(3, minmax(70px, 70px));
+	grid-template-columns: repeat(auto-fit, minmax(40px, auto));
 	grid-auto-rows: repeat(10, minmax(80px, .4fr));
 	margin: 0 auto;
-	margin: 0 10px 10px 10px;
-	grid-gap: 15px;
+	grid-gap: 10%;
 	text-align: center;
 	padding: 10px;
 	padding-top: 10px;
 	justify-content: center;
 	align-content: center;
 	border-radius: 10px;
-	background-color: rgb(26, 26, 26);
-	background: rgb(23, 20, 31);
+	background-color: #0075D9;
     box-shadow: 0 0 10px black;
 }
 
 .nav div{
-    background-color: purple;
+    background-color: #ddd;
     padding: 5px;
+	
 }
 
 .nav p{
@@ -80,6 +82,7 @@ section{
   justify-content: center;
   align-items: center;
   color: #ddd;
+  margin-top: 1px;
 }
 /********Nav**Area**Finish*******************************/
 .box{
@@ -91,32 +94,33 @@ section{
 }
 
 .box0, .box1, .box2, .box3 {
-	height: 40px;
-	width: 40px;
+	height: 35px;
+	width: 35px;
 	margin: 0 auto;
 	box-shadow: 2px 2px 2px 2px rgb(26, 26, 26);
 }
 
 .box0:active, .box1:active, .box2:active, .box3:active {
-	height: 35px;
-	width: 35px;
+	height: 30px;
+	width: 30px;
 }
 
+
+/***Grid Hold Shop Items***Start******/
 .container{
 	display: grid;
 	max-height: 100%;
-	max-width: 920px;
-	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-	grid-auto-rows: repeat(4, minmax(250px, auto));
+	max-width: 100%;
+	grid-template-columns: repeat(auto-fit, minmax(275px, auto));
+	grid-auto-rows: repeat(auto-fit, minmax(250px, auto));
 	margin: 0 auto;
-	margin-left: 10px;
-	margin-right: 10px;	
 	grid-gap: 15px;
 	text-align: center;
 	padding: 10px;
 	justify-content: center;
 	border-radius: 10px;
 	background: rgb(23, 20, 31);
+	background-color: #0075D9;
 	box-shadow: 0 0 10px black;
 }
 
@@ -126,6 +130,11 @@ section{
     background-color: #ddd;
 }
 
+.container a{
+    margin: 0 auto;
+
+}
+/***Grid Hold Shop Items***END******/
 
 .box0{background-image: url(../images/home-rickety.svg);}
 .box1{background-image: url(../images/house-W-leafs.svg);}
@@ -161,98 +170,36 @@ img{
 	justify-content: center;
 	align-items: center;
 	box-shadow: none;
-	
 }
 
 
-
-
-
-
-/**
-/****Grid Holding All Shopping Items**********/
-/**
-#shop_items_grid{
-    display: grid;
-    max-width: 100%;
-    max-height: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
-    grid-gap: 13px;
-    padding: 10px;
-    margin: 0 auto;
-    justify-content: center;
-    border-radius: 10px;
-    background-color: black;
-    background-color: darkolivegreen;
-}
-
-#shop_items_grid div{
-    text-align: center;
-    margin: 0 auto;
-    
-}
-
-#shop_items_grid a{
-    text-align: center;
-    margin: 0 auto;
-    color: black;
-    text-decoration: none;
-}
-
-/*****Controls Adjustments To Item Images******/
-/**
-.img_item{
-	width: 100%;
-    max-height: 100%;
-	border-radius: 10px;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	box-shadow: 0 0 5px black;
-}
-
-/***Box Holds Items Also Nav Buttons Have That Class****/
-/**
-
-.box{
-    display: grid;
-    max-width:350px;
-    max-height:100%;
-    border-radius: 10px;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;	
-	padding: 5px;
-    background-color: #ddd;
-}
-***/
-/**
-.box0{background-image: url(../images/home-rickety.svg);}
-.box1{background-image: url(../images/house-W-leafs.svg);}
-.box2{background-image: url(../images/chat-icon.svg);}
-
-.box0, .box1, .box2 {
-    height: 45px;
-    width: 45px;
-    border-radius: 10px;
-	margin: 0 auto;
-	margin-top: 10px;
-	justify-content: center;
-	align-content: center;
-	box-shadow: 0 0 10px black;
-	background-color: #ddd;
-    text-align: center;	
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-***/
-
-
-/*****Media Queries******/
+/*****Media Queries***472px***/
 @media screen and (max-width: 472px) {
 h1{
     font-size: 24px;
+ }
 }
 
+/*****Media Queries***310px***/
+@media screen and (max-width: 310px) {
+	h1{
+		font-size: 20px;
+ }	
+
+ .container{
+	display: grid;
+	max-height: 100%;
+	max-width: 100%;
+	grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+	grid-auto-rows: repeat(auto-fit, minmax(250px, auto));
+	margin: 0 auto;
+	grid-gap: 15px;
+	text-align: center;
+	padding: 10px;
+	justify-content: center;
+	border-radius: 10px;
+	background: rgb(23, 20, 31);
+	background-color: #0075D9;
+	box-shadow: 0 0 10px black;
+ }
 }
