@@ -187,14 +187,11 @@ img{
    
 }
 
-
 .youtube a, .youtube p{
-   
     text-decoration: none;
     color: black;
     padding-top: 5px;
  }
-
 
 .img_item_youtube{
     max-width:45px;
@@ -226,15 +223,24 @@ img{
 }
 
 @media screen and (max-width:450px) {
+body{
+    padding:0;
+}
+
+#wrapper{
+    margin:0;
+}
+
 .youtube p{
     font-size: 10px;
 }
 }
+
 @media screen and (max-width:383px) {
-    html{
+ /**   html{
       padding-left: 1px;
       padding-right: 1px; 
-    }
+    }**/
 
     h1{
         height: 30px;
@@ -243,10 +249,10 @@ img{
     }
 
 @media screen and (max-width:310px) {
-    html, body{
+ /**   html, body{
         padding-left: 0;
         padding-right: 0; 
-    }
+    }**/
 }
     
 
@@ -274,11 +280,12 @@ h2{
 .nav{
     margin: 0 auto;
     grid-gap:1px;
-
 }
+
 .nav p{
     font-size: 14px; 
 }
+
 .box {
     height: 35px;
     width: 35px;
@@ -290,49 +297,25 @@ h2{
 .wrapper{
     padding: 0;
     width:100vw;
+ }
 }
+
+/****iwatches Sizes & Such***150px*****/  
+@media screen and (max-width:150px) {   
 }
-/**
-@media screen and (max-width:200px) {
-    h1{
-        font-size: 16px;  
-      }
-    h2{
-       font-size: 14px; 
-    }
-    
-    .box {
-        height: 35px;
-        width: 35px;
-}
-nav{
-    
-    padding:0;
-    margin: 0;
-}
-}**/
- 
-  /****iwatches Sizes & Such***150px*****/  
-    @media screen and (max-width:150px) {   
+
+@media screen and (max-width:110px) {   
+    .wrapper{
+        font-size: 20px; 
+        padding: 0; 
+        margin: 0;
+        height: 100%;
     }
 
-    @media screen and (max-width:110px) {
-        html{
-            padding: 0;
-            margin: 0;
-        }
-        
-        .wrapper{
-          font-size: 20px; 
-          padding: 0; 
-          margin: 0;
-          height: 100%;
-        }
-
-        .creative_projects{
-            height: 100vh;
-    }
-    h1{
-        display:none;
-    }
+.creative_projects{
+        height: 100vh;
+}
+h1{
+    display:none;
+ }
 }
