@@ -9,19 +9,26 @@ body{
     background-image: radial-gradient(circle at 85% 1%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 96%,transparent 96%, transparent 100%),radial-gradient(circle at 14% 15%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 1%,transparent 1%, transparent 100%),radial-gradient(circle at 60% 90%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 20%,transparent 20%, transparent 100%),radial-gradient(circle at 79% 7%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 78%,transparent 78%, transparent 100%),radial-gradient(circle at 55% 65%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 52%,transparent 52%, transparent 100%),linear-gradient(135deg, rgb(37, 56, 222),rgb(96, 189, 244));
     margin: 0 auto;	
 	text-align: center;
-	padding: 15px;
+	padding: 1%;
 }
 
 a{
     text-decoration: none;	
 }
 
+/***Shop Harmonicas Text*****/
 h1{
     margin: 1% 0 1% 0;
-    color: hotpink;
+    color: #ddd;
     font-family: 'nunito';
-    font-size: 36px;
+    font-size: 2em;
     text-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+	grid-column: 1/3;
+	grid-row:1;
+	-webkit-text-fill-color:#3aad09 ;
+	stroke: solid;
+	stroke-width: 4px;
+	stop-color: #3aad09;
 }
 
 p{
@@ -45,7 +52,7 @@ section{
     margin: 0 auto;
 	margin-top: 1px;
 	margin-bottom: 10px;
-	padding: 10px 12px 10px 12px; /***Space inbetween Main Grid Container - Nav - Grid Space***/
+	padding: 10px 1% 10px 1%; /***Space inbetween Main Grid Container - Nav - Grid Space***/
 	border-radius: 10px;
     box-shadow: 0 0 10px black;
 }
@@ -55,11 +62,11 @@ section{
 .nav{
 	display: grid;
 	max-height: 70px;
-	max-width: 900px;
+	max-width: 100%;
 	grid-template-columns: repeat(auto-fit, minmax(40px, auto));
 	grid-auto-rows: repeat(10, minmax(80px, .4fr));
 	margin: 0 auto;
-	grid-gap: 10%;
+	grid-gap: 5%;
 	text-align: center;
 	padding: 10px;
 	padding-top: 10px;
@@ -69,7 +76,7 @@ section{
 	background-color: #0075D9;
     box-shadow: 0 0 10px black;
 	border-style: outset;
-	border-width:2px;
+	border-width:4px;
 	border-color: #ddd;
 }
 
@@ -132,7 +139,8 @@ section{
 	margin: 0 auto;
 	grid-gap: 15px;
 	text-align: center;
-	padding: 10px;
+	padding: 1em 1% 1em 1%; /***Space Between Card & Outer Grid****/
+	margin-top: 2%;
 	justify-content: center;
 	border-radius: 10px;
 	background: rgb(23, 20, 31);
@@ -141,10 +149,10 @@ section{
 }
 
 .container div{
-    padding: 10px;
+    padding: 10px; /**Adjust Space Between Image & Card Section***/
     box-shadow: 0 0 20px black;
     background-color: #ddd;
-		border-style: solid;
+	border-style: solid;
 	border-width:4px;
 	border-color: #3aad09;
 }
@@ -154,8 +162,11 @@ section{
 }
 
 .container p{
-	font-size: 26px;
+	margin: 5% 10% 0 10%;
+	font-size: 22px;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+	font-family: Consolas;
+
 }
 /***Grid Hold Shop Items***END******/
 
@@ -197,9 +208,9 @@ img{
 
 
 /*****Media Queries***472px***/
-@media screen and (max-width: 472px) {
+@media screen and (max-width: 505px) {
 body{
-	padding: 8px; 
+	padding: 0; 
 }
 
 h1{
@@ -207,16 +218,45 @@ h1{
  }
 }
 
+
+/*****Media Queries***378px***/
+@media screen and (max-width: 378px) {
+.box0, .box1, .box2, .box3 {
+	height: 35px;
+	width: 35px;
+}
+
+.box0:active, .box1:active, .box2:active, .box3:active {
+	height: 30px;
+	width: 30px;
+}
+}
+
 /*****Media Queries***310px***/
 @media screen and (max-width: 333px) {
 body{
 	padding: 0; 
 }
+h1{
+	font-size: 20px;
+}
+
+.box0, .box1, .box2, .box3 {
+	height: 35px;
+	width: 35px;
+}
+.box0:active, .box1:active, .box2:active, .box3:active {
+	height: 27px;
+	width: 27px;
+}
+
+h1{
+	display: none;
+}
 }
 
 /*****Media Queries***310px***/
 @media screen and (max-width: 310px) {
-
 h1{
 		font-size: 20px;
 }	
@@ -227,14 +267,16 @@ h1{
 	max-width: 100%;
 	grid-template-columns: repeat(auto-fit, minmax(100px, auto));
 	grid-auto-rows: repeat(auto-fit, minmax(250px, auto));
-	margin: 0 auto;
-	grid-gap: 15px;
-	text-align: center;
-	padding: 10px;
-	justify-content: center;
-	border-radius: 10px;
-	background: rgb(23, 20, 31);
-	background-color: #0075D9;
-	box-shadow: 0 0 10px black;
  }
+ .container p{
+	font-size: 16px;
+ }
+}
+
+/*****Media Queries***193px***/
+@media screen and (max-width: 193px) {
+.box0, .box1, .box2, .box3 {
+	height: 25px;
+	width: 25px;
+}
 }

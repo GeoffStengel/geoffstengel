@@ -158,7 +158,7 @@ img{
     width:85%;
     height:155px;
     margin: 0 auto;
-    font-size: 14px;
+    font-size: 12px;
     padding: 5px;
     padding-top: 10px;
     margin: 0 auto;
@@ -201,7 +201,6 @@ img{
     color: #ddd;
     box-shadow: 0 0 10px black;
     background-color: #55e004;
-    
     padding: 5px;
 }
 
