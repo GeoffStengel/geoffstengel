@@ -8,62 +8,74 @@ body, html{
 	background-color: rgb(0, 191, 255);
 	/**background: #0a0212; **/
 	background-image: repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(22.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(194,74%,56%),hsl(266,74%,56%),hsl(338,74%,56%),hsl(50,74%,56%),hsl(122,74%,56%));
-    width: 100%;
-	height: 100%;
+
 	margin: 0 auto;
     padding: 10px;
 
 }
-
+/**
 body{
-
-    max-width:1500px;
-    margin: 0;
+    width:100%;
+    height: 100%;
+    margin: 0 auto;
     padding: 0;
     justify-content: center;
     align-content: center;
+    align-self: center;
 }
-
+**/
 h1{
     color: #ddd;
     font-family: 18thcentury;
     font-size: 36px;
+    margin: 0 auto;
 }
-
+h2{
+    color: #ddd;
+    font-family: 18thcentury;
+    font-size: 20px;
+    padding: 0;
+    margin: 0 auto;
+}
  
 /****Main Section Tag Wrapping Content**Inside Body*******/
 #wrapper{
-    max-width: 700px;
-    height:420px;
-    margin: 0 auto;
+    display: grid;
+    max-width: 500px;
+    height:520px;
     padding: 10px;
     /**margin-top: 5%;**/
     border-radius: 10px;
     background: url('../images/harmonica.svg') no-repeat;
     background-color: #0075D9;
     box-shadow: 0 0 10px black;
-    
+    margin: 0 auto;
+    border-style: solid;
+	border-width:3px;
+	border-color: #ddd;
 }
 
 /***Header Holds Nav Buttons & Logo*****/
+/**
 header{
     display: grid;
-    max-width:675px;
-    height:100px;
+    width:90%;
+    height:100%;
     margin: 0 auto;
     border-radius: 10px;
-    padding: 10px;
     background-color: #DCF506;
     box-shadow: 0 0 10px black;
-}
+    padding: 10px;
+}**/
 
 /**Nav Bar Holding Main Page Buttons***/
 .nav{ 
     display: grid;
-    width:100%;
+    max-width:100%;
     height:100%;
     grid-template-columns: repeat(auto-fit, minmax(50px, auto));
-    grid-row: 50px;
+    grid-template-rows: auto;
+    column-gap: 5%;
     margin: 0 auto;
     justify-content: center;
     align-content: center;
@@ -71,9 +83,11 @@ header{
     border-radius: 10px;
     font-size: 16px;
     color: #ddd;
-    box-shadow: 0 0 10px black;
+/** box-shadow: 0 0 10px black;
     background-color: #E004B4;
-    column-gap: 5%;
+    border-style: solid;
+	border-width:2px;
+	border-color: #ddd;**/
 } 
 
 .nav a{
@@ -82,13 +96,29 @@ header{
     text-decoration: none;
 }
 
-.box0{background-image: url(../images/home-rickety.svg);}
-.box1{background-image: url(../images/house-W-leafs.svg);}
-.box2{background-image: url(../images/chat-icon.svg);}
+.box0{
+    background-image: url(../images/home-rickety.svg);
+    border-style: solid;
+	border-width:2px;
+	border-color: #3aad09;
+}
+.box1{
+    background-image: url(../images/house-W-leafs.svg);
+    border-style: solid;
+	border-width:2px;
+	border-color: #3aad09;
+}
+.box2{
+    background-image: url(../images/chat-icon.svg);
+    border-style: solid;
+	border-width: 3px;
+	border-color: #3aad09;
+}
+
 
 .box {
-    height: 45px;
-    width: 45px;
+    height: 55px;
+    width: 55px;
     border-radius: 10px;
 	margin: 0 auto;
 	margin-top: 10px;
@@ -100,6 +130,7 @@ header{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    
    /** box-shadow: 2px 2px 2px 2px rgb(26, 26, 26);**/
 }
 
@@ -124,47 +155,62 @@ img{
 }
 
 .youtube{
-    width:70px;
-    height:180px;
+    width:85%;
+    height:155px;
     margin: 0 auto;
-    
+    font-size: 14px;
+    padding: 5px;
+    padding-top: 10px;
+    margin: 0 auto;
+    justify-items: center;
+	align-items: center;
+ /**   background-color: cadetblue;**/
+    background-color:#ddd;
 }
 
+.youtube a, .youtube p{
+    text-decoration: none;
+    color: black;
+    padding-top: 5px;
+ }
+
+
 .img_item_youtube{
-    width:60px;
-    height:50px;
+    max-width:120px;
+    height:95px;
     margin: 0 auto;
     justify-content: center;
 	align-content: center;
-    
+   /** padding: 0; **/
 }
 
 /****Grid For Projects Youtube BitcoinDavida Twitter etc..*******/
 .creative_projects{
     display: grid;
-    width:100%;
-    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
-    grid-row: 50px;
+    max-width:500px;
+    max-height: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    grid-row: auto;
     margin: 0 auto;
     justify-content: center;
     align-content: center;
+    justify-self: center;
     text-align: center;
     border-radius: 10px;
     font-size: 16px;
     color: #ddd;
     box-shadow: 0 0 10px black;
     background-color: #55e004;
-    column-gap: 5%;
+    
+    padding: 5px;
 }
 
-@media screen and (max-width:700px) {
-body{
-    padding: 0;
-}
 
-    #wrapper{
-    max-width: 94%;
-    height:96%;
-    margin-top: 0px;
+
+
+
+@media screen and (max-width:252px) {
+h1{
+  font-size: 24px;  
 }
 }

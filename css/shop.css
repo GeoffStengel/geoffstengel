@@ -9,7 +9,7 @@ body{
     background-image: radial-gradient(circle at 85% 1%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 96%,transparent 96%, transparent 100%),radial-gradient(circle at 14% 15%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 1%,transparent 1%, transparent 100%),radial-gradient(circle at 60% 90%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 20%,transparent 20%, transparent 100%),radial-gradient(circle at 79% 7%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 78%,transparent 78%, transparent 100%),radial-gradient(circle at 55% 65%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 52%,transparent 52%, transparent 100%),linear-gradient(135deg, rgb(37, 56, 222),rgb(96, 189, 244));
     margin: 0 auto;	
 	text-align: center;
-	padding: 5px;
+	padding: 15px;
 }
 
 a{
@@ -22,7 +22,6 @@ h1{
     font-family: 'nunito';
     font-size: 36px;
     text-shadow: 10px 10px 30px rgba(0,0,0,0.1);
-    
 }
 
 p{
@@ -69,6 +68,9 @@ section{
 	border-radius: 10px;
 	background-color: #0075D9;
     box-shadow: 0 0 10px black;
+	border-style: outset;
+	border-width:2px;
+	border-color: #ddd;
 }
 
 .nav div{
@@ -94,18 +96,32 @@ section{
 }
 
 .box0, .box1, .box2, .box3 {
-	height: 35px;
-	width: 35px;
+	height: 40px;
+	width: 40px;
 	margin: 0 auto;
 	box-shadow: 2px 2px 2px 2px rgb(26, 26, 26);
+	border-style: solid;
+	border-width:3px;
+	border-color: #3aad09;
 }
 
 .box0:active, .box1:active, .box2:active, .box3:active {
 	height: 30px;
 	width: 30px;
 }
+.box:hover{
+	background-color: hotpink;
+	border-style: solid;
+	border-width:4px;
+	border-color: #DCF506;
+}
 
-
+.box0:hover, .box1:hover, .box2:hover{
+	background-color: hotpink;
+	border-style: solid;
+	border-width:4px;
+	border-color: #3aad09;
+}
 /***Grid Hold Shop Items***Start******/
 .container{
 	display: grid;
@@ -128,11 +144,18 @@ section{
     padding: 10px;
     box-shadow: 0 0 20px black;
     background-color: #ddd;
+		border-style: solid;
+	border-width:4px;
+	border-color: #3aad09;
 }
 
 .container a{
     margin: 0 auto;
+}
 
+.container p{
+	font-size: 26px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
 /***Grid Hold Shop Items***END******/
 
@@ -175,16 +198,28 @@ img{
 
 /*****Media Queries***472px***/
 @media screen and (max-width: 472px) {
+body{
+	padding: 8px; 
+}
+
 h1{
     font-size: 24px;
  }
 }
 
 /*****Media Queries***310px***/
+@media screen and (max-width: 333px) {
+body{
+	padding: 0; 
+}
+}
+
+/*****Media Queries***310px***/
 @media screen and (max-width: 310px) {
-	h1{
+
+h1{
 		font-size: 20px;
- }	
+}	
 
  .container{
 	display: grid;
