@@ -3,11 +3,13 @@
 	margin: 0;
 	padding: 0;
 }
- 
+html{
+	background-image: repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(22.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(194,74%,56%),hsl(266,74%,56%),hsl(338,74%,56%),hsl(50,74%,56%),hsl(122,74%,56%));
+
+}
 body, html{
 	background-color: rgb(0, 191, 255);
 	/**background: #0a0212; **/
-	background-image: repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(22.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(194,74%,56%),hsl(266,74%,56%),hsl(338,74%,56%),hsl(50,74%,56%),hsl(122,74%,56%));
     width: 100%;
     height:100%;
 	margin: 0 auto;
@@ -22,7 +24,7 @@ body{
     justify-content: center;
  /**   align-content: center; **/
     padding-top: 2px;
- 
+    background-color: transparent;
 }
 
 h1{
@@ -31,6 +33,9 @@ h1{
     font-size: 36px;
     margin: 0 auto;
     height: 100%;
+    text-shadow: 1px 1px 2px #12181d;
+    align-content: center;
+    text-align: center;
 }
 h2{
     color: #ddd;
@@ -39,6 +44,7 @@ h2{
     padding: 0;
     margin: 0 auto;
     max-height:  100%;
+    text-shadow: 1px 1px 2px #12181d;
 }
  
 /****Main Section Tag Wrapping Content**Inside Body*******/
