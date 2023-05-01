@@ -184,13 +184,13 @@ p{
 }
 img{
 	display: grid;
-	width: 100%;
-	height: 100%;
+	width: 70%;
+	height: 70%;
 	align-content: center;
 	justify-content: center;
 	margin: 0 auto;
 }
-	
+	/***
 .img1, .img2, .img3, .img4 {
 	border: 3px groove black;
 	width: 300px;
@@ -200,16 +200,14 @@ img{
 }	
 	
 .img1{   /***this is the top left image**/
-	float: left;  /**at top of page***/
-	/**shape-outside: ;***/
-	shape-image-threshold: 0;
+/**	float: left;  /**at top of page***/
+/**	shape-image-threshold: 0;
 	margin-right: 2%;
 	margin-top: 2%;
 }
 	
 .img2{ /****3rd image down on the left****/
-	float: left;
-	/***shape-outside: ;***/
+/**	float: left;
 	shape-image-threshold: 0;
 	margin-right: 2%;
 	margin-top: 2%;
@@ -217,22 +215,20 @@ img{
 }	
 
 .img3{ /****4rd image down on the right****/
-	float: right;
-	/**shape-outside: ;**/
+/**	float: right;
 	shape-image-threshold: 0;
 	margin-left: 2%;
 	margin-top: 2%;
 	margin-bottom: 2%;
 }	
 .img4{  /****5rd image down on the left****/
-	float: left;
-	/**shape-outside: ;**/
+/**	float: left;
 	shape-image-threshold: 0;
 	margin-right: 2%;
 	margin-top: 2%;
 	margin-bottom: 2%;
 }
-	
+	**/
 .disclaimerish p{
 	font-size: 16px;
 	
