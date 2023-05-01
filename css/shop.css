@@ -81,6 +81,10 @@ section{
 	border-color: #ddd;
 }
 
+h4{
+	font-size:12px;
+}
+
 .nav div{
     background-color: #ddd;
     padding: 5px;
@@ -112,7 +116,7 @@ section{
 	border-width:3px;
 	border-color: #3aad09;
 }
-
+ 
 .box0:active, .box1:active, .box2:active, .box3:active {
 	height: 30px;
 	width: 30px;
@@ -130,6 +134,7 @@ section{
 	border-width:4px;
 	border-color: #3aad09;
 }
+
 /***Grid Hold Shop Items***Start******/
 .container{
 	display: grid;
@@ -165,17 +170,51 @@ section{
 
 .container p{
 	margin: 5% 10% 0 10%;
-	font-size: 22px;
+	font-size: 20px;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 	font-family: Consolas;
-
 }
 /***Grid Hold Shop Items***END******/
 
+/****Info For Items Namw Price Buy Now Button***START***/
+#item_info_grid{
+	display: grid;
+	margin:0 auto;
+	grid-template-columns: repeat(1, minmax(20px, auto));
+	grid-template-rows: 100px 35px 40px;
+	grid-gap: 5px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: none;
+	background: none;
+	border: none;
+	box-shadow: 0px;
+	box-shadow: 0 0 0 rgb(214, 17, 152);
+	padding-bottom: 0;
+}
+
+#item_info_grid img, #item_info_grid p{
+	margin:0 auto;
+}
+#item_info_grid{
+	margin:0 auto;
+	padding-top: 0;
+}
+
+#item_name{
+	font-size: 18px;
+	text-shadow: 1px 1px 2px #7dabd2;
+	padding: 0;
+	margin-top: 0;
+}
+/****Info For Items Name Price Buy Now Button***END***/
+
+/*****Nav Images**Start***/
 .box0{background-image: url(../images/home-rickety.svg);}
 .box1{background-image: url(../images/house-W-leafs.svg);}
 .box2{background-image: url(../images/chat-icon.svg);}
-
+/*****Nav Images**END***/
 
 img{
 	width: 100%;
@@ -190,25 +229,6 @@ img{
 	width: 50%;
 }
 
-.description_wrapper{
-	display: grid;
-	grid-template-columns: repeat(1, minmax(70px, auto));
-	grid-auto-rows: repeat(3, 30px);
-	padding: 0px 0px 0px 0px;
-	margin: 0;
-	border-radius: 10px;
-	background-color: none;
-}
-
-.description_wrapper img, .description_wrapper div, .description_wrapper p, .description_wrapper a{
-	margin: 0;
-	padding: 0;
-	justify-content: center;
-	align-items: center;
-	box-shadow: none;
-}
-
-
 /*****Media Queries***472px***/
 @media screen and (max-width: 505px) {
 body{
@@ -219,7 +239,6 @@ h1{
     font-size: 24px;
  }
 }
-
 
 /*****Media Queries***378px***/
 @media screen and (max-width: 378px) {
@@ -257,12 +276,13 @@ h1{
 }
 }
 
-/*****Media Queries***310px***/
+/*****Media Queries***310px*****/
 @media screen and (max-width: 310px) {
 h1{
 		font-size: 20px;
 }	
 
+/***Container Grid Hold Shop Items***/
  .container{
 	display: grid;
 	max-height: 100%;
@@ -273,6 +293,10 @@ h1{
  .container p{
 	font-size: 16px;
  }
+
+#item_name{
+font-size: 16px;
+ } 
 }
 
 /*****Media Queries***193px***/
@@ -280,5 +304,5 @@ h1{
 .box0, .box1, .box2, .box3 {
 	height: 25px;
 	width: 25px;
-}
+ }
 }
