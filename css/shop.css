@@ -1,4 +1,4 @@
-/***CSS*Shop*Page***Geoff*Stengel***/
+/***CSS*Shop*Main*Page***Geoff*Stengel***/
 * {
 	margin: 0;
 	padding: 0;
@@ -29,6 +29,7 @@ h1{
 	stroke: solid;
 	stroke-width: 4px;
 	stop-color: #3aad09;
+	text-shadow: 1px 1px 2px #d7dadc;
 }
 
 p{
@@ -146,6 +147,7 @@ section{
 	background: rgb(23, 20, 31);
 	background-color: #0075D9;
 	box-shadow: 0 0 10px black;
+	text-shadow: 1px 1px 2px #7dabd2;
 }
 
 .container div{

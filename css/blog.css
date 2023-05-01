@@ -4,90 +4,148 @@
 	padding: 0;
 }
 
-body, html{
+body{
 	background-color: rgb(0, 123, 255);
-	/**background: #0a0212; **/
 	background-image: radial-gradient(circle at center center, rgba(33,33,33,0),rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 1px,transparent 1px, transparent 4px),repeating-linear-gradient(45deg, rgb(56,56,56) 0px, rgb(56,56,56) 5px,transparent 5px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
-	width: 100%;
-	height: 100%;
 	margin: 0 auto;
+    text-align: center;
 }
 
 h1{
-    color: #ddd;
+    color: #2d6a98;
     font-family: 18thcentury;
     font-size: 36px;
 }
 
-p{
-    text-decoration: none;
-}
-/****Main Section Tag Wrapping Content**Inside Body*******/
-/**
-#wrapper{
-    width:700px;
-    height:900px;
+/****Grid Holding Blogs***From Davida take top one out if works*****/
+/*****Test Start*********/
+/****Background Section Behind Content and Nav******************/
+section{
+	background-color: #ddd; /***background**/
+	background-position: center;
+	height: 100%;
+	max-width: 920px;
     margin: 0 auto;
-    background-color: #0075D9;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px 0 10px 0;
+	border-radius: 10px;
 }
-**/
-/****Main Section Tag Wrapping Content**Inside Body*******/
-#wrapper{
-    display: grid;
-    max-width: 500px;
-    height:100%;
-    padding: 10px;
-    /**margin-top: 5%;**/
-    border-radius: 10px;
-    grid-template-columns: repeat(1, minmax(50px, auto));
-    grid-template-rows: repeat(2, minmax(50px, auto));
-    /**background: url('../images/harmonica.svg') no-repeat; **/
-    background-color: #0075D9;
-    box-shadow: 0 0 10px black;
-    margin: 0 auto;
-    border-style: solid;
-	border-width:5px;
+
+/***Header Wraps Nav & Logo*****/
+header{
+	max-width: 900px;
+	justify-content: center;
+	align-content: center;
+	border-radius: 10px;
+	box-shadow: 0 0 10px black;
+	margin: 0 auto;
+	background: #0075D9;
+	margin:0 10px 0 10px;
+	border-style: outset;
+	border-width:4px;
 	border-color: #ddd;
 }
 
-
-
-/***Header Holds Nav Buttons & Logo*****/
-header{
-    display: grid;
-    width:100%;
-    max-height:120px;
-    background-color: #DCF506;
-    margin: 0 auto;
-    border-radius: 10px;
-	box-shadow: 0 0 10px black;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+/********Nav**Area**Start**********/
+.nav{
+	display: grid;
+	height: 70px;
+	max-width: 400px;
+	grid-template-columns: repeat(4, minmax(70px, 70px));
+	grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+	grid-auto-rows: repeat(10, minmax(80px, .4fr));
+	margin: 0 auto;
+	grid-gap: 5px;
+	text-align: center;
+	padding: 5px;
+	justify-content: center;
+	align-content: center;
+	border-radius: 10px;
 }
 
-.nav{
-    display: grid;
-    width:100%;
-    height:50%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row: auto;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    font-size: 16px;
-    color: #ddd;
-   
+.nav p{
+	font-size: 12px;
+	justify-content: center;
+	align-items: center;
+	color: #ddd;
+	margin: 0 auto;
+	padding-top: 2px;
+	padding-bottom: 0;
+}
+
+.nav div{
+	padding: 5px;
 }
 
 .nav a{
-    text-decoration: none;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
 }
 
+.container{
+	display: grid;
+	max-height: 100%;
+	max-width: 920px;
+	grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+	grid-auto-rows: repeat(10, minmax(80px, .4fr));
+	margin: 0 auto;
+	margin: 10px 10px 0 10px;	
+	grid-gap: 15px;
+	text-align: center;
+	padding: 10px;
+	justify-content: center;
+	border-radius: 10px;
+	background: #0075D9;
+	box-shadow: 0 0 10px black;
+}
+/**BKGD Behind Blog IMGs********/
+.container div{
+    padding: 10px;
+    box-shadow: 0 0 20px black;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+/***Grid Section**That**has**the**blog**imgs**or**colors*in*grid***/
+.blog{
+	height: 130px;
+	box-shadow: 1px 1px 1px 1px rgb(86, 86, 86);
+}
+ 
+.blog:active{
+	height: 65%;
+	width: 90%;
+}
+
+
+/****Text**inside**or**below**content**boxes*******/
+a{
+	text-decoration: none;	
+}
+
+p{
+	color: #ddd;
+	padding: 10px;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 5px black;
+}
+/*************************/
+/*****Test End*********/
+/*************************/
 /***Adjust Boxes For Nav Buttons******/
 .box {
-    height: 55px;
-    width: 55px;
+    height: 40px;
+    width: 40px;
     border-radius: 10px;
 	margin: 0 auto;
 	margin-top: 10px;
@@ -106,7 +164,7 @@ header{
 	background-color: hotpink;
 }
 
-/****Box*Presses*In*Effect*When*Pressed**Start***/
+/****Box*Presses*In*Nav* Buttons*Effect*When*Pressed**Start***/
 .box:active{
 	height: 40px;
 	width: 40px;

@@ -205,7 +205,7 @@ img{
 /****Grid For Projects Youtube BitcoinDavida Twitter etc..*******/
 .creative_projects{
     display: grid;
-    width: 98%;
+    width: 95%;
     max-height: 100%;
     grid-template-columns: repeat(auto-fit, minmax(40px, auto));
     margin: 0 auto;
@@ -216,10 +216,13 @@ img{
     font-size: 16px;
     color: #ddd;
     box-shadow: 0 0 10px black;
-    background-color: #55e004;
+    background-color: #0075D9;
     padding: 5px;
     grid-gap: 5%;
     grid-row: 3/5;
+    border-style: solid;
+	border-width:4px;
+	border-color: #ddd;
 }
 
 @media screen and (max-width:450px) {
@@ -237,22 +240,19 @@ body{
 }
 
 @media screen and (max-width:383px) {
- /**   html{
-      padding-left: 1px;
-      padding-right: 1px; 
-    }**/
-
+ 
     h1{
         height: 30px;
     }
 
+#wrapper{
+    padding:2px;
+}
+
     }
 
 @media screen and (max-width:310px) {
- /**   html, body{
-        padding-left: 0;
-        padding-right: 0; 
-    }**/
+
 }
     
 

@@ -1,0 +1,490 @@
+/***Styling for Indididual Blog Articles*GEoffStengel Website***/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+    background: #0052a5;
+    color: #ffffff;	
+	font-size: 1.1em;
+	line-height: 1.5;
+	text-align: center;
+}
+
+/*******Section Main Grid Area*********/
+section{
+	background-color: #ddd;
+	background-position: center;
+	height: 100%;
+	max-width: 700px;
+	background-size: cover;
+	background-repeat: no-repeat;
+    margin: 0 auto;
+	border-radius: 8px;
+	box-shadow: 0 0 20px black;
+}
+
+/**Nav Bar Holding Main Page Buttons***/
+.nav{ 
+    display: grid;
+    max-width:100%;
+    height:100%;
+    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+    grid-template-rows: auto;
+    column-gap: 5%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #ddd;
+} 
+
+p, a{
+	margin: 0 auto;
+	color:black;
+	
+}
+
+.nav a, .nav p{
+    font-size: 16px;
+    color: #ddd;
+    text-decoration: none;
+}
+
+#content{
+	display: grid;
+	max-height: 96%;
+	max-width: 920px;
+	grid-template-columns: repeat(4, minmax(60px, 60px));
+	grid-auto-rows: repeat(10, minmax(80px, .4fr));
+	margin: 0 auto;
+	grid-gap: 15px;
+	text-align: center;
+	padding: 10px;
+	justify-content: center;
+	box-shadow: 0 0 20px black;
+	padding-top: 10px;
+}
+
+#content div{
+	background-color: purple;
+	padding: 8px;
+}
+
+/***Header Wraps Nav & Logo*****/
+header{
+	max-width: 900px;
+	justify-content: center;
+	align-content: center;
+	border-radius: 10px;
+	box-shadow: 0 0 10px black;
+	margin: 0 auto;
+	background: #0075D9;
+	margin:0 10px 0 10px;
+	border-style: outset;
+	border-width:4px;
+	border-color: #ddd;
+}
+
+
+
+h1{
+	font-size: 45px;
+	font-family: fantasy, sans-serif;
+	color: #0075D9;
+	padding-bottom:  2%;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	box-shadow: 0 0 20px black;
+}
+
+h2{
+	font-size: 35px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #ff8000;
+}
+
+/**Color For Text Links In Blog****/
+a{
+	color:#0075D9;
+	text-decoration: none;
+}
+
+p{
+	font-size: 20px;
+	text-indent: 17px;
+	line-height: 35px;
+	text-align: left;
+	margin-bottom: 8px;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-family: sans-serif;
+	text-shadow: 1px 1px 2px #7dabd2;
+}
+
+/***Adjust Boxes For Nav Buttons******/
+.box {
+    height: 55px;
+    width: 55px;
+    border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 10px;
+	justify-content: center;
+	align-content: center;
+	box-shadow: 0 0 10px black;
+	background-color: #ddd;
+    text-align: center;	
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   /** box-shadow: 2px 2px 2px 2px rgb(26, 26, 26);**/
+}
+
+.box:hover{
+	background-color: hotpink;
+}
+
+/****Box*Presses*In*Effect*When*Pressed**Start***/
+.box:active{
+	height: 40px;
+	width: 40px;
+}
+
+
+.box0{
+    background-image: url(../images/home-rickety.svg);
+    border-style: solid;
+	border-width:2px;
+	border-color: #3aad09;
+}
+.box1{
+    background-image: url(../images/house-W-leafs.svg);
+    border-style: solid;
+	border-width:2px;
+	border-color: #3aad09;
+}
+.box2{
+    background-image: url(../images/chat-icon.svg);
+    border-style: solid;
+	border-width: 3px;
+	border-color: #3aad09;
+}
+
+.blog1{
+	align-content: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+img{
+	display: grid;
+	width: 100%;
+	height: 100%;
+	align-content: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+	
+.img1, .img2, .img3, .img4 {
+	border: 3px groove black;
+	width: 300px;
+	height: 200px;
+	border-radius: 10px;
+	box-shadow: 0 0 20px black;
+}	
+	
+.img1{   /***this is the top left image**/
+	float: left;  /**at top of page***/
+	/**shape-outside: ;***/
+	shape-image-threshold: 0;
+	margin-right: 2%;
+	margin-top: 2%;
+}
+	
+.img2{ /****3rd image down on the left****/
+	float: left;
+	/***shape-outside: ;***/
+	shape-image-threshold: 0;
+	margin-right: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}	
+
+.img3{ /****4rd image down on the right****/
+	float: right;
+	/**shape-outside: ;**/
+	shape-image-threshold: 0;
+	margin-left: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}	
+.img4{  /****5rd image down on the left****/
+	float: left;
+	/**shape-outside: ;**/
+	shape-image-threshold: 0;
+	margin-right: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+	
+.disclaimerish p{
+	font-size: 16px;
+	
+}
+
+.youtube_logo{
+	width: 100%;
+}
+
+
+.rarible_logo{   /**Trezor ** Ad ** Logo ** At ** Bottom***/
+	/**background-image: url(../images/trezor_ad.jpg);**/
+	width: 25%;
+	height: 25%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-radius: 20px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 20px black;
+}
+
+/**********Tipbot settings**start**********/
+.baconwrap{
+	display: grid;
+	grid-template-columns:repeat(2, minmax(60px, 60px));
+	grid-template-rows: repeat(1,  minmax(60px, auto));
+	max-width: 2600px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 20px;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	justify-content: center;
+/*	background-color: chocolate;   */
+	grid-gap: 10px;
+	margin: 0 auto;
+}
+
+.baconwrap div:nth-child(even){
+	background: #777;
+	padding: 10px;
+}
+	
+.baconwrap div{
+	padding: 10px;
+	border-radius: 10px;
+}
+ 
+.tipbot{
+      background-image: url(../images/xrptibot_icon.jpg);	    
+}
+
+.tipbot {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;	  
+}
+
+.tipbot p{
+	opacity:0 ;
+}
+
+/***********Tipbot settings***finish*********/
+
+.footer{
+	background-image: url(../images/menagerie_icon.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.footer p{
+	color: #fff;
+	opacity: 0;
+}
+/*******Mobile Devices ***************************/
+@media screen and (max-width: 930px) {
+	section{
+	width: 95%;	
+	}
+}
+/**************************************************/
+/*******Mobile Devices ***************************/
+@media screen and (max-width: 450px) {
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+	
+#content{
+	display: grid;
+	max-height: 100%;
+	max-width: 95%;
+	grid-template-columns: repeat(4, minmax(65px, 65px));
+	grid-auto-rows: repeat(4, minmax(60px, 60px));	
+	grid-gap: 10px;
+}
+	
+#content div{
+	padding:11px;
+}
+	
+section{
+  width: 95%;	
+}	
+	
+.img1, .img2, .img3, .img4 {
+	display: block;
+	float: none;
+	margin: 0 auto;
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+	height: 12em;
+	margin-bottom:2%;
+	margin-top: 2%;
+}
+			
+	
+}
+
+@media screen and (max-width: 400px)	{		
+* {
+	margin: 0 auto;
+	padding: 0;
+}	
+		
+.img1, .img2, .img3, .img4 {
+	
+	height: 10em;
+	margin-bottom:2%;
+	margin-top: 2%;
+}	
+.box{
+	border-radius: 12px;
+}
+}
+@media screen and (max-width: 330px) {		
+
+#content{
+	grid-template-columns: repeat(4, minmax(60px, 60px));
+		
+}
+	
+#content div{
+	padding: 9px;	
+	}
+}
+
+/**************************************************/
+/*******Small Devices ***************************/
+@media screen and (max-width: 315px) {
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+		
+section{
+	width: 16em;
+}
+	
+#content{
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(2, minmax(60px, 65px));
+	grid-auto-rows: repeat(4, minmax(60px, 60px));
+	margin: 0 auto;
+	grid-gap: 1.1em;
+	text-align: center;
+	padding: 0;
+	padding-top: 10px;
+	padding-bottom: 10px; 
+	justify-content: center;
+}
+#content div{
+    background-color: purple;
+	padding: 12px;
+}
+
+#content div:nth-child(even){
+    background-color: skyblue;
+	padding: 12px;
+}
+	
+p{
+	font-size: 18px;
+	text-indent: 10px;
+	line-height: 38px;
+	text-align: left;
+	margin-bottom: 8px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+	
+.box{
+    border-radius: 10px;		
+}
+	
+#adlogo{
+	background-image: url(/images/trezor_ad.jpg);
+	width: 10em;
+	height:8em;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-radius: 20px;
+}
+	
+}
+
+/**************************************************/
+/*******Tiny Devices ***************************/
+@media screen and (max-width: 210px) {
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+	
+body{
+	font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    	
+}
+	
+section{
+	background-color: chocolate;
+	background-position: center;
+	height: 100%;
+	width: 14em;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#content{
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(2, minmax(63px, 65px));
+	grid-auto-rows: repeat(4, minmax(60px, 60px));
+	margin: 0 auto;
+	grid-gap: 1.2em;
+	text-align: center;
+	justify-content: center;
+}
+p{
+	font-size: 20px;	
+}
+
+}
+/*******Tiny Devices ***************************/
+@media screen and (max-width: 68px) {
+	#content{
+	grid-template-columns: repeat(1, minmax(63px, 65px));
+	margin: 0 auto;
+}
+}
