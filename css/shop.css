@@ -105,6 +105,7 @@ h4{
 	background-size: cover;
 	background-repeat: no-repeat;	
 	padding: 5px;
+	border-style: solid;
 }
 
 .box0, .box1, .box2, .box3 {
@@ -112,7 +113,6 @@ h4{
 	width: 40px;
 	margin: 0 auto;
 	box-shadow: 2px 2px 2px 2px rgb(26, 26, 26);
-	border-style: solid;
 	border-width:3px;
 	border-color: #3aad09;
 }
@@ -123,38 +123,35 @@ h4{
 }
 .box:hover{
 	background-color: hotpink;
-	border-style: solid;
 	border-width:4px;
 	border-color: #DCF506;
 }
 
 .box0:hover, .box1:hover, .box2:hover{
-	background-color: hotpink;
-	border-style: solid;
 	border-width:4px;
 	border-color: #3aad09;
 }
 
-/***Grid Hold Shop Items***Start******/
+/***Grid That Hold All Shop Items***Start******/
 .container{
 	display: grid;
 	max-height: 100%;
 	max-width: 100%;
 	grid-template-columns: repeat(auto-fit, minmax(275px, auto));
 	grid-auto-rows: repeat(auto-fit, minmax(250px, auto));
-	margin: 0 auto;
 	grid-gap: 15px;
-	text-align: center;
 	padding: 1em 1% 1em 1%; /***Space Between Card & Outer Grid****/
+	margin: 0 auto;
 	margin-top: 2%;
+	text-align: center;
 	justify-content: center;
 	border-radius: 10px;
-	background: rgb(23, 20, 31);
 	background-color: #0075D9;
 	box-shadow: 0 0 10px black;
 	text-shadow: 1px 1px 2px #7dabd2;
 }
 
+/***This is The Individual Cards or Selections************/
 .container div{
     padding: 10px; /**Adjust Space Between Image & Card Section***/
     box-shadow: 0 0 20px black;
@@ -174,7 +171,7 @@ h4{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 	font-family: Consolas;
 }
-/***Grid Hold Shop Items***END******/
+/***Grid That Hold All Shop Items***END******/
 
 /****Info For Items Namw Price Buy Now Button***START***/
 #item_info_grid{
@@ -223,6 +220,13 @@ img{
 	background-size: cover;
 	background-repeat: no-repeat;
 	box-shadow: 0 0 5px black;
+}
+
+/***Images Showing Items*********/
+.img_item{
+	border-style: solid;
+	border-width:2px;
+	border-color: #ddd;
 }
 
 .buy_now{
