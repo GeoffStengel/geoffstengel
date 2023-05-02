@@ -5,37 +5,38 @@
 }
 html{
 	background-image: repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(22.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(194,74%,56%),hsl(266,74%,56%),hsl(338,74%,56%),hsl(50,74%,56%),hsl(122,74%,56%));
-
 }
+
 body, html{
 	background-color: rgb(0, 191, 255);
 	/**background: #0a0212; **/
     width: 100%;
     height:100%;
 	margin: 0 auto;
-    
 }
 
 body{
     display: grid;
-    max-width: 700px;
-    height: 90vh;
+    max-width: 420px;
+    max-height: 100%;
     margin: 0 auto;
     justify-content: center;
- /**   align-content: center; **/
-    padding-top: 2px;
+    padding-top: 1%;
     background-color: transparent;
+	max-height: 90%;
 }
 
 h1{
     color: #ddd;
     font-family: 18thcentury;
-    font-size: 36px;
+    font-size: 1.5rem;
     margin: 0 auto;
     height: 100%;
     text-shadow: 1px 1px 2px #12181d;
     align-content: center;
     text-align: center;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 h2{
     color: #ddd;
@@ -43,30 +44,37 @@ h2{
     font-size: 20px;
     padding: 0;
     margin: 0 auto;
-    max-height:  100%;
-    text-shadow: 1px 1px 2px #12181d;
+    height:  100%;
+    text-shadow: 1px 1px 2px #12181d; 
+    padding-left: 3px;
+    padding-right: 3px;  
 }
  
-/****Main Section Tag Wrapping Content**Inside Body*******/
+/****Main Section Tag Wrapping Everything Content**Inside Body*******/
 #wrapper{
     display: grid;
-    max-width: 500px;
-    max-height:100vh;
+    max-width: 180em;
+    max-height:100%;
     padding: 10px;
-    /**margin-top: 5%;**/
     border-radius: 10px;
     grid-template-columns: repeat(1, minmax(50px, auto));
-    grid-template-rows: repeat(4, minmax(50px, auto));
+   /** grid-template-rows: repeat(4, minmax(50px, auto));**/
+    grid-template-rows: auto;
     background: url('../images/harmonica.svg') no-repeat;
-    background-color: #0075D9;
+    background-color: #0074d974;
     box-shadow: 0 0 10px black;
     margin: 0 auto;
     border-style: solid;
 	border-width:5px;
 	border-color: #ddd;
-    margin-left: 1%;
-    margin-right: 1%;
-   
+}
+
+#wrapper h2{
+    display: grid;
+    margin: 0 auto;
+    float: bottom;
+    align-content: center;
+    text-align: center;
 }
 
 /**Nav Bar Holding Main Page Buttons***/
@@ -134,8 +142,11 @@ h2{
    /** box-shadow: 2px 2px 2px 2px rgb(26, 26, 26);**/
 }
 
-.box:hover{
+.box:hover, .box.youtube:hover{
+    border-style: solid;
 	background-color: hotpink;
+	border-width:2px;
+	border-color: #DCF506;
 }
 
 /****Box*Presses*In*Effect*When*Pressed**Start***/
@@ -143,6 +154,32 @@ h2{
 	height: 40px;
 	width: 40px;
 }
+
+/****Grid For Projects Youtube BitcoinDavida Twitter etc..*******/
+#creative_projects{
+    display: grid;
+    max-width: 500px;
+    max-height: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 90px));
+    grid-template-rows:auto;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #ddd;
+    box-shadow: 0 0 10px black;
+    background-color: #0074d93c;
+    
+    grid-gap: 5px;
+    row-gap: 10px;
+    grid-row: 4/5;
+    border-style: solid;
+	border-width:4px;
+	border-color: #ddd;
+}
+
 
 img{
 	width: 100%;
@@ -153,9 +190,15 @@ img{
 	box-shadow: 0 0 5px black;
 }
 
+.img_item{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/***. youtube is wrapper for Logo & Project Name***/
 .youtube{
     max-width:65px;
-    height:100%;
+    max-height:85px;
     margin: 0 auto;
     font-size: 12px;
     padding: 5px;
@@ -164,16 +207,17 @@ img{
     justify-items: center;
 	align-items: center;
  /**   background-color: cadetblue;**/
-    background-color:#ddd;
+    
 }
 
 /***The Box around Cards For Projects ********/
 .box.youtube{
-    width:auto;
-    height: auto;
+    /**width:auto;**/
+    width: 80px;
+    height:90px;
     color: blue;
     margin: 0 auto;
-   
+    background-color:#ddd;
 }
 
 .youtube a, .youtube p{
@@ -183,36 +227,15 @@ img{
  }
 
 .img_item_youtube{
-    width:85%;
-    height:45%;
+    width:50px;
+    height:45px;
     margin: 0 auto;
     justify-content: center;
 	align-content: center;
    /** padding: 0; **/
 }
 
-/****Grid For Projects Youtube BitcoinDavida Twitter etc..*******/
-.creative_projects{
-    display: grid;
-    width: 95%;
-    max-height: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(40px, auto));
-    margin: 0 auto;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    border-radius: 10px;
-    font-size: 16px;
-    color: #ddd;
-    box-shadow: 0 0 10px black;
-    background-color: #0075D9;
-    padding: 5px;
-    grid-gap: 5%;
-    grid-row: 3/5;
-    border-style: solid;
-	border-width:4px;
-	border-color: #ddd;
-}
+
 
 @media screen and (max-width:450px) {
 body{
@@ -279,7 +302,7 @@ h2{
     padding: 0;
     width:100vw;
  }
- .creative_projects{
+ #creative_projects{
     padding: 0;
  }
 }
