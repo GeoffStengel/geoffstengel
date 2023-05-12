@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: geoffstengel.com
+Token: b2626cb9c7dc12a612cc3196bf75b63678c8977e02753364188179df3e533cc8

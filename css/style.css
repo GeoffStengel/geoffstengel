@@ -37,6 +37,7 @@ h1{
     text-align: center;
     padding-left: 3px;
     padding-right: 3px;
+    grid-row: 5;
 }
 h2{
     color: #ddd;
@@ -47,19 +48,20 @@ h2{
     height:  100%;
     text-shadow: 1px 1px 2px #12181d; 
     padding-left: 3px;
-    padding-right: 3px;  
+    padding-right: 3px;
+    grid-row: 1; 
 }
  
 /****Main Section Tag Wrapping Everything Content**Inside Body*******/
-#wrapper{
+.wrapper{
     display: grid;
     max-width: 180em;
     max-height:100%;
     padding: 10px;
     border-radius: 10px;
     grid-template-columns: repeat(1, minmax(50px, auto));
-   /** grid-template-rows: repeat(4, minmax(50px, auto));**/
-    grid-template-rows: auto;
+    /**grid-template-rows: repeat(4, minmax(50px, auto));**/
+    grid-template-rows: 20px 90px 20px 300px 40px 1fr;
     background: url('../images/harmonica.svg') no-repeat;
     background-color: #0074d974;
     box-shadow: 0 0 10px black;
@@ -69,7 +71,7 @@ h2{
 	border-color: #ddd;
 }
 
-#wrapper h2{
+.wrapper h2{
     display: grid;
     margin: 0 auto;
     float: bottom;
@@ -92,6 +94,7 @@ h2{
     border-radius: 10px;
     font-size: 16px;
     color: #ddd;
+    grid-row:1;
 } 
 
 .nav a{
@@ -171,15 +174,13 @@ h2{
     color: #ddd;
     box-shadow: 0 0 10px black;
     background-color: #0074d93c;
-    
     grid-gap: 5px;
     row-gap: 10px;
-    grid-row: 4/5;
+    grid-row: 6;
     border-style: solid;
 	border-width:4px;
 	border-color: #ddd;
 }
-
 
 img{
 	width: 100%;
@@ -206,7 +207,7 @@ img{
     margin: 0 auto;
     justify-items: center;
 	align-items: center;
- /**   background-color: cadetblue;**/
+ /**background-color: cadetblue;**/
     
 }
 
