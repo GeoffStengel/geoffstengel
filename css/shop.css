@@ -213,6 +213,12 @@ h4{
 .box0{background-image: url(../images/home-rickety.svg);}
 .box1{background-image: url(../images/house-W-leafs.svg);}
 .box2{background-image: url(../images/chat-icon.svg);}
+.box3{
+    background-image: url(../images/cash_giving_icon.svg);
+    border-style: solid;
+	border-width: 3px;
+	border-color: #3aad09;
+}
 /*****Nav Images**END***/
 
 img{

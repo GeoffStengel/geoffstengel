@@ -1,0 +1,190 @@
+/****Donate & Tip CSS******/
+* {
+	margin: 0;
+	padding: 0;
+}
+html{
+	background-image: repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(22.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(194,74%,56%),hsl(266,74%,56%),hsl(338,74%,56%),hsl(50,74%,56%),hsl(122,74%,56%));
+}
+
+body, html{
+	background-color: rgb(0, 191, 255);
+	/**background: #0a0212; **/
+    width: 100%;
+    height:100%;
+	margin: 0 auto;
+}
+
+body{
+    display: grid;
+    max-width: 420px;
+    max-height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 1%;
+    background-color: transparent;
+	max-height: 90%;
+}
+
+/****Main Section Tag Wrapping Everything Content**Inside Body*******/
+.wrapper{
+    display: grid;
+    max-width: 180em;
+    height:100%;
+    padding: 10px;
+    border-radius: 10px;
+    grid-template-columns: repeat(1, minmax(50px, auto));
+    /**grid-template-rows: repeat(4, minmax(50px, auto));**/
+    grid-template-rows: 22px 90px 10px; 
+    background: url('../images/geoff_stengel_chicago_by_Zouhar.jpg') no-repeat;
+    background-position: center;
+	background-size: cover;
+    background-color: #0074d974;
+    box-shadow: 0 0 10px black;
+    margin: 0 auto;
+    border-style: solid;
+	border-width:5px;
+	border-color: #ddd;
+ 
+}
+
+h1{
+    max-height: 50px;
+    max-width: 100%;
+    color: #ddd;
+    font-family: 18thcentury;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px #12181d;
+    text-align: center;
+    padding-left: 3px;
+    padding-right: 3px;
+    grid-row: 5;
+}
+.tacos{
+    text-decoration: none;
+    color: #ddd;
+    text-align: right;
+    font-size: 12px;
+}
+
+.tacos:hover{
+    color: hotpink;
+}
+
+
+.header_text{
+    height: 150px;
+    display:grid;
+}
+
+.box0, .box1, .box2, .box3, .property_Fund, .taco_Fund, .square{
+    border-style: solid;
+	border-width:3px;
+	border-color: #3aad09;
+}
+
+.box0{background-image: url(../images/home-rickety.svg);}
+.box1{background-image: url(../images/house-W-leafs.svg);}
+.box2{background-image: url(../images/chat-icon.svg);}
+.box3{background-image: url(../images/cash_giving_icon.svg);}
+.property_Fund{background-image: url(../images/tree_oak.svg);}
+.taco_Fund{background-image: url(../images/taco.svg);}
+.square{background-image: url(../images/Square_Jewel_Black.svg);}
+
+/***Adjust Boxes For Nav Buttons******/
+.box {
+    height: 55px;
+    width: 55px;
+    border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 10px;
+	justify-content: center;
+	align-content: center;
+	box-shadow: 0 0 10px black;
+	background-color: #ddd;
+    text-align: center;	
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   /** box-shadow: 2px 2px 2px 2px rgb(26, 26, 26);**/
+}
+
+.box:hover, .box.youtube:hover{
+    border-style: solid;
+	background-color: hotpink;
+	border-width:2px;
+	border-color: #DCF506;
+}
+
+/****Box*Presses*In*Effect*When*Pressed**Start***/
+.box:active{
+	height: 40px;
+	width: 40px;
+}
+
+/**Nav Bar Holding Main Page Buttons***/
+.nav{ 
+    display: grid;
+    max-width:100%;
+    height:100%;
+    grid-template-columns: repeat(4, minmax(50px, auto));
+    grid-template-rows: auto;
+    column-gap: 5%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #ddd;
+    grid-row:2;
+} 
+
+.nav a{
+    font-size: 16px;
+    color: #ddd;
+    text-decoration: none;
+ 
+}
+
+.donate_wrapper{
+    background: #303030ab;
+    border-radius: 5px;
+    padding: 3px;
+    padding-top: 10px;
+    line-height: 25px;
+}
+
+.donate_wrapper, .donate_wrapper p{
+    max-width: 100%;
+    max-height: 100%;
+    color:#ffffff;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+   /** text-shadow: 1px 1px 2px #12181d;**/ 
+    text-shadow: 1px 1px 2px #000000;
+    padding-left: 1px;
+    padding-right: 1px;
+    text-justify: center;
+    text-align: center;
+    margin: 0 auto;
+   /** background-color: #ddd; **/
+}
+
+.donate_wrapper a{
+    color:#E004B4;
+    text-decoration: none;
+    max-width: 100%;
+    max-height: 100%;
+    text-shadow: 1px 1px 2px #12181d;
+}
+.donatation_links{
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+
+}
+.donatation_links p{
+    font-size: 12px;
+}

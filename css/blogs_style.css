@@ -8,7 +8,7 @@ body{
 	font-family: Arial, Helvetica, sans-serif;
     background: #0052a5;
     color: #ffffff;	
-	font-size: 1.1em;
+	font-size: 1.5em;
 	line-height: 1.5;
 	text-align: center;
 }
@@ -26,12 +26,17 @@ section{
 	box-shadow: 0 0 20px black;
 }
 
+header{
+	text-align: center;
+	margin: 0 auto;
+}
+
 /**Nav Bar Holding Main Page Buttons***/
 .nav{ 
     display: grid;
     max-width:100%;
     height:100%;
-    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+    grid-template-columns: repeat(4, minmax(50px, auto));
     grid-template-rows: auto;
     column-gap: 5%;
     margin: 0 auto;
@@ -41,19 +46,32 @@ section{
     border-radius: 10px;
     font-size: 16px;
     color: #ddd;
+    grid-row:2;
 } 
+.nav a, .nav p{
+    font-size: 12px;
+    color: #ddd;
+    text-decoration: none;
+	text-align: center;
+	margin: 0 auto;
+}
 
 p, a{
 	margin: 0 auto;
 	color:black;
-	
 }
-
+/**
 .nav a, .nav p{
     font-size: 16px;
     color: #ddd;
     text-decoration: none;
-}
+	margin: 0 auto;
+}**/
+
+.tacos {
+	width: 50px;
+	height:20px;
+} 
 
 #content{
 	display: grid;
@@ -89,8 +107,6 @@ header{
 	border-width:4px;
 	border-color: #ddd;
 }
-
-
 
 h1{
 	font-size: 45px;
@@ -160,25 +176,16 @@ p{
 	width: 40px;
 }
 
+.box0, .box1, .box2, .box3{
+	border-style: solid;
+	border-width:2px;
+	border-color: #3aad09;
+}
 
-.box0{
-    background-image: url(../images/home-rickety.svg);
-    border-style: solid;
-	border-width:2px;
-	border-color: #3aad09;
-}
-.box1{
-    background-image: url(../images/house-W-leafs.svg);
-    border-style: solid;
-	border-width:2px;
-	border-color: #3aad09;
-}
-.box2{
-    background-image: url(../images/chat-icon.svg);
-    border-style: solid;
-	border-width: 3px;
-	border-color: #3aad09;
-}
+.box0{background-image: url(../images/home-rickety.svg);}
+.box1{background-image: url(../images/house-W-leafs.svg);}
+.box2{background-image: url(../images/chat-icon.svg);}
+.box3{background-image: url(../images/cash_giving_icon.svg);}
 
 .blog1{
 	align-content: center;

@@ -194,7 +194,12 @@ img{
 	border-color: #3aad09;
 }
 
-
+.box3{
+    background-image: url(../images/cash_giving_icon.svg);
+    border-style: solid;
+	border-width: 3px;
+	border-color: #3aad09;
+}
 
 
 
