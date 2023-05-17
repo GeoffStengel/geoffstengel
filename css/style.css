@@ -75,7 +75,7 @@ h2{
     grid-template-columns: repeat(1, minmax(50px, auto));
     /**grid-template-rows: repeat(4, minmax(50px, auto));**/
     grid-template-rows: 15px 80px 90px 20px 300px 40px 1fr;
-    background: url('../images/geoff_stengel_chicago_by_Zouhar.jpg') no-repeat;
+    background: url('../images/geoff_stengel_chicago_by_Zouhair_bkgd.png') no-repeat;
     background-position: center;
 	background-size: cover;
     background-color: #0074d974;
@@ -99,7 +99,7 @@ h2{
     display: grid;
     max-width:100%;
     max-height:100%;
-    grid-template-columns: repeat(4, minmax(50px, auto));
+    grid-template-columns: repeat(4, minmax(30px, auto));
     grid-template-rows: auto;
     column-gap: 5%;
     margin: 0 auto;
@@ -113,9 +113,12 @@ h2{
 } 
 
 .nav a{
-    font-size: 16px;
+    font-size: 14px;
     color: #ddd;
     text-decoration: none;
+}
+.nav p{
+    margin-top: 3px;
 }
 
 .header_text{
@@ -123,31 +126,16 @@ h2{
     display:grid;
 }
 
-.box0{
-    background-image: url(../images/home-rickety.svg);
+.box0, .box1, .box2, .box3{
     border-style: solid;
 	border-width:2px;
-	border-color: #3aad09;
-}
-.box1{
-    background-image: url(../images/house-W-leafs.svg);
-    border-style: solid;
-	border-width:2px;
-	border-color: #3aad09;
-}
-.box2{
-    background-image: url(../images/chat-icon.svg);
-    border-style: solid;
-	border-width: 3px;
 	border-color: #3aad09;
 }
 
-.box3{
-    background-image: url(../images/cash_giving_icon.svg);
-    border-style: solid;
-	border-width: 3px;
-	border-color: #3aad09;
-}
+.box0{background-image: url(../images/home-rickety.svg);}
+.box1{background-image: url(../images/house-W-leafs.svg);}
+.box2{background-image: url(../images/chat-icon.svg);}
+.box3{background-image: url(../images/cash_giving_icon.svg);}
 
 /***Adjust Boxes For Nav Buttons******/
 .box {
@@ -294,14 +282,14 @@ body{
     padding:2px;
  }
 }
-
+/**
 @media screen and (max-width:410px) {
 #creative_projects{    
     grid-template-columns: repeat(auto-fit, minmax(20px, 120px));
    
 
    }
-}  
+}  **/
 @media screen and (max-width:269px) {
 
 body{
@@ -341,14 +329,70 @@ h2{
 .wrapper{
     padding: 0;
     width:100vw;
+    border: none;
  }
  #creative_projects{
     padding: 0;
  }
 }
 
-/****iwatches Sizes & Such***150px*****/  
-@media screen and (max-width:150px) {   
+/****iwatches Sizes & Such***204px*****/  
+@media screen and (max-width:204px) { 
+ h1{
+    grid-row: 8;
+ }
+    h2{
+        height: 28px;
+        font-size: 12px;
+        grid-row: 7;
+    }
+    /**Nav Bar Holding Main Page Buttons***/
+    .nav{ 
+        grid-template-columns: repeat(2, minmax(30px, auto));
+        grid-template-rows: auto;
+        column-gap: 2px;
+        font-size: 16px;
+        grid-row: 2;
+    } 
+
+.nav a{
+    font-size: 12px;
+    color: #ddd;
+    text-decoration: none;
+}
+.nav p{
+    margin-top: 3px;
+}
+
+ .wrapper{
+    max-height: 300px;
+    max-width: 180em;
+    padding: 10px;
+    border-radius: 10px;
+    grid-template-columns: repeat(1, minmax(30px, auto));
+    grid-template-rows: 20px 120px 60px 20px 20px;
+    border: none;
+    padding:0;
+}
+.youtube{
+    grid-row: 4;
+}
+/****Grid For Projects Youtube BitcoinDavida Twitter etc..*******/
+#creative_projects{
+    max-width: 500px;
+    height: 100%;
+    grid-template-columns: repeat(2, minmax(20px, 90px));
+    grid-template-rows:auto;
+    font-size: 16px;
+    grid-gap: 5px;
+    row-gap: 10px;
+    grid-row: 3;
+
+ }
+ .tacos a{
+    max-width: 100%;
+ 
+ }
 }
 
 @media screen and (max-width:110px) {   

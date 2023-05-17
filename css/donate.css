@@ -36,7 +36,7 @@ body{
     grid-template-columns: repeat(1, minmax(50px, auto));
     /**grid-template-rows: repeat(4, minmax(50px, auto));**/
     grid-template-rows: 22px 90px 10px; 
-    background: url('../images/geoff_stengel_chicago_by_Zouhar.jpg') no-repeat;
+    background: url('../images/geoff_stengel_chicago_by_Zouhair_bkgd.png') no-repeat;
     background-position: center;
 	background-size: cover;
     background-color: #0074d974;
