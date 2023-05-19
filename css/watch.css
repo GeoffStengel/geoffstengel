@@ -1,0 +1,190 @@
+/***CSS*Watch*Page***Geoff*Stengel***/
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+
+body{
+    background: #eee;
+}
+
+.heading{
+    color: #444;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 5px 5%;
+}
+
+.container .main-video{
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container .main-video video{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.container .main-video .title{
+    color: #333;
+    font-size: 23px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.container .video-list{
+    background: #fff;
+    border-radius: 5px;
+    height: 520px;
+    overflow-y: scroll;
+}
+
+.container .video-list::-webkit-scrollbar{
+    width:7px;
+}
+.container .video-list::-webkit-scrollbar-track{
+    background:#ccc;
+    border-radius: 50px;
+}
+
+.container .video-list::-webkit-scrollbar-thumb{
+    background:#666;
+    border-radius: 50px;
+}
+
+.container .video-list .vid video{
+    width: 100px;
+    border-radius: 5px;
+}
+
+.container .video-list .vid{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background:#f7f7f7;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.1);
+    cursor: pointer;
+}
+
+.container .video-list .vid:hover{
+    background: #eee;
+}
+
+.container .video-list .vid.active{
+    background: #2980b9;
+}
+
+.container .video-list .vid.active .title{
+    color: #fff;
+}
+
+.container .video-list .vid .title{
+    color: #333;
+    font-size: 17px;
+}
+
+/********************************/
+/**Nav Bar Holding Main Page Buttons***/
+.nav{ 
+    display: grid;
+    max-width:100%;
+    max-height:100%;
+    grid-template-columns: repeat(4, minmax(30px, auto));
+    grid-template-rows: auto;
+    column-gap: 5%;
+ /**   justify-content: center;**/
+    align-content: center;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    grid-row:2;
+} 
+
+.nav a{
+    font-size: 14px;
+    text-decoration: none;
+}
+.nav p{
+    margin-top: 3px;
+}
+
+.header_text{
+    height: 150px;
+    display:grid;
+}
+
+.box0, .box1, .box2, .box3{
+    border-style: solid;
+	border-width:2px;
+	border-color: #3aad09;
+}
+
+.box0{background-image: url(../images/home-rickety.svg);}
+.box1{background-image: url(../images/house-W-leafs.svg);}
+.box2{background-image: url(../images/chat-icon.svg);}
+.box3{background-image: url(../images/cash_giving_icon.svg);}
+
+/***Adjust Boxes For Nav Buttons******/
+.box {
+    height: 55px;
+    width: 55px;
+    border-radius: 10px;
+	margin-top: 10px;
+	justify-content: center;
+	align-content: center;
+	box-shadow: 0 0 10px black;
+	background-color: #ddd;
+    text-align: center;	
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   /** box-shadow: 2px 2px 2px 2px rgb(26, 26, 26);**/
+}
+
+.box:hover{
+    border-style: solid;
+	background-color: hotpink;
+	border-width:2px;
+	border-color: #DCF506;
+}
+
+/****Box*Presses*In*Effect*When*Pressed**Start***/
+.box:active{
+	height: 40px;
+	width: 40px;
+}
+
+/**************************************/
+
+
+
+
+
+@media (max-width:991px){
+.container{
+    grid-template-columns: 1.5fr 1fr;
+    padding: 10px;
+ }
+}
+
+@media (max-width:768px){
+    .container{
+        grid-template-columns: 1fr;
+     }
+    }
