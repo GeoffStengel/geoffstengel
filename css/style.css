@@ -8,29 +8,29 @@ html{
 }
 
 body, html{
-	/**background-color: rgb(0, 191, 255);**/
-	/**background: #0a0212; **/
     width: 100%;
     height:100%;
-	margin: 0 auto;
 }
 
 body{
     display: grid;
     max-width: 420px;
     max-height: 100%;
-    margin: 0 auto;
     justify-content: center;
     padding-top: 1%;
     background-color: transparent;
 	max-height: 90%;
 }
 
+body, html, .tacos, h1, h2, #wrapper, .wrapper h2, .nav, .box, #creative_projects, .img_item, .youtube,
+ .box.youtube, .img_item_youtube {
+    margin: 0 auto;
+}
+
 .tacos{
     max-width: 72px;
     max-height:23px;
     text-decoration: none;
-    color: #ddd;
     text-align: right;
     font-size: 12px;
     grid-row: 1;
@@ -40,11 +40,13 @@ body{
     color: hotpink;
 }
 
-h1{
+h1, h2, .tacos, .nav a, #creative_projects{
     color: #ddd;
+}
+
+h1{
     font-family: 18thcentury;
     font-size: 1.5rem;
-    margin: 0 auto;
     height: 100%;
     text-shadow: 1px 1px 2px #12181d;
     text-align: center;
@@ -52,12 +54,11 @@ h1{
     padding-right: 3px;
     grid-row: 6;
 }
+
 h2{
-    color: #ddd;
     font-family: 18thcentury;
     font-size: 20px;
     padding: 0;
-    margin: 0 auto;
     height:  100%;
     text-shadow: 1px 1px 2px #12181d; 
     padding-left: 1px;
@@ -73,14 +74,11 @@ h2{
     padding: 10px;
     border-radius: 10px;
     grid-template-columns: repeat(1, minmax(50px, auto));
-    /**grid-template-rows: repeat(4, minmax(50px, auto));**/
     grid-template-rows: 15px 80px 90px 20px 300px 40px 1fr;
     background: url('../images/geoff_stengel_chicago_by_Zouhair_bkgd.png') no-repeat;
     background-position: center;
 	background-size: cover;
-    background-color: #0074d974;
     box-shadow: 0 0 10px black;
-    margin: 0 auto;
     border-style: solid;
 	border-width:5px;
 	border-color: #ddd;
@@ -88,7 +86,6 @@ h2{
 
 .wrapper h2{
     display: grid;
-    margin: 0 auto;
     float: bottom;
     align-content: center;
     text-align: center;
@@ -102,19 +99,16 @@ h2{
     grid-template-columns: repeat(4, minmax(30px, auto));
     grid-template-rows: auto;
     column-gap: 5%;
-    margin: 0 auto;
  /**   justify-content: center;**/
     align-content: center;
     text-align: center;
     border-radius: 10px;
     font-size: 16px;
-    color: #ddd;
     grid-row:2;
 } 
 
 .nav a{
     font-size: 14px;
-    color: #ddd;
     text-decoration: none;
 }
 .nav p{
@@ -142,7 +136,6 @@ h2{
     height: 55px;
     width: 55px;
     border-radius: 10px;
-	margin: 0 auto;
 	margin-top: 10px;
 	justify-content: center;
 	align-content: center;
@@ -175,22 +168,15 @@ h2{
     max-height: 100%;
     grid-template-columns: repeat(4, minmax(20px, 90px));
     grid-template-rows:auto;
-    margin: 0 auto;
     justify-content: center;
     align-content: center;
     text-align: center;
     border-radius: 10px;
     font-size: 16px;
-    color: #ddd;
     box-shadow: 0 0 10px black;
     grid-gap: 5px;
     row-gap: 10px;
     grid-row: 7;
- /**   border-style: solid;
-	border-width:4px;
-	border-color: #ddd;
-     background-color: #0074d93c;
-     **/
 }
 
 img{
@@ -204,22 +190,17 @@ img{
 
 .img_item{
     width: 100%;
-    margin: 0 auto;
 }
 
 /***. youtube is wrapper for Logo & Project Name***/
 .youtube{
     max-width:65px;
     max-height:95px;
-    margin: 0 auto;
     font-size: 12px;
     padding: 5px;
     padding-top: 8px;
-    margin: 0 auto;
     justify-items: center;
 	align-items: center;
- /**background-color: cadetblue;**/
-    
 }
 
 /***The Box around Cards For Projects ********/
@@ -228,7 +209,6 @@ img{
     width: 80%;
     height:90px;
     color: blue;
-    margin: 0 auto;
     background-color:#dddddd88;
 }
 
@@ -241,13 +221,9 @@ img{
 .img_item_youtube{
     width:80%;
     height:55%;
-    margin: 0 auto;
     justify-content: center;
 	align-content: center;
-   /** padding: 0; **/
 }
-
-
 
 @media screen and (max-width:450px) {
 body{
@@ -268,28 +244,19 @@ body{
 #creative_projects{
     grid-template-columns: repeat(4, minmax(20px, 80px));
 }
-
-
 }
 
 @media screen and (max-width:383px) {
- 
-    h1{
-        height: 30px;
-    }
+
+h1{
+    height: 30px;
+}
 
 #wrapper{
     padding:2px;
  }
 }
-/**
-@media screen and (max-width:410px) {
-#creative_projects{    
-    grid-template-columns: repeat(auto-fit, minmax(20px, 120px));
-   
 
-   }
-}  **/
 @media screen and (max-width:269px) {
 
 body{
@@ -298,8 +265,9 @@ body{
 }
 
 h1{
-  font-size: 14px;
+    font-size: 14px;
 }
+
 h2{
     font-size: 100%;
 }  
@@ -310,7 +278,6 @@ h2{
 }
 
 .nav{
-    margin: 0 auto;
     grid-gap:1px;
 }
 
@@ -338,70 +305,71 @@ h2{
 
 /****iwatches Sizes & Such***204px*****/  
 @media screen and (max-width:204px) { 
- h1{
+h1{
     grid-row: 8;
- }
-    h2{
-        height: 28px;
-        font-size: 12px;
-        grid-row: 7;
-    }
-    /**Nav Bar Holding Main Page Buttons***/
-    .nav{ 
-        grid-template-columns: repeat(2, minmax(30px, auto));
-        grid-template-rows: auto;
-        column-gap: 2px;
-        font-size: 16px;
-        grid-row: 2;
-    } 
+}
+
+h2{
+    height: 28px;
+    font-size: 12px;
+    grid-row: 7;
+}
+
+/**Nav Bar Holding Main Page Buttons***/
+.nav{ 
+    grid-template-columns: repeat(2, minmax(30px, auto));
+    grid-template-rows: auto;
+    column-gap: 2px;
+    font-size: 16px;
+    grid-row: 2;
+} 
 
 .nav a{
     font-size: 12px;
-    color: #ddd;
     text-decoration: none;
 }
+
 .nav p{
     margin-top: 3px;
 }
 
- .wrapper{
+.wrapper{
     max-height: 300px;
     max-width: 180em;
     padding: 10px;
-    border-radius: 10px;
     grid-template-columns: repeat(1, minmax(30px, auto));
-    grid-template-rows: 20px 120px 60px 20px 20px;
+    grid-template-rows: 20px 120px auto 20px;
     border: none;
     padding:0;
 }
+
 .youtube{
     grid-row: 4;
 }
+
 /****Grid For Projects Youtube BitcoinDavida Twitter etc..*******/
 #creative_projects{
     max-width: 500px;
     height: 100%;
-    grid-template-columns: repeat(2, minmax(20px, 90px));
-    grid-template-rows:auto;
-    font-size: 16px;
+    grid-template-columns: repeat(4, minmax(30px, 50px));
+    grid-template-rows:2;
+    font-size: 12px;
     grid-gap: 5px;
-    row-gap: 10px;
     grid-row: 3;
+}
 
- }
  .tacos a{
     max-width: 100%;
- 
  }
 }
 
 @media screen and (max-width:110px) {   
-    .wrapper{
-        font-size: 20px; 
-        padding: 0; 
-        margin: 0;
-        height: 100%;
-    }
+.wrapper{
+    font-size: 20px; 
+    padding: 0; 
+    margin: 0;
+    height: 100%;
+}
 
 .creative_projects{
         height: 100vh;
