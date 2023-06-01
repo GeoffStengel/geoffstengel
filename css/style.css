@@ -74,7 +74,7 @@ h2{
     padding: 10px;
     border-radius: 10px;
     grid-template-columns: repeat(1, minmax(50px, auto));
-    grid-template-rows: 15px 80px 90px 20px 300px 40px 1fr;
+    grid-template-rows: 15px 60px 60px 20px 100px 40px 1fr;
     background: url('../images/geoff_stengel_chicago_by_Zouhair_bkgd.png') no-repeat;
     background-position: center;
 	background-size: cover;
