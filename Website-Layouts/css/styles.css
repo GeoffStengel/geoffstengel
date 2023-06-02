@@ -59,8 +59,8 @@ header{
     text-decoration: none;
     text-align: center;
     margin: 0 auto;
-
 }
+
 .nav a{
     font-size: 20px;
     color: #ddd;
@@ -71,6 +71,14 @@ header{
     text-shadow: 1px 1px 2px #7dabd2;
 }
 
+a:active, p:active {
+    width: 76%;
+    height: 96%;
+}
+.nav a:active, .nav p:active {
+    width: 98%;
+    height: 96%;
+}
 h1{
     font-size: 32px;
     color:#ffffff;
@@ -240,6 +248,29 @@ h1{
     margin:0 auto;
     text-decoration: none;
 }
+ 
+/****Box*Presses*In*Effect*When*Pressed**Start***/
+.footer:active{
+	height: 96%;
+	width: 96%;
+}
+
+
+.footer p, .footer{
+    border-radius: 20px;
+}
+
+.footer a{
+    text-decoration: none;
+}
+.footer p{
+    border-style: solid;
+    border-color: burlywood;
+}
+
+a{
+    text-decoration: none;  
+}
 
 .footer p, .footer a{
     font-size: 24px;
@@ -251,8 +282,10 @@ h1{
     font-family:'Courier New', Courier, monospace ;
     text-shadow: 1px 1px 2px #7dabd2;  
     color: brown;
-    padding:3px;
+    padding:5px;
     background: pink;
+    box-shadow: 1px 1px 2px #262e36;
+    text-shadow: 1px 1px 2px #67737e;
 }
 
 
