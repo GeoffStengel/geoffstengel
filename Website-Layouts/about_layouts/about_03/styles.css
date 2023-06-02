@@ -1,0 +1,83 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  html {
+    font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
+    font-size: 100%;
+    line-height: 1.5;
+    color: #121212;
+  }
+  body {
+   margin: 0 auto;
+   width: 960px;
+   max-width: 100%;
+  }
+  a {
+    color: inherit;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  h1, h2, h3, h4 {
+    text-transform: uppercase;
+    margin: 0 0 1.5rem;
+  }
+  .logo {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 32px;
+  }
+  .icon-link {
+    transition: 0.3s;
+  }
+  .icon-link:hover {
+     color:  cadetblue;
+  }
+  .site-title {
+    font-size: calc(36px + 3vw); 
+  }
+  .site-subtitle {
+    font-weight: normal;
+    text-transform: none;
+    font-size: calc(1.5rem + 1vw);
+  }
+  .page-header {
+    margin: 48px 0;
+    text-align: center;
+  }
+  .box {
+    padding: 3rem;
+  }
+  .about,
+  .page-footer {
+    border-top: 1px solid;
+  }
+  .contact {
+    text-align: center;
+    margin: 48px 0;
+    color: #fff;
+    background: #212121;  
+  }
+  .quote {
+    padding: 4.5rem 0;
+    text-align: center;
+    background:  url(https://unsplash.it/1200/800?image=354) no-repeat;
+    background-size:  cover;
+    background-attachment: fixed;
+  }
+  blockquote {
+    color: #fff;
+    font-size: calc(1rem + 2vw);
+  }
+  blockquote strong {
+    display: block;
+  }
+  .page-footer {
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  address {
+    margin-bottom: 1.5rem;
+  }

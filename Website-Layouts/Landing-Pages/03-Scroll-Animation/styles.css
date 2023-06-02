@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --font1: "Poppins";
+  --fontSizeMenu: 1vw;
+  --fontSizeH1: 10vw;
+  --fontSizeP: 1.48vw;
+  --maxWidth: 1100px;
+} 
+
+body {
+  margin: 0;
+  background-color: #f7f0ea;
+  font-family: var(--font1);
+  overflow-x: hidden;
+}
+
+.flex, .flex__col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex__col {
+  flex-direction: column;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+main.flex__col {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.menu {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 50%;
+  width: calc(100% - 80px);
+  justify-content: space-between;
+  margin: 40px 0;
+  transform: translatex(-50%);
+}
+
+.menu a {
+  font-size: var(--fontSizeMenu);
+  font-weight: 600;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.menu ul {
+  gap: 0 60px;
+}
+
+.menu ul li {
+  display: flex;
+}
+
+.clip {
+  width: 100%;
+  height: 150vh;
+}
+
+.clip__inner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.clip__inner h1 {
+  align-items: flex-end;
+  height: 40vh;
+  font-size: var(--fontSizeH1);
+  text-align: center;
+  max-width: var(--maxWidth);
+  margin: 5vw 0;
+}
+
+.clip__cols {
+  width: 70vw;
+  height: 45vh;
+  gap: 40px;
+  align-items: flex-start;
+  max-width: var(--maxWidth);
+}
+
+.clip__cols p {
+  font-size: var(--fontSizeP);
+  width: 50%;
+}
+
+.clip__cols a {
+  color: #000;
+}
+
+.clip__scroll {
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100vh;
+}
+
+#clip1__scroll {
+  padding-top: 0;
+}
+
+.clip__scroll h2 {
+  color: #fff;
+  font-size: var(--fontSizeH1);
+  margin: 0 0 6vw 0;
+}
+
+.clip__scroll .clip__cols {
+  height: auto;
+}
+
+.clip__scroll p, .clip__scroll a {
+  color: #fff;
+}
+
+#svg__rec, #svg__rec2, #svg__rec3, #svg__rec4 {
+  display: none;
+}
+
+.starSvg {
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  width: 200px;
+  height: auto;
+  aspect-ratio: 1/1;
+  transform: translate(-50%, -50%);
+}
+
+#svg1 {clip-path: url(#svg__path)}
+#svg2 {clip-path: url(#svg__path2)}
+#svg3 {clip-path: url(#svg__path3)}
+#svg4 {clip-path: url(#svg__path4)}
+
+.starSvg img, .starSvg video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  transform: translate(-50%,-50%);
+}
+
+@media (orientation: portrait) {
+  .starSvg img, .starSvg video {
+    width: auto;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1550px) {
+  :root {
+  --fontSizeMenu: 16px;
+  --fontSizeH1: 140px;
+  --fontSizeP: 22px;
+  }
+  .clip__inner h1 {
+    height: 30vh;
+  }
+  .clip__cols {
+    height: 35vh;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --fontSizeMenu: 11px;
+    --fontSizeP: 11px;
+  }
+  .menu {
+    width: 90vw;
+    margin: 4vw 0;
+  }
+  .menu ul {
+    gap: 0 2vw;
+  }
+  .clip__inner h1 {
+    width: 90vw;
+    justify-content: flex-start;
+    margin: 60px 0;
+  }
+  
+  .clip__scroll h2 {
+    width: 90vw;
+  }
+  .clip__cols {
+    width: 90vw;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .clip__cols p {
+    width: 100%;
+  }
+  .starSvg {
+    width: 70px;
+  }
+}

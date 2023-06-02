@@ -1,0 +1,7 @@
+06-landing-forest-parallax 
+
+
+Codepen:  https://codepen.io/robertgbaptista/pen/jOZGEWX ⭐⭐⭐⭐
+
+A good simple landing page, parallax scroll design with svg
+

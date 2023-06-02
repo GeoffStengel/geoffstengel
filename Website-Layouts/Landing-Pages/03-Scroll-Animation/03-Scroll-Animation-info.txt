@@ -1,0 +1,8 @@
+03 Scroll Animation Info - Landing Page Layout
+
+
+
+Codepen: https://codepen.io/Tiopayo/pen/eYPpLVe ⭐⭐⭐ would be 4 if JS or script tag gets fixed
+
+When scrollling it looks like it's moving towards ya kinda.
+  JS or Script for GSAP needs to be checked out before deploying

@@ -1,0 +1,68 @@
+html,body,section{height:100%}body{font:1em/1.25 "Helvetica Neue", Helvetica, Arial, sans-serif;background:#222;color:#fff;text-align:center;margin:0;padding:0}
+header{padding:.75em;font-size:1.2em;background:#222}h1,h2,h3,h4,h5,h6{font-weight:800;margin:0}
+h1{font-size:3em}
+.description{font-size:1.5em;font-weight:normal;margin:1em 0}
+footer{font-size:0.6em;padding:1em 0}
+a{color:#7ea613}
+ul,ol{padding:0 0 0 2em;margin:0}
+ul{list-style:square}
+.bloque{background-color:#f2f2f2}.bloque.texto{padding:2em;text-align:left;color:#111}.bloque.texto .content{max-width:960px;margin-left:auto;margin-right:auto;margin-bottom:.5em}.paraxify{background-attachment:scroll}
+
+.bloque.foto{background-color:#f2f2f2;background-repeat:no-repeat;height:250px;position:relative}
+.over{padding:2em 1em 0 1em}.over h1{line-height:0.8}.over:after{content:'\2228';display:inline-block;border-radius:50%;margin:1em 0;width:2em;height:2em;line-height:2em;font-size:2em;text-shadow:none !important;background:#7ea613;background:rgba(255,255,255,0.3)}.toTop{content:'\2228';text-decoration:none;display:inline-block;border-radius:50%;margin:1em 0;width:2em;height:2em;line-height:2.3;font-size:3em;text-shadow:none !important;background:#7ea613;background:#2f2f2f}.share{padding:3em 0 0 0}.button{display:inline-block;margin-top:.5em;padding:.75em 1.5em;font-size:1.3em;border-radius:.35em;text-decoration:none;font-weight:bold;color:white;background:#7ea613;border:0.1em solid #a4c059;-webkit-box-shadow:0 0 0 transparent;box-shadow:0 0 0 transparent;-webkit-transition:.5s ease-out;transition:.5s ease-out;background:-webkit-gradient(linear, left top, left bottom, from(#a1d418), to(#7ea613));filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a1d418', endColorstr='#7ea613')}.button:hover{-webkit-transition:0.3s cubic-bezier(0.29, 1.24, 0.96, 1.25);transition:0.3s cubic-bezier(0.29, 1.24, 0.96, 1.25);-webkit-box-shadow:0 .5em 1em -.25em #000;box-shadow:0 .5em 1em -.25em #000;-webkit-transform:scale(1.2);-ms-transform:scale(1.2);transform:scale(1.2)}@-webkit-keyframes parallax-bg{0%{background-position:center 0}100%{background-position:center 50px}}@keyframes parallax-bg{0%{background-position:center 0}100%{background-position:center 50px}}@-webkit-keyframes parallax{0%{background-position:center -50px}100%{background-position:center 0}}@keyframes parallax{0%{background-position:center -50px}100%{background-position:center 0}}
+.foto.intro{height:auto;background-attachment:scroll;-webkit-background-size:cover;background-size:cover;background-position:center center;background-image:url("img/intro_small.jpg")}
+.foto.foto-1{background-image:url("http://lanapant.com/px/header_small.jpg")}
+.foto.foto-2{background-image:url("img/2_small.jpg")}
+.foto.foto-3{background-image:url("img/3_small.jpg")}
+.foto.foto-4{background-image:url("img/4_small.jpg")}
+@media screen and (min-width: 40em){header{position:fixed;background:rgba(0,0,0,0.7);top:0;right:0;left:0;z-index:100}h1{font-size:4em}h2{font-size:2.5em}p,ul,ol,ul ul,pre{font-size:1.2rem}ul ul{padding-bottom:.5em}.over{padding-top:9em}.bloque.texto{padding:4em 0}.bloque.texto .content{max-width:70%}.bloque.foto{height:500px}.foto.intro{height:100%;background-image:url("img/intro.jpg")}:root .example{width:200px;float:right;left:1em;height:250px;border:1px solid #333;background:#CCC;background-image:url("img/1.jpg");-webkit-background-size:auto 200px;background-size:auto 200px;background-repeat:no-repeat;background-position:center 0;margin:0 auto;position:relative;-webkit-transition:1s;transition:1s}:root .example:before{content:'';display:block;height:100%;background:#7ea613;background:rgba(126,166,19,0.5);color:white;text-align:center;line-height:50px}:root .example:hover,:root .example:focus,:root .example:active{-webkit-animation:parallax-bg 1s ease-in-out infinite alternate;animation:parallax-bg 1s ease-in-out infinite alternate}:root .example:hover:after,:root .example:focus:after,:root .example:active:after{-webkit-animation:parallax 1s ease-in-out infinite alternate;animation:parallax 1s ease-in-out infinite alternate}:root .example:after{content:'.paraxify';position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;display:inline-block;height:150px;background:#CCC;color:white;background-image:url("img/1.jpg");-webkit-background-size:auto 200px;background-size:auto 200px;background-repeat:no-repeat;background-position:center -50px;text-align:center;line-height:150px}}@media screen and (min-width: 60em){.paraxify{background-attachment:fixed}
+  .foto.foto-1{background-image:url("http://lanapant.com/px/aboutus_2.jpg")}
+  .foto.foto-2{background-image:url("http://lanapant.com/px/aboutus_3.jpg")    }.foto.foto-3{background-image:url("http://jaicab.com/Paraxify.js/img/3.jpg")}.foto.foto-4{background-image:url("http://jaicab.com/Paraxify.js/img/4.jpg")}}
+.fill{
+  width:100%;
+}
+.logo{
+  position:absolute;
+  top:5%;
+}
+.title{
+  position:absolute;
+  bottom:5%;
+  color:white;
+  right:10px;
+   font-weight: 800;
+  font:4em "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.col-xs-12, .col-lg-4{
+  color:black;
+  padding:40px;
+  word-wrap: break-word;
+}
+h3{
+  font:1.6em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align:left;
+
+  padding-top:20px;
+}
+body{font-size: 100%;}
+@media screen and (max-width: 500px) {
+  .title{
+    font:3em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+body{
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+.last{
+  height:50px;
+  font:1.4em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding:5px;
+
+ 
+}
+.last a{
+  font:1.4em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#fff;
+}

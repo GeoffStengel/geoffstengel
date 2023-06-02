@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Martel&display=swap");
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	font-family: "Martel", serif;
+	background-color: #f4f5f8;
+
+	--step-1: clamp(1.35rem, calc(1.18rem + 0.55vw), 1.56rem);
+	--step-2: clamp(2.8rem, calc(1.98rem + 2.62vw), 3.82rem);
+}
+
+figure {
+	object-fit: cover;
+}
+
+img {
+	width: 100%;
+}
+
+p {
+	line-height: 1.8rem;
+	padding-bottom: 1em;
+}
+
+article span {
+	display: block;
+	width: 4rem;
+	height: 4rem;
+	font-size: var(--step-2);
+	line-height: 6vmin;
+	display: grid;
+	align-items: start;
+	justify-items: center;
+	font-family: "DM Serif Display", serif;
+	shape-outside: inset(0px 0px 10px 0px);
+	float: left;
+}
+
+.container {
+	width: min(100%, 1120px);
+	padding: 2em 1em;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 2em;
+}
+
+aside {
+	padding: 1em;
+	font-size: var(--step-1);
+	font-family: "DM Serif Display", serif;
+	position: relative;
+}
+aside svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4em;
+	height: 2em;
+	z-index: -1;
+}
+aside svg g {
+	fill: rgb(255, 183, 193);
+	stroke: none;
+}
+
+@media (max-width: 700px) {
+	.container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	article:last-of-type {
+		grid-column: 1 / -1;
+	}
+}
+
+@media (max-width: 500px) {
+	.container {
+		grid-template-columns: 1fr;
+	}
+	article:last-of-type {
+		grid-column: 1 / -1;
+	}
+}

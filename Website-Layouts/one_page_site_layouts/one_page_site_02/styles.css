@@ -1,0 +1,189 @@
+/* 
+  
+*/
+body {
+    background-color: silver;
+ }
+ button {
+   border: none;
+   padding: 5px 15px;
+   background-color: #c7c7c7;
+   color: #444444;
+   font-weight: bold;
+ }
+ input , label, textarea {
+   width: 100%;
+ }
+ 
+ /* header */
+ header {
+   background-color: #18aab7;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 1000;
+ }
+ 
+ .navbar-header {
+   display: inline-block;
+ }
+ .navbar-header a {
+   color: white;
+ }
+ .navbar-header h2 {
+   letter-spacing: -2px;
+ }
+ header div.container {
+   padding: 20px 0;
+ }
+ header nav {
+     float: right;
+ }
+ header nav ul {
+   padding: 13.5px 0;
+ }
+ header nav ul li {
+   display: inline-block;
+   margin: 0 10px;
+ }
+ header nav ul li a {
+   padding: 20px;
+   font-weight: bold;
+   color: white;
+   transition: background-color 0.2s;
+ }
+ header nav ul li a:hover {
+   text-decoration: none;
+   background-color: #119aa7;
+ }
+ 
+ header:after {
+   content: "";
+   display: block;
+   clear: both;
+ }
+ 
+ /* page */
+ /* section about me */
+ section#about-me {
+   padding: 40px 40px;
+   background: #d2d2d2;
+   margin-bottom: 40px;
+   background-image: url(https://static.pexels.com/photos/14676/pexels-photo-14676.png);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+ section#about-me div.col-md-10 h4 {
+   color: white;
+   padding-bottom: 20px;
+   border-bottom: 1px solid grey;
+ }
+ section#about-me div.span-wrap {
+   display: inline-block;
+   padding: 20px 0;
+ }
+ section#about-me span {
+   font-size: 20px;
+   font-weight: bold;
+ }
+ section#about-me span {
+   color: #18aab7;
+ }
+ 
+ section#about-me img {
+   max-width: 100%;
+   border-radius: 100%;
+   border: 2px solid white;
+ }
+ /*page */
+ #page {
+   width: 70%;
+   min-width: 360px;
+   margin: 0 auto;
+   margin-top: 91px;
+   background-color: white;
+ }
+ 
+ /* section portfolio */
+ section#portfolio {
+   border-bottom: 1px solid grey;
+ }
+ section#portfolio div.container-fluid div.row {
+   margin: 60px 0;
+ }
+ section#portfolio h2 {
+    text-align: center;
+    color: #444444;
+   padding: 10px 0;
+   border-bottom: 1px solid grey;
+ }
+ section#portfolio div.container-fluid div.row div.col-md-6 img {
+   display: block;
+   max-width: 100%;
+ }
+ section#portfolio div.container-fluid div.row div.col-md-6 img:hover {
+   opacity: 0.8;
+ }
+ section#portfolio div.container-fluid div.row div.col-md-6 {
+   margin-bottom: 40px;
+ 
+ }
+ /* section contact-me */
+ section#contact-me {
+   margin: 40px 0;
+   padding-bottom: 40px;
+ }
+ section#contact-me div.row {
+   margin-top: 60px;
+   padding: 0 40px;
+ }
+ section#contact-me div.row textarea {
+   height: 200px;
+ }
+ section#contact-me h2 {
+   color: #444444;
+   text-align: center;
+ }
+ /* section about-page */
+ section#about-page {
+   width: 100%;
+   background-color: #148d98;
+   padding: 40px 0;
+   color: white;
+ }
+ section#about-page div.row {
+   width: 70%;
+   margin: 0 auto;
+ }
+ section#about-page div.row div.col1 {
+   text-align: left;
+ }
+ section#about-page div.row div.col1 p {
+   font-style: italic;
+   font-size: 12px;
+   margin: 0;
+ }
+ section#about-page div.row div.col2 {
+   text-align: right;
+ }
+ section#about-page div.row div.col2 a {
+   padding: 5px 10px;
+   background-color: #12808a;
+   color: white;
+   transition: background-color 0.2s;
+ }
+ section#about-page div.row div.col2 a:hover {
+   background-color: #c7c7c7;
+   color: black;
+ }
+ /* footer */
+ footer {
+   background-color: #18aab7;
+   padding: 10px 0;
+ }
+ footer p {
+   text-align: center;
+   margin: 0;
+   font-weight: bold;
+ }

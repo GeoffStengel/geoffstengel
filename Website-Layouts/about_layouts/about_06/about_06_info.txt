@@ -1,0 +1,5 @@
+about_06 Layout for About Pages
+
+Codepen:  https://codepen.io/Sicontis/pen/mdzabVv  ⭐⭐⭐
+
+Kinda basic with 3 rows a few pics & some text.  Will use it at times for sure
