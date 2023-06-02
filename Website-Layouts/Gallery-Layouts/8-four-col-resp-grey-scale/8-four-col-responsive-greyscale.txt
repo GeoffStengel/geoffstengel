@@ -1,0 +1,4 @@
+8-gallery-four-column-greyscale-responsive (Basically same as 07_gallery but styled & responsive)
+
+Instagram Look
+Codepen: https://codepen.io/Abdel-Rahman/details/GXmvrO ⭐⭐⭐⭐

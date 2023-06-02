@@ -1,0 +1,5 @@
+7-gallery-four-column-greyscale (Basically same as 08_gallery but not styled or responsive)
+
+
+Instagram Look
+Codepen: ⭐⭐⭐⭐

@@ -1,0 +1,119 @@
+body {
+    margin:0px;
+    padding:0px;
+}
+.home-carousel {
+    background: #000;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.home-carousel .home-carousel-panel {
+    background: #222;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+}
+
+.home-carousel .home-carousel-panel > div {
+    flex-grow: 1;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0%;
+    bottom:0%;
+    left:0%;
+    right:0%;
+    transition: all 1s cubic-bezier(.8, 0, .8, 1);
+}
+
+.home-carousel .home-carousel-panel.disableTransition > div {
+    transition: none !important;
+}
+
+.home-carousel .home-carousel-panel > div.slideUp {
+    top:-100%
+}
+
+.home-carousel .home-carousel-panel > div:first-of-type {     
+    clip-path: polygon(0% 0%, 33.3% 0%, 33.3% 100%, 0% 100% );
+}
+.home-carousel .home-carousel-panel > div:nth-of-type(2) {     
+    clip-path: polygon(33.1% 0%, 66.8% 0%,66.8% 100%, 33.1% 100% );
+}
+.home-carousel .home-carousel-panel > div:nth-of-type(3) {     
+    clip-path: polygon(66.6% 0%, 100% 0%,100% 100%, 66.6% 100% );
+}
+
+/* Transition Styles */
+.home-carousel-rotate-wrapper > div.home-carousel-rotate-item {
+    top:0%;
+    transition: all 1s cubic-bezier(.8, 0, .8, 1);
+    position: relative;
+}
+.home-carousel-rotate-wrapper.disableTransition > div.home-carousel-rotate-item {
+    transition: none !important;
+}
+
+.home-carousel-rotate-wrapper div.home-carousel-rotate-item.slideUp:nth-of-type(1) {
+    top:-130%;
+/*		top:-1.3em;*/
+}
+.home-carousel-rotate-wrapper div.home-carousel-rotate-item.slideUp:nth-of-type(2) {
+    top:-100%;
+/*		top:-1em;*/
+}
+    
+/* Text Styles */	
+.home-carousel-text {
+    position: absolute;
+    text-align: left;
+    left:30px;
+    bottom:30px;
+    z-index: 5;
+    color:  rgb(255, 102, 0);
+    font-size: 75px;
+    line-height: 1em;
+    font-weight: 700
+}
+
+.home-carousel-text .text-dynamic > div {
+    flex-direction: column;
+    text-align: left;
+    height: 1em;	
+    overflow: hidden;
+    line-height: 1em;
+    align-content: left;
+    justify-content: left;
+}
+
+.home-carousel-labels {
+    text-align: left;
+    position: absolute;
+    right:30px;
+    bottom:30px;
+    z-index: 5;
+    color:#fff;
+    font-size: 19px;
+    font-weight: 500;
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    height: 1.4em;	
+    overflow: hidden;
+    line-height: 1.3em;
+    width: 440px;
+    max-width: 100%;
+}
+
+.home-carousel-labels .home-carousel-label {
+    height: 100%;
+    display: flex;
+    align-content: left;
+    justify-content: left;
+    position: relative;
+    top: 0;
+    right: 0;
+}

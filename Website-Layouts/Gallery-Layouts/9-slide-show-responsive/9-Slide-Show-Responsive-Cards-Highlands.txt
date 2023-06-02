@@ -1,0 +1,5 @@
+9 Slide Show - Highlands Mountains Gallery
+
+Codepen: https://codepen.io/dev_loop/details/MWKbJmO  ⭐⭐⭐⭐⭐
+
+Cards pop up from bottom on page Load - Carousel of Images & Middle Rotates with Interaction

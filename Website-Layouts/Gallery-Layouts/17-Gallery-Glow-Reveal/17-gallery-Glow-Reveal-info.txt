@@ -1,0 +1,5 @@
+17 - Gallery Layout Glow Effect Reveal
+
+Codepen:  https://codepen.io/lincohn/pen/JjPZgXw
+
+When hover info is revealed had glow Effect ⭐⭐⭐⭐

@@ -1,0 +1,7 @@
+
+
+
+looks 
+good on codepen but gsap might not be done right on my end here, still needs work when geta sec
+
+Codepen: https://codepen.io/Tiopayo/pen/GRYoMEZ

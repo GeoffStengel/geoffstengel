@@ -1,0 +1,18 @@
+Gallery Layout Directory 
+
+📷Gallery:
+    2-multi-column - Basic Layout - responsive - ⭐⭐⭐ - needs styling - 🧑could also be used as About page
+    Main Image Near Top 3 columns on bottom for images - white BKGD
+    3-holy-grail - maybe should maybe be About or Bio page - ⭐⭐⭐ - responsive layout - White BKGD
+    4-masonry - basic clean looking grid white BKGD - ⭐⭐⭐ - 🧑could also be used as About page.
+    5-portfolio - is one will use for a step above basic layouts - looks worpressy (🧑Could also be About page)
+    7-four-column-greyscale - Nice Gallery Like Instagram - not mobile responsive yet - ⭐⭐⭐⭐
+    8-gallery-improved gallery 07 - ⭐⭐⭐⭐ - Instagram Look
+    9-slide-show-responsive - Very nice but needs work - will fix in near future
+    10-carousel-w-drag - Nice Layout - Looks like image cards & interactive - will use
+    11-split-carousel - Nice Layout 3 Columns move at different times with one image (Red Shoe exp) ⭐⭐⭐⭐
+    12-Carousel-3d - Rotates & kinda 3d - ⭐⭐⭐⭐⭐
+    13-Scroll-Trigger - Needs work - but nice when working - film real rotates when scroll
+    14-Alpine-slider Clean Image slide show - Buttons for Next & Prev - ⭐⭐⭐⭐
+    15-cards-interactive - playing cards in column - Shiney hover & moves a bit - ⭐⭐⭐⭐
+    16-Gallery-polaroid - Interactive Polaroid Imgs - needs styling BKGD - ⭐⭐⭐⭐
