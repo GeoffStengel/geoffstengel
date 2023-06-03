@@ -25,22 +25,12 @@ section{
     margin: 0 auto;
 }
 
-#content div{
-     /** background-color: purple; **/
-	  padding: 8px;
-}
-
-#content div:nth-child(even){
-       background-color: skyblue;
-	
-}
-
-#content{
+.nav{
 	display: grid;
-	max-height: 96%;
+	height: 80px;
 	max-width: 920px;
-	grid-template-columns: repeat(4, minmax(60px, 60px));
-	grid-auto-rows: repeat(10, minmax(80px, .4fr));
+	grid-template-columns: repeat(4, minmax(50px, 60px));
+	grid-auto-rows: repeat(10, minmax(60px, .3fr));
 	margin: 0 auto;
 	grid-gap: 15px;
 	text-align: center;
@@ -48,6 +38,20 @@ section{
 	justify-content: center;
 	box-shadow: 0 0 20px black;
 	padding-top: 10px;
+}
+
+.nav div{
+	  padding: 4px;
+}
+
+.nav p{
+	width: 100%;
+	height: 100%;
+	margin:0 auto;
+	font-size: 12px;
+	text-align: center;
+	letter-spacing: 2px;
+	color: #ddd;
 }
 
 h1{
@@ -97,27 +101,17 @@ p{
 }
 
 .box0, .box1, .box2, .box3{
+	width:40px;
+	height: 40px;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;	
 }
 
-.box0{
-	background-image: url(../images/home-rickety.svg);
-}
-
-.box1{
-	background-image: url(../images/house-W-leafs.svg);
-    background: none;
-}
-
-.box3{
-	background-image: url(../images/chat-icon.svg);
-}
-
-.box4{
-	background-image: url(../images/buy_now.png);		
-}
+.box0{background-image: url(../images/home-rickety.svg);}
+.box1{background-image: url(../images/house-W-leafs.svg);}
+.box2{background-image: url(../images/chat-icon.svg);}
+.box3{background-image: url(../images/cash_giving_icon.svg);}
 
 .blog2{
 	margin-bottom: 20px;
