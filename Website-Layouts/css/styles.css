@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 }
- 
+  
 html{
     max-width: 100%;
     max-height: 100%;
@@ -98,10 +98,7 @@ h1{
     margin: 0px auto;
     justify-items: center;
     align-content: center;
-  /**  background-color: #ddd;
-    box-shadow: 0 0 10px black; **/
 	text-shadow: 1px 1px 2px #7dabd2;   
-    /**padding: 10px; **/
 }
 
 /***Box is Holding Images*****/
@@ -110,7 +107,7 @@ h1{
     max-width:90%;
     height: 150px;
     margin: 0 auto;
-    background-color: rgb(255, 0, 234);
+    /**background-color: rgb(255, 0, 234);**/
     margin: 0px auto;
     border: solid;
     border-color: #ddd;
@@ -120,7 +117,6 @@ h1{
 	background-repeat: no-repeat;	
 	padding: 5px;
     border-radius: 6px 6px 1px 1px;
-    /**background-size: 100% 50px;**/
 }
 
 .box:active{
@@ -148,6 +144,7 @@ h1{
     width: 100%;
     max-height: 100%;
     text-align: center;
+    font-size: 18px;
     grid-row: 1;
     grid-column: 1/5;
 }
