@@ -118,12 +118,12 @@ h1{
 	padding: 5px;
     border-radius: 6px 6px 1px 1px;
 }
-
+/**
 .box:active{
     width: 86%;
     box-shadow: 0 0 5px rgb(9, 255, 0);
    
-}
+}**/
 
 /***Wraps around Items & Box images in Content Grid**/
 .item-wrap{

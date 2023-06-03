@@ -1,57 +1,23 @@
 /****CSS Disclaimer Page Geoff Stengel******/
 * {
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 }
 
 body{
+	height: 100%;
 	font-family: Arial, Helvetica, sans-serif;
     background: #0052a5;
     color: #ffffff;	
 	font-size: 1.1em;
-	line-height: 1.5;
+	line-height: 1.3;
 	text-align: center;
 }
 
-/***********Section Body Grid Area***************************************/
-
-section{
-	background-color: chocolate;
-	background-position: center;
-	height: 100%;
-	max-width: 700px;
-	background-size: cover;
-	background-repeat: no-repeat;
-    margin: 0 auto;
-}
-
-.nav{
-	display: grid;
-	height: 80px;
-	max-width: 920px;
-	grid-template-columns: repeat(4, minmax(50px, 60px));
-	grid-auto-rows: repeat(10, minmax(60px, .3fr));
-	margin: 0 auto;
-	grid-gap: 15px;
-	text-align: center;
-	padding: 10px;
-	justify-content: center;
-	box-shadow: 0 0 20px black;
-	padding-top: 10px;
-}
-
-.nav div{
-	  padding: 4px;
-}
-
-.nav p{
+header{
 	width: 100%;
-	height: 100%;
-	margin:0 auto;
-	font-size: 12px;
-	text-align: center;
-	letter-spacing: 2px;
-	color: #ddd;
+	margin: 0 auto;
+	box-shadow: 0 0 5px black;
 }
 
 h1{
@@ -70,42 +36,107 @@ h2{
 	margin-bottom: 10px;
 }
 
-a{
-	text-decoration: none;
-}
+a{text-decoration: none;}
 
 p{
 	font-size: 20px;
 	text-indent: 17px;
 	line-height: 35px;
 	text-align: left;
-	margin-bottom: 8px;
 	padding-left: 5%;
 	padding-right: 5%;
 	font-family: sans-serif;
+	margin: 0 auto;
 }
 
-.box p{
-    background-color: none;
+/**Nav Bar Holding Main Page Buttons***/
+.nav{ 
+    display: grid;
+    max-width:380px;
+    height:100%;
+    grid-template-columns: repeat(4, minmax(30px, 60px));
+    grid-template-rows: auto;
+    gap: 5%;
+    align-items: center;
+	justify-content: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+	margin: 0 auto;	
+	padding-top: 10px;
+} 
+
+.nav a, nav p{
+	margin: 0 auto;
+	color: #ddd;
+    font-size: 14px;
+	text-align: center;
+	align-content: center;
+    text-decoration: none;
+	font-family: 'Courier New', Courier, monospace;
 }
 
-.box{
-	border-radius: 15px;
-	text-align: center;	
-	background-size: cover;
-	background-repeat: no-repeat;
+.nav p{
+    margin-top: 3px;
+	margin: 0 auto;
+	font-size: 14px;
+	text-align: center;
 }
 
- .box29 p, .box30 p, .box31 p, .box32 p, #adlogo a{
-	opacity: 0;	
+.container{
+	max-width: 720px;
+	height: 100%;
+	background-color: #ddd;
+	margin: 0 auto;
+	box-shadow: 0 0 5px black;
 }
 
-.box0, .box1, .box2, .box3{
-	width:40px;
-	height: 40px;
+/******Section Body Grid Area***********/
+.wrapper{
+	display: grid;
+	max-width: 700px;
+	height: 100%;
+	grid-template-columns: 1fr;
+    grid-template-rows: auto;
+	background-color: chocolate;
 	background-position: center;
 	background-size: cover;
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+	margin-top: 10px;
+	margin:0 auto;
+	justify-content: center;
+	align-content: center;
+	box-shadow: 0 0 10px black;
+	background-color: #ddd;
+    text-align: center;	
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   /** box-shadow: 2px 2px 2px 2px rgb(26, 26, 26);**/
+}
+/****Box*Presses*In*Effect*When*Pressed**Start***/
+.box:active{
+	height: 40px;
+	width: 40px;
+} 
+
+.box0, .box1, .box2, .box3{
+    border-style: solid;
+	border-width:2px;
+	border-color: #3aad09;
+}
+
+.box:hover{
+    border-style: solid;
+	background-color: hotpink;
+	border-width:2px;
+	border-color: #DCF506;
 }
 
 .box0{background-image: url(../images/home-rickety.svg);}
@@ -113,15 +144,23 @@ p{
 .box2{background-image: url(../images/chat-icon.svg);}
 .box3{background-image: url(../images/cash_giving_icon.svg);}
 
-.blog2{
-	margin-bottom: 20px;
+
+.disclaimerish{
+	width: 100%;
+	max-height: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .disclaimerish p{
+    margin-top: 2%;
     font-size: 16px;
+	line-height: 22px;
 	letter-spacing: .1rem;
-	text-shadow: 1px 1px 2px #070a0d;	
+	text-shadow: 1px 1px 2px #070a0d;
+		
 }
+
 
 #adlogo{   /**Trezor ** Ad ** Logo ** At ** Bottom***/
 	background-image: url(/img_blogs/business_dude.png);
@@ -135,7 +174,11 @@ p{
 	background-repeat: no-repeat;
 	box-shadow: 0 0 20px black;
 }
-
+#adlogo a{
+	width: 250px;
+	height: 200px;
+	margin: 0 auto;
+}
 /**********Tipbot settings**start**********/
 .tip_a_taco{
     background-image: url(../images/taco.svg);	    
@@ -149,9 +192,10 @@ p{
 
 .footer{
 	display: grid;
+	max-width: 2600px;
+	max-height: 100%;
 	grid-template-columns:repeat(2, minmax(60px, 100px));
 	grid-template-rows: repeat(1,  minmax(60px, auto));
-	max-width: 2600px;
 	text-align: center;
 	font-size: 12px;
 	line-height: 20px;
@@ -163,11 +207,31 @@ p{
 	margin: 0 auto;
 }
 
+
+.bottom_section{
+	width: 100%;
+	height: 100%;
+	margin:0 auto;
+}
+
 .footer div{
 	padding: 10px;
 	border-radius: 10px;
 }
+.footer a{
+	width: 100%;
+	max-height:50px;
+}
 
+.footer p{
+	width: 100px;
+	height: 100%;
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin:0 auto;
+	text-align: center;
+	padding: 0px
+}
 .my_logo, .tip_a_taco{
 	width: 35px;
 	height: 35px;
@@ -203,35 +267,10 @@ p{
 	padding: 0;
 }
 	
-#content{
-	display: grid;
-	max-height: 100%;
-	max-width: 95%;
-	grid-template-columns: repeat(4, minmax(65px, 65px));
-	grid-auto-rows: repeat(4, minmax(60px, 60px));	
-	grid-gap: 10px;
-}
-	
-#content div{
-	padding:11px;
-}
-	
+
 section{
   width: 95%;	
 }	
-	
-.img1, .img2, .img3, .img4 {
-	display: block;
-	float: none;
-	margin: 0 auto;
-	justify-content: center;
-	align-content: center;
-	width: 100%;
-	height: 12em;
-	margin-bottom:2%;
-	margin-top: 2%;
-}
-			
 	
 }
 
@@ -240,27 +279,10 @@ section{
 	margin: 0 auto;
 	padding: 0;
 }	
-		
-.img1, .img2, .img3, .img4 {
-	
-	height: 10em;
-	margin-bottom:2%;
-	margin-top: 2%;
-}	
+
 .box{
 	border-radius: 12px;
 }
-}
-@media screen and (max-width: 330px) {		
-
-#content{
-	grid-template-columns: repeat(4, minmax(60px, 60px));
-		
-}
-	
-#content div{
-	padding: 9px;	
-	}
 }
 
 /**************************************************/
@@ -273,29 +295,6 @@ section{
 		
 section{
 	width: 16em;
-}
-	
-#content{
-	display: grid;
-	width: 100%;
-	grid-template-columns: repeat(2, minmax(60px, 65px));
-	grid-auto-rows: repeat(4, minmax(60px, 60px));
-	margin: 0 auto;
-	grid-gap: 1.1em;
-	text-align: center;
-	padding: 0;
-	padding-top: 10px;
-	padding-bottom: 10px; 
-	justify-content: center;
-}
-#content div{
-    background-color: purple;
-	padding: 12px;
-}
-
-#content div:nth-child(even){
-    background-color: skyblue;
-	padding: 12px;
 }
 	
 p{
@@ -313,7 +312,7 @@ p{
 }
 	
 #adlogo{
-	background-image: url(/images/trezor_ad.jpg);
+	background-image: url(/img_blogs/business_dude.png);
 	width: 10em;
 	height:8em;
 	margin: 0 auto;
@@ -346,25 +345,8 @@ section{
 	background-repeat: no-repeat;
 }
 
-#content{
-	display: grid;
-	width: 100%;
-	grid-template-columns: repeat(2, minmax(63px, 65px));
-	grid-auto-rows: repeat(4, minmax(60px, 60px));
-	margin: 0 auto;
-	grid-gap: 1.2em;
-	text-align: center;
-	justify-content: center;
-}
 p{
 	font-size: 20px;	
 	
-}
-}
-/*******Tiny Devices ***************************/
-@media screen and (max-width: 68px) {
-	#content{
-	grid-template-columns: repeat(1, minmax(63px, 65px));
-	margin: 0 auto;
 }
 }
