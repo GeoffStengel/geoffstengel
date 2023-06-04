@@ -33,9 +33,38 @@
 	<!----Thumbnail Image In Index----Finish--------->	
 	<!-- <script src="js/index.js" type="module"></script> -->
     <title>🏠 Geoff Stengel Official Website - Music - Adventure - Harmonica - Tech</title>
-</head>
+<!---Metamask Wallet Connect Start--Original-->
 
+<!---<script src="https://c0f4f41c-2f55-4863-921b-sdk-docs.github.io/cdn/metamask-sdk.js"></script> --->
+
+<!---Metamask Wallet Connect END --Original-->
+</head>
     <body>
+
+<!---New 2nd Button-START--->
+<button id="connect-button"><p></p>
+<img class="metamask-logo" src="/images/metamask_icon_150x150.png" alt="metamask logo">
+</button>
+<script>
+    document.getElementById('connect-button').addEventListener('click', event => {
+        let account;
+        let button = event.target; 
+        ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
+            account = accounts[0];
+            console.log(account);
+            button.textContent = account;
+
+            ethereum.request({method: 'eth_getBalance', params: [account, 'latest']}).then(result => {
+                console.log(result);
+                let wei = parseInt(result,16);
+                let balance = wei / (10**18);
+                console.log(balance + " ETH");  
+            });
+        });       
+    });        
+</script>
+<!---New 2nd Button-END--->
+
         <div class="wrapper">
             <a class="tacos" href="https://square.link/u/yu9hDSBt" target="_blank">🌮Tip a Taco</a>
             <h1>Made in U.S.A played everywhere</h1>
