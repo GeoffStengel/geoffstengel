@@ -1,0 +1,5 @@
+18 Gallery Layout
+
+Codepen: https://codepen.io/ig_design/pen/VwedgWj  ⭐⭐⭐⭐
+
+Looks Like A Card When Click Button Card Flips needs a bit of work

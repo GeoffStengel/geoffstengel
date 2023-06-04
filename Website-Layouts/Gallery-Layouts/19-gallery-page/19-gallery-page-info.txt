@@ -1,0 +1,5 @@
+19 Gallery Page
+
+Codepen:  https://codepen.io/ig_design/pen/aXXOqw ⭐⭐⭐⭐ when works proper
+
+Grid style of Colors when press buttons patterns change with rows interactive

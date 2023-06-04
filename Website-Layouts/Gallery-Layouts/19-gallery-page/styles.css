@@ -1,0 +1,246 @@
+/*****19 Gallery layout**********/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.7;
+	color: #c4c3ca;
+	background-color: #1f2029;
+	overflow-x: hidden;
+}
+a {
+	cursor: pointer;
+}
+a:hover {
+	text-decoration: none;
+}
+
+.section{
+  position: relative;
+  width: 100%;
+  display: block;
+  padding: 70px 0;
+}
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:checked + label,
+[type="checkbox"]:not(:checked) + label{
+  position: relative;
+  padding-left: 12px;
+  padding-right: 12px;
+  cursor: pointer;
+  line-height: 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #fff;
+  margin-right: 10px;
+  margin-left: 10px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+[type="checkbox"]:checked:hover + label:before,
+[type="checkbox"]:not(:checked):hover + label:before,
+[type="checkbox"]:checked:hover + label:after,
+[type="checkbox"]:not(:checked):hover + label:after{
+  opacity: 0.7;
+}
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  background-color: transparent;
+  z-index: -1;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+[type="checkbox"]:checked + label:after,
+[type="checkbox"]:not(:checked) + label:after{
+  content: '';
+  width: calc(100% - 8px);
+  border-radius: 2px;
+  height: 22px;
+  background-color: #e74c3c;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: -1;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+[type="checkbox"]:not(:checked) + label:after{
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after{
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* #Colors
+================================================== */ 
+
+.checkbox-alizarin:checked + label:before,
+.checkbox-alizarin:not(:checked) + label:before{
+  border: 1px solid #e74c3c;
+}
+.checkbox-alizarin:checked + label:after,
+.checkbox-alizarin:not(:checked) + label:after{
+  background-color: #e74c3c;
+}
+
+.checkbox-wisteria:checked + label:before,
+.checkbox-wisteria:not(:checked) + label:before{
+  border: 1px solid #8e44ad;
+}
+.checkbox-wisteria:checked + label:after,
+.checkbox-wisteria:not(:checked) + label:after{
+  background-color: #8e44ad;
+}
+
+.checkbox-emerland:checked + label:before,
+.checkbox-emerland:not(:checked) + label:before{
+  border: 1px solid #2ecc71;
+}
+.checkbox-emerland:checked + label:after,
+.checkbox-emerland:not(:checked) + label:after{
+  background-color: #2ecc71;
+}
+
+.checkbox-belizehole:checked + label:before,
+.checkbox-belizehole:not(:checked) + label:before{
+  border: 1px solid #2980b9;
+}
+.checkbox-belizehole:checked + label:after,
+.checkbox-belizehole:not(:checked) + label:after{
+  background-color: #2980b9;
+}
+
+.checkbox-sunflower:checked + label:before,
+.checkbox-sunflower:not(:checked) + label:before{
+  border: 1px solid #f1c40f;
+}
+.checkbox-sunflower:checked + label:after,
+.checkbox-sunflower:not(:checked) + label:after{
+  background-color: #f1c40f;
+}
+
+.box{
+  border-radius: 10px;
+  box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.box.alizarin{
+  background-color: #e74c3c;
+}
+.box.wisteria{
+  background-color: #8e44ad;
+}
+.box.emerland{
+  background-color: #2ecc71;
+}
+.box.belizehole{
+  background-color: #2980b9;
+}
+.box.sunflower{
+  background-color: #f1c40f;
+}
+.box.alizarin,
+.box.wisteria,
+.box.emerland,
+.box.belizehole,
+.box.sunflower{
+  opacity: 0;
+  min-height: 0;
+  max-width: 0;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.checkbox-alizarin:checked ~ .box.alizarin,
+.checkbox-wisteria:checked ~ .box.wisteria,
+.checkbox-emerland:checked ~ .box.emerland,
+.checkbox-belizehole:checked ~ .box.belizehole,
+.checkbox-sunflower:checked ~ .box.sunflower{
+  opacity: 1;
+  min-height: 140px;
+  max-width: 100%;
+  min-width: calc(25% - 20px);
+  padding: 0 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+@media (max-width: 1199px) {	
+  .checkbox-alizarin:checked ~ .box.alizarin,
+  .checkbox-wisteria:checked ~ .box.wisteria,
+  .checkbox-emerland:checked ~ .box.emerland,
+  .checkbox-belizehole:checked ~ .box.belizehole,
+  .checkbox-sunflower:checked ~ .box.sunflower{
+    min-width: calc(33.333333333333% - 20px);
+  }
+}
+@media (max-width: 991px) {	
+  .checkbox-alizarin:checked ~ .box.alizarin,
+  .checkbox-wisteria:checked ~ .box.wisteria,
+  .checkbox-emerland:checked ~ .box.emerland,
+  .checkbox-belizehole:checked ~ .box.belizehole,
+  .checkbox-sunflower:checked ~ .box.sunflower{
+    min-width: calc(50% - 20px);
+  }
+}
+@media (max-width: 575px) {	
+  .checkbox-alizarin:checked ~ .box.alizarin,
+  .checkbox-wisteria:checked ~ .box.wisteria,
+  .checkbox-emerland:checked ~ .box.emerland,
+  .checkbox-belizehole:checked ~ .box.belizehole,
+  .checkbox-sunflower:checked ~ .box.sunflower{
+    min-width: calc(100% - 20px);
+  }
+}
+
+/* #Link to page
+================================================== */
+
+.link-to-portfolio {
+	  position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 200;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 3px;
+    background-position: center center;
+    background-size: cover;
+    background-image: url('https://ivang-design.com/ig-logo.jpg');
+    box-shadow: 0 0 0 2px rgba(255,255,255,.1);
+    transition: opacity .2s, border-radius .2s, box-shadow .2s;
+    transition-timing-function: ease-out;
+}
+.link-to-portfolio:hover {
+    opacity: 0.8;
+    border-radius: 50%;
+    box-shadow: 0 0 0 20px rgba(255,255,255,.1);
+}
