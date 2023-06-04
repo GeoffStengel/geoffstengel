@@ -1,9 +1,9 @@
-/******CSS Main Page Website Directory GeoffStengel.com Home Page******/
+/******CSS for Website Directory Index Page******/
 * {
 	margin: 0;
 	padding: 0;
 }
-  
+
 html{
     max-width: 100%;
     max-height: 100%;
@@ -53,10 +53,11 @@ header{
     display: grid;
     max-width: 600px;
     height: 30px;
-    grid-template-columns: repeat(2, minmax(40px, auto));
+    grid-template-columns: repeat(4, minmax(40px, auto));
     text-decoration: none;
     text-align: center;
     margin: 0 auto;
+    margin-top: 8px;
 }
 
 .nav a{
