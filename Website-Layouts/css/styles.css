@@ -41,12 +41,12 @@ body{
 header{
     display: grid;
     width:100%;
-    height:100%;
-    grid-template-columns: repeat(5, minmax(40px, auto));
-    grid-template-rows: auto;
+    height:105px;
+    grid-template-columns: repeat(1, minmax(30px, auto));
+    grid-template-rows: 25px 35px 45px;
     /**background-color: aqua;**/
     margin: 0 auto;
-    padding-top: 5px;
+    padding-top: 2px;
     background-color:rgb(29, 131, 215);
     border-radius: 8px 8px 0 0;
     box-shadow: 0 0 5px black;
@@ -62,8 +62,8 @@ header{
     text-decoration: none;
     text-align: center;
     margin: 0 auto;
-    grid-column: auto;
-    grid-row: 2;
+    grid-row: 3;
+    gap: 5%;
     justify-content: center;
     background-position: center;
     background-size: cover;
@@ -91,13 +91,12 @@ a:active, p:active {
 
 /****labeled as box Tag on other pages possibly**/
 .nav-item{
-    height: 35px;
-    width: 35px;
+    height: 33px;
+    width: 33px;
     border-radius: 10px;
 	justify-content: center;
 	align-content: center;
 	box-shadow: 0 0 10px black;
-	
     text-align: center;	
     background-position: center;
     background-size: cover;
@@ -115,6 +114,7 @@ a:active, p:active {
 	border-width:2px;
 	border-color: #3aad09;
 }
+
 .nav-item:hover{
     border-style: solid;
 	background-color: hotpink;
@@ -129,8 +129,8 @@ h1{
     font-family:'Courier New', Courier, monospace;
     margin: 0 auto;
     text-align: center;
-    grid-column: 4;
-    grid-row: 1;
+    
+    grid-row: 2;
 }
 
 /****Grid Holding All Section Cards*********/
@@ -302,7 +302,7 @@ h1{
 	border-width:2px;
 	border-color: #3aad09;
     box-shadow: 1px 1px 2px #262e36;
-    grid-column:7;
+    grid-row:1;
 }
 
 .metamask-logo{
