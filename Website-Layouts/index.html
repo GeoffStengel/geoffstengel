@@ -30,12 +30,35 @@
 
 <div class="container">
 <header>
+    <!---New 2nd Button-START--->
+<button id="connect-button"><p></p>
+    <img class="metamask-logo" src="/images/metamask_icon_150x150.png" alt="metamask logo">
+    </button>
+    <script>
+        document.getElementById('connect-button').addEventListener('click', event => {
+            let account;
+            let button = event.target; 
+            ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
+                account = accounts[0];
+                console.log(account);
+                button.textContent = account;
+    
+                ethereum.request({method: 'eth_getBalance', params: [account, 'latest']}).then(result => {
+                    console.log(result);
+                    let wei = parseInt(result,16);
+                    let balance = wei / (10**18);
+                    console.log(balance + " ETH");  
+                });
+            });       
+        });        
+    </script>
+    <!---New 2nd Button-END--->
     <h1>Website Layouts</h1>
     <nav class="nav">
-        <a href="/index.html"><div class="nav-item"></div><p>Hooome</p></a>
-        <a href="/shop.html"><div class="nav-item"></div><p>Shop</p></a>
-        <a href="/blog.html"><div class="nav-item"></div><p>Blog</p></a>
-        <a href="https://square.link/u/yu9hDSBt"><div class="nav-item"></div><p>Tip a Taco🌮</p></a>     
+        <a href="/index.html"><div class="nav-item box0 "></div><p></p></a>
+        <a href="/shop.html"><div class="nav-item box1"></div><p></p></a>
+        <a href="/blog.html"><div class="nav-item box2"></div><p></p></a>
+        <a href="https://square.link/u/yu9hDSBt"><div class="nav-item box3"></div><p></p></a>     
     </nav>
 </header>
 
