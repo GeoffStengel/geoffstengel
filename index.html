@@ -10,34 +10,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FBDT4QH7FZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FBDT4QH7FZ');
-</script> 
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="The main page for all news on Stengel Adventures
      Also shop for some of the top rated products i use as well!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="geoff stengel, harmonica, glassblower, food, art, music, adventure,
     toyota tacoma, chicago, digi nomad">
-    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="reset" href="css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FBDT4QH7FZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FBDT4QH7FZ');
+    </script>
 	<!-----Thumbnail Image In Index---Start-------->
 	<link rel="shortcut icon" type="image/png"type="image/png" href="images/harmonica.svg">
 	<!----Thumbnail Image In Index----Finish--------->	
-	<!-- <script src="js/index.js" type="module"></script> -->
     <title>🏠 Geoff Stengel Official Website - Music - Adventure - Harmonica - Tech</title>
-<!---Metamask Wallet Connect Start--Original-->
+    <link rel="stylesheet" type="text/css" href="/mscbot/static/css/chat.css"/>
 
-<!---<script src="https://c0f4f41c-2f55-4863-921b-sdk-docs.github.io/cdn/metamask-sdk.js"></script> --->
-
-<!---Metamask Wallet Connect END --Original-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
     <body>
 
@@ -146,6 +143,58 @@
 </div>
 </div>
 
-<script src="js/footer.js"></script> <!---Added This For Google Tag Manager--->
 </body>
+<!----Chatbot Start------->
+<!-- CHAT BAR BLOCK -->
+<div class="chat-bar-collapsible">
+    <button id="chat-button" type="button" class="collapsible">Chat with us!
+        <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+    </button>
+
+    <div class="content">
+        <div class="full-chat-block">
+            <!-- Message Container -->
+            <div class="outer-container">
+                <div class="chat-container">
+                    <!-- Messages -->
+                    <div id="chatbox">
+                        <h5 id="chat-timestamp"></h5>
+                        <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                    </div>
+
+                    <!-- User input box -->
+                    <div class="chat-bar-input-block">
+                        <div id="userInput">
+                            <input id="textInput" class="input-box" type="text" name="msg"
+                                placeholder="Tap 'Enter' to send a message">
+                            <p></p>
+                        </div>
+
+                        <div class="chat-bar-icons">
+                            <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                onclick="heartButton()"></i>
+                            <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                onclick="sendButton()"></i>
+                        </div>
+                    </div>
+
+                    <div id="chat-bar-bottom">
+                        <p></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<!-- CHAT BAR BLOCK -->
+<!----Chatbot END------->
+
+<!--<script src="js/footer.js"></script> -Added This For Google Tag Manager--->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="/mscbot/static/scripts/responses.js"></script>
+<script src="/mscbot/static/scripts/chat.js"></script>
 </html>

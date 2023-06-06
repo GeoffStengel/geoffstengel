@@ -1,7 +1,10 @@
-
+Gallery 13 
 
 
 looks 
 good on codepen but gsap might not be done right on my end here, still needs work when geta sec
 
 Codepen: https://codepen.io/Tiopayo/pen/GRYoMEZ
+
+
+looks like side ways images in photo real and when scroll it moves
