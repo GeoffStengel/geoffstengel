@@ -14,7 +14,7 @@ function getBotResponse(input) {
     } else if (input == "goodbye") {
         return "Talk to you later!";
     } else {
-        return "Hi this is the GeoffBot 🤖 Beep boop bop!  Testing this out so you can chat direct, but it's still in the works so bare with please thank you. Email directly to deeznuts@gmail.com(jk)🦧";
+        return "Geoff-Bot Here 🤖 Beep boop bop!  Testing this out so can chat direct, but it's still in the works so bare with please thank you. Email directly to deeznuts@gmail.com(jk)🦧";
     }
 
 }
