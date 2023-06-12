@@ -26,15 +26,10 @@ section{
 	box-shadow: 0 0 20px black;
 }
 
-header{
-	text-align: center;
-	margin: 0 auto;
-}
-
 /**Nav Bar Holding Main Page Buttons***/
 .nav{ 
     display: grid;
-    max-width:100%;
+    width:100%;
     height:100%;
     grid-template-columns: repeat(4, minmax(50px, auto));
     grid-template-rows: auto;
@@ -42,35 +37,30 @@ header{
     margin: 0 auto;
     justify-content: center;
     align-content: center;
-    text-align: center;
     border-radius: 10px;
-    font-size: 16px;
-    color: #ddd;
-    grid-row:2;
+    grid-row: 1;
 } 
-.nav a, .nav p{
+.nav p{
     font-size: 12px;
     color: #ddd;
     text-decoration: none;
 	text-align: center;
 	margin: 0 auto;
 }
+.box p{
+	margin: 0 auto;
+	text-align: center;
+}
 
 p, a{
 	margin: 0 auto;
 	color:black;
 }
-/**
-.nav a, .nav p{
-    font-size: 16px;
-    color: #ddd;
-    text-decoration: none;
-	margin: 0 auto;
-}**/
 
 .tacos {
 	width: 50px;
 	height:20px;
+	grid-row: 2;
 } 
 
 #content{
@@ -95,17 +85,20 @@ p, a{
 
 /***Header Wraps Nav & Logo*****/
 header{
+	display: grid;
 	max-width: 900px;
-	justify-content: center;
+	height: 110px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 70px 30px;
 	align-content: center;
 	border-radius: 10px;
-	box-shadow: 0 0 10px black;
+	text-align: center;
 	margin: 0 auto;
-	background: #0075D9;
-	margin:0 10px 0 10px;
 	border-style: outset;
 	border-width:4px;
 	border-color: #ddd;
+	background: #0075D9;
+	box-shadow: 0 0 10px black;
 }
 
 h1{
@@ -150,8 +143,8 @@ p{
 
 /***Adjust Boxes For Nav Buttons******/
 .box {
-    height: 55px;
-    width: 55px;
+    height: 45px;
+    width: 45px;
     border-radius: 10px;
 	margin: 0 auto;
 	margin-top: 10px;
@@ -288,10 +281,10 @@ img{
 	padding: 10px;
 	border-radius: 10px;
 }
- 
+/**
 .tipbot{
       background-image: url(../images/xrptibot_icon.jpg);	    
-}
+}**/
 
 .tipbot {
 	background-position: center;
