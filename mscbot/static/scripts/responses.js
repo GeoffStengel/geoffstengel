@@ -26,9 +26,15 @@ function getBotResponse(input) {
     } else if (input == "Thank you") {
         return "Thank you as well Enjoy the day!!";
     } else if (input == "thank you") {
-        return "Thank you as well Enjoy the day!!";                                
+        return "Thank you as well Enjoy the day!!";
+    } else if (input == "thanks") {
+        return "Thank you as well Enjoy the day!!";
+    } else if (input == "Thanks") {
+        return "Thank you as well Enjoy the day!!";                                                
     } else if (input == "goodbye") {
-        return "Talk to you later!";    
+        return "Talk to you later!";
+    } else if (input == "Goodbye") {
+        return "Talk to you later!";            
     } else {
         return "Geoff-Bot Here 🤖 Beep boop bop!  Testing this out so can chat direct, still in the works bare with please! </br> Thank you 🙏🏽 </br> </br> 💻 Website Clients Read This Blog /blogs/website_info.html  </br> </br> For all else, Lets Play Rock Paper Scissors!!";
     }
