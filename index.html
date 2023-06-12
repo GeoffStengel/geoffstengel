@@ -39,12 +39,13 @@
     <body>
 
 <!---New 2nd Button-START--->
-<button id="connect-button"><p></p>
-<img class="metamask-logo" src="/images/metamask_icon_150x150.png" alt="metamask logo">
-</button>
+<button id="connect-button">Connect</button>
+<!---- <img class="metamask-logo" src="/images/metamask_icon_150x150.png" alt="metamask logo"> --->
+<!--- <button id="send-button" style="width:150px; height:30px; margin:0 auto;">💰 Tip 0.01 ETH</button>  -->
 <script>
-    document.getElementById('connect-button').addEventListener('click', event => {
-        let account;
+    let account;
+
+    document.getElementById('connect-button').addEventListener('click', event => {      
         let button = event.target; 
         ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
             account = accounts[0];
@@ -58,7 +59,50 @@
                 console.log(balance + " ETH");  
             });
         });       
-    });        
+    });
+    /***Bacon Start Button*****/
+    if(window.ethereum.networkVersion == 10) {
+    document.getElementById('send-button').addEventListener('click', event =>{
+        let  transactionParam = {
+            to: '0xbBa4f79067362a69EF9Ed859e68b2D8b7b03f2E8',
+            from: account,
+            value: '0x38D7EA4C68000'
+        };
+        
+        ethereum.request({method: 'eth_sendTransaction', params:[transactionParam]}).then(txhash => {
+            console.log(txhash);
+            checkTransactionconfirmation(txhash).then(r => alert(r));
+        });
+      });
+    }
+    /***Bacon Start Button*****/ /***
+    if(window.ethereum.networkVersion == 10) {
+    document.getElementById('send-button').addEventListener('click', event => {
+        let  transactionParam = {
+            to: '0xbBa4f79067362a69EF9Ed859e68b2D8b7b03f2E8',
+            from: account,
+            value: '0x38D7EA4C68000'
+        };
+
+        ethereum.request({method: 'eth_sendTransaction', params:[transactionParam]}).then(txhash => {
+            console.log(txhash);
+            checkTransactionconfirmation(txhash).then(r => alert(r));
+        });
+      });
+    }
+    function checkTransactionconfirmation(txhash) {
+        
+        let checkTransactionLoop = () => {
+        return ethereum.request({method:'eth_sendTransactionReceipt',params:[txhash]}).then(r => {
+            if(r !=null) return 'confirmed';
+            else return checkTransactionLoop();
+        });
+      };
+
+      return checkTransactionLoop();
+    } ****/
+    /***Bacon END Button*****/
+
 </script>
 <!---New 2nd Button-END--->
 
@@ -143,6 +187,8 @@
 </div>
 </div>
 
+
+    
 </body>
 <!----Chatbot Start------->
 <!-- CHAT BAR BLOCK -->
@@ -197,4 +243,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 <script src="/mscbot/static/scripts/responses.js"></script>
 <script src="/mscbot/static/scripts/chat.js"></script>
+
 </html>
