@@ -64,7 +64,7 @@ section{
 /**Nav Bar Holding Main Page Buttons***/
 .nav{
 	display: grid;
-	max-height: 70px;
+	max-height: 80px;
 	max-width: 100%;
 	grid-template-columns: repeat(auto-fit, minmax(40px, auto));
 	grid-auto-rows: repeat(10, minmax(80px, .4fr));
@@ -94,11 +94,12 @@ h4{
 }
 
 .nav p{
-  font-size: 16px;
+  font-size: 15px;
   justify-content: center;
   align-items: center;
   color: #ddd;
   margin-top: 1px;
+  
 }
 /********Nav**Area**Finish*******************************/
 .box{
@@ -134,7 +135,8 @@ h4{
 	border-color: #3aad09;
 }
 
-/***Grid That Hold All Shop Items***Start******/
+/***Grid That Hold All Shop Items***Start******/  /***Muted Container so didn't mess it up for testing purposes****/
+/**
 .container{
 	display: grid;
 	max-height: 100%;
@@ -142,7 +144,7 @@ h4{
 	grid-template-columns: repeat(auto-fit, minmax(275px, auto));
 	grid-auto-rows: repeat(auto-fit, minmax(250px, auto));
 	grid-gap: 15px;
-	padding: 1em 1% 1em 1%; /***Space Between Card & Outer Grid****/
+	padding: 1em 1% 1em 1%; /***Space Between Card & Outer Grid****/ /**
 	margin: 0 auto;
 	margin-top: 2%;
 	text-align: center;
@@ -151,11 +153,12 @@ h4{
 	background-color: #0075D9;
 	box-shadow: 0 0 10px black;
 	text-shadow: 1px 1px 2px #7dabd2;
-}
+}**/
 
 /***This is The Individual Cards or Selections************/
+/**
 .container div{
-    padding: 10px; /**Adjust Space Between Image & Card Section***/
+    padding: 10px; /**Adjust Space Between Image & Card Section***/ /**
     box-shadow: 0 0 20px black;
     background-color: #ddd;
 	border-style: solid;
@@ -173,7 +176,90 @@ h4{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 	font-family: Consolas;
 }
+
+**/
 /***Grid That Hold All Shop Items***END******/
+
+/**********Testing*********/
+
+.container{
+	display: grid;
+	max-height: 100%;
+	max-width: 100%;
+	grid-template-columns: repeat(auto-fill, minmax(275px, auto));
+	/**grid-auto-rows: repeat(auto-fill, minmax(250px, auto)); **/
+	grid-gap: 15px;
+	padding: 1em 1% 1em 1%; /***Space Between Card & Outer Grid****/ 
+	margin: 0 auto;
+	margin-top: 2%;
+	text-align: center;
+	justify-content: center;
+	border-radius: 10px;
+	background-color: #0075D9;
+	box-shadow: 0 0 10px black;
+	text-shadow: 1px 1px 2px #7dabd2;
+}
+
+.container div{
+    padding: 10px; /**Adjust Space Between Image & Card Section***/ 
+    box-shadow: 0 0 20px black;
+    background-color: #ddd;
+	border-style: solid;
+	border-width:4px;
+	border-color: #3aad09;
+}
+
+.container a{
+    margin: 0 auto;
+}
+
+.container p{
+	margin: 5% 10% 0 10%;
+	font-size: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+	font-family: Consolas;
+}
+
+#shop{
+display: grid;
+max-height: 100%;
+max-width: 100%;
+grid-template-columns: repeat(auto-fit, minmax(275px, auto));
+grid-auto-rows: repeat(auto-fit, minmax(250px, auto));
+grid-gap: 15px;
+padding: 1em 1% 1em 1%; /***Space Between Card & Outer Grid****/ 
+margin: 0 auto;
+margin-top: 2%;
+text-align: center;
+justify-content: center;
+border-radius: 10px;
+background-color: #0075D9;
+box-shadow: 0 0 10px black;
+text-shadow: 1px 1px 2px #7dabd2;
+}
+
+/***This is The Individual Cards or Selections************/
+
+#shop div{
+    padding: 10px; /**Adjust Space Between Image & Card Section***/
+    box-shadow: 0 0 20px black;
+    background-color: #ddd;
+	border-style: solid;
+	border-width:4px;
+	border-color: #3aad09;
+}
+
+#shop a{
+    margin: 0 auto;
+}
+
+#shop p{
+	margin: 5% 10% 0 10%;
+	font-size: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+	font-family: Consolas;
+}
+/********Test***********/
 
 /****Info For Items Namw Price Buy Now Button***START***/
 #item_info_grid{
@@ -218,6 +304,8 @@ h4{
     border-style: solid;
 	border-width: 3px;
 	border-color: #3aad09;
+	margin-right: 5px;
+
 }
 /*****Nav Images**END***/
 
@@ -242,7 +330,52 @@ img{
 	width: 50%;
 }
 
-/*****Media Queries***472px***/
+/***Amazon Discalimer For Amazon Products***/
+.amazon_disclaimer{
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+/*****Media Queries***655px***/
+@media screen and (max-width: 655px) {
+h1{
+	font-size: 25px;
+}
+
+}
+
+/*****Media Queries***580px***/
+@media screen and (max-width: 580px) {
+h1{
+	font-size: 25px;
+}
+
+h4{
+	font-size:12px;
+}
+
+/**Nav Bar Holding Main Page Buttons***/
+.nav{
+	max-height: 70px;
+}
+
+.nav p{
+  font-size: 14px;
+}
+
+.box0, .box1, .box2, .box3{
+	width: 30px;
+	height: 30px;
+}
+
+
+/********Nav**Area**Finish*******************************/
+
+}
+
+
+/*****Media Queries***505px***/
 @media screen and (max-width: 505px) {
 body{
 	padding: 0; 
@@ -256,25 +389,30 @@ h1{
 /*****Media Queries***378px***/
 @media screen and (max-width: 378px) {
 .box0, .box1, .box2, .box3 {
-	height: 35px;
-	width: 35px;
+	height: 28px;
+	width: 28px;
 }
 
 .box0:active, .box1:active, .box2:active, .box3:active {
-	height: 30px;
-	width: 30px;
-}
+	height: 25px;
+	width: 25px;
 }
 
-/*****Media Queries***310px***/
-@media screen and (max-width: 333px) {
+h1{
+	font-size: 18px;
+}
+
+}
+
+/*****Media Queries***340px***/
+@media screen and (max-width: 340px) {
 body{
 	padding: 0; 
 }
 h1{
 	font-size: 20px;
 }
-
+/**
 .box0, .box1, .box2, .box3 {
 	height: 35px;
 	width: 35px;
@@ -282,7 +420,7 @@ h1{
 .box0:active, .box1:active, .box2:active, .box3:active {
 	height: 27px;
 	width: 27px;
-}
+}**/
 
 h1{
 	display: none;
@@ -300,7 +438,7 @@ h1{
 	display: grid;
 	max-height: 100%;
 	max-width: 100%;
-	grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+	grid-template-columns: repeat(auto-fit, minmax(150px, auto));
 	grid-auto-rows: repeat(auto-fit, minmax(250px, auto));
  }
  .container p{
@@ -312,10 +450,34 @@ font-size: 16px;
  } 
 }
 
+/*****Media Queries***203px***/
+@media screen and (max-width: 203px) {
+
+.box0, .box1, .box2, .box3 {
+	height: 15px;
+	width: 15px;
+}
+.box0:active, .box1:active, .box2:active, .box3:active {
+	height: 18px;
+	width: 18px;
+
+}
+
+.nav{
+	grid-gap: 2%;	
+}
+.nav p{
+	font-size: 10px;
+}
+
+}
+
 /*****Media Queries***193px***/
+/**
 @media screen and (max-width: 193px) {
 .box0, .box1, .box2, .box3 {
 	height: 25px;
 	width: 25px;
  }
 }
+**/

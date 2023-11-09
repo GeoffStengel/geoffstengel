@@ -6,31 +6,28 @@
 
 body{
 	font-family: Arial, Helvetica, sans-serif;
-    background: #0052a5;
-    color: #ffffff;	
 	font-size: 1.5em;
 	line-height: 1.5;
 	text-align: center;
+    color: #ffffff;
+	background: #0052a5;
 }
 
 /*******Section Main Grid Area*********/
 section{
-	background-color: #ddd;
-	background-position: center;
-	height: 100%;
 	max-width: 700px;
-	background-size: cover;
-	background-repeat: no-repeat;
+	height: 100%;
     margin: 0 auto;
 	border-radius: 8px;
+	background-color: #ddd;
 	box-shadow: 0 0 20px black;
 }
 
 /**Nav Bar Holding Main Page Buttons***/
 .nav{ 
     display: grid;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     grid-template-columns: repeat(4, minmax(50px, auto));
     grid-template-rows: auto;
     column-gap: 5%;
@@ -39,30 +36,22 @@ section{
     align-content: center;
     border-radius: 10px;
     grid-row: 1;
-} 
+}
+
 .nav p{
     font-size: 12px;
     color: #ddd;
     text-decoration: none;
-	text-align: center;
 	margin: 0 auto;
-}
-.box p{
-	margin: 0 auto;
-	text-align: center;
+	text-justify: center;
 }
 
 p, a{
 	margin: 0 auto;
 	color:black;
+	text-align: center;
 }
-
-.tacos {
-	width: 50px;
-	height:20px;
-	grid-row: 2;
-} 
-
+/**
 #content{
 	display: grid;
 	max-height: 96%;
@@ -76,10 +65,9 @@ p, a{
 	justify-content: center;
 	box-shadow: 0 0 20px black;
 	padding-top: 10px;
-}
+}**/
 
 #content div{
-	background-color: purple;
 	padding: 8px;
 }
 
@@ -95,7 +83,7 @@ header{
 	text-align: center;
 	margin: 0 auto;
 	border-style: outset;
-	border-width:4px;
+	border-width: 4px;
 	border-color: #ddd;
 	background: #0075D9;
 	box-shadow: 0 0 10px black;
@@ -168,10 +156,14 @@ p{
 	height: 40px;
 	width: 40px;
 }
+.box p{
+	margin: 0 auto;
+	text-align: center;
+}
 
 .box0, .box1, .box2, .box3{
 	border-style: solid;
-	border-width:2px;
+	border-width: 2px;
 	border-color: #3aad09;
 }
 
@@ -193,57 +185,16 @@ img{
 	justify-content: center;
 	margin: 0 auto;
 }
-	/***
-.img1, .img2, .img3, .img4 {
-	border: 3px groove black;
-	width: 300px;
-	height: 200px;
-	border-radius: 10px;
-	box-shadow: 0 0 20px black;
-}	
-	
-.img1{   /***this is the top left image**/
-/**	float: left;  /**at top of page***/
-/**	shape-image-threshold: 0;
-	margin-right: 2%;
-	margin-top: 2%;
-}
-	
-.img2{ /****3rd image down on the left****/
-/**	float: left;
-	shape-image-threshold: 0;
-	margin-right: 2%;
-	margin-top: 2%;
-	margin-bottom: 2%;
-}	
 
-.img3{ /****4rd image down on the right****/
-/**	float: right;
-	shape-image-threshold: 0;
-	margin-left: 2%;
-	margin-top: 2%;
-	margin-bottom: 2%;
-}	
-.img4{  /****5rd image down on the left****/
-/**	float: left;
-	shape-image-threshold: 0;
-	margin-right: 2%;
-	margin-top: 2%;
-	margin-bottom: 2%;
-}
-	**/
 .disclaimerish p{
 	font-size: 16px;
-	
 }
 
 .youtube_logo{
 	width: 100%;
 }
 
-
 .rarible_logo{   /**Trezor ** Ad ** Logo ** At ** Bottom***/
-	/**background-image: url(../images/trezor_ad.jpg);**/
 	width: 25%;
 	height: 25%;
 	margin: 0 auto;
@@ -267,49 +218,30 @@ img{
 	padding-top: 20px;
 	padding-bottom: 15px;
 	justify-content: center;
-/*	background-color: chocolate;   */
 	grid-gap: 10px;
 	margin: 0 auto;
 }
 
-.baconwrap div:nth-child(even){
-	background: #777;
-	padding: 10px;
-}
-	
 .baconwrap div{
 	padding: 10px;
 	border-radius: 10px;
 }
-/**
-.tipbot{
-      background-image: url(../images/xrptibot_icon.jpg);	    
-}**/
 
-.tipbot {
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	margin: 0 auto;	  
-}
-
-.tipbot p{
-	opacity:0 ;
-}
-
+.tacos {
+	width: 50px;
+	height: 20px;
+	grid-row: 2;
+} 
 /***********Tipbot settings***finish*********/
-
-.footer{
-	background-image: url(../images/menagerie_icon.jpg);
+.stengel-logo, .tacos{
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
     margin: 0 auto;
-}
-.footer p{
 	color: #fff;
-	opacity: 0;
 }
+.stengel-logo{background-image: url(../images/menagerie_icon.jpg);}
+.taco_salad{background-image: url(../images/taco.svg);}
 
 #title_emojis{
 	margin: 0 auto;
@@ -320,118 +252,36 @@ img{
 .section-titles{
 	font-family: sans-serif;
 	text-shadow: 1px 1px 2px #ff00dd;
-	color:#000000;
+	color: #000000;
 	font-size: 26px;
 }
 /*******Mobile Devices ***************************/
 @media screen and (max-width: 930px) {
-	section{
+section{
 	width: 95%;	
 	}
 }
 /**************************************************/
 /*******Mobile Devices ***************************/
 @media screen and (max-width: 450px) {
-* {
-	margin: 0 auto;
-	padding: 0;
-}
-	
-#content{
-	display: grid;
-	max-height: 100%;
-	max-width: 95%;
-	grid-template-columns: repeat(4, minmax(65px, 65px));
-	grid-auto-rows: repeat(4, minmax(60px, 60px));	
-	grid-gap: 10px;
-}
-	
-#content div{
-	padding:11px;
-}
-	
 section{
   width: 95%;	
-}	
-	
-.img1, .img2, .img3, .img4 {
-	display: block;
-	float: none;
-	margin: 0 auto;
-	justify-content: center;
-	align-content: center;
-	width: 100%;
-	height: 12em;
-	margin-bottom:2%;
-	margin-top: 2%;
-}
-			
-	
+ }	
 }
 
-@media screen and (max-width: 400px)	{		
-* {
-	margin: 0 auto;
-	padding: 0;
-}	
-		
-.img1, .img2, .img3, .img4 {
-	
-	height: 10em;
-	margin-bottom:2%;
-	margin-top: 2%;
-}	
+@media screen and (max-width: 400px) {
 .box{
 	border-radius: 12px;
-}
-}
-@media screen and (max-width: 330px) {		
-
-#content{
-	grid-template-columns: repeat(4, minmax(60px, 60px));
-		
-}
-	
-#content div{
-	padding: 9px;	
-	}
+ }
 }
 
 /**************************************************/
 /*******Small Devices ***************************/
-@media screen and (max-width: 315px) {
-* {
-	margin: 0 auto;
-	padding: 0;
-}
-		
+@media screen and (max-width: 315px) {	
 section{
 	width: 16em;
 }
-	
-#content{
-	display: grid;
-	width: 100%;
-	grid-template-columns: repeat(2, minmax(60px, 65px));
-	grid-auto-rows: repeat(4, minmax(60px, 60px));
-	margin: 0 auto;
-	grid-gap: 1.1em;
-	text-align: center;
-	padding: 0;
-	padding-top: 10px;
-	padding-bottom: 10px; 
-	justify-content: center;
-}
-#content div{
-    background-color: purple;
-	padding: 12px;
-}
 
-#content div:nth-child(even){
-    background-color: skyblue;
-	padding: 12px;
-}
-	
 p{
 	font-size: 18px;
 	text-indent: 10px;
@@ -439,7 +289,6 @@ p{
 	text-align: left;
 	margin-bottom: 8px;
 	padding-left: 10%;
-	padding-right: 10%;
 }
 	
 .box{
@@ -449,26 +298,18 @@ p{
 #adlogo{
 	background-image: url(/images/trezor_ad.jpg);
 	width: 10em;
-	height:8em;
+	height: 8em;
 	margin: 0 auto;
 	margin-bottom: 10px;
 	border-radius: 20px;
-}
-	
+ }
 }
 
-/**************************************************/
+/************************************************/
 /*******Tiny Devices ***************************/
 @media screen and (max-width: 210px) {
-* {
-	margin: 0 auto;
-	padding: 0;
-}
-	
 body{
-	font-family: Arial, Helvetica, sans-serif;
-    background: #333;
-    	
+    background: #333;	
 }
 	
 section{
@@ -480,25 +321,8 @@ section{
 	background-repeat: no-repeat;
 }
 
-#content{
-	display: grid;
-	width: 100%;
-	grid-template-columns: repeat(2, minmax(63px, 65px));
-	grid-auto-rows: repeat(4, minmax(60px, 60px));
-	margin: 0 auto;
-	grid-gap: 1.2em;
-	text-align: center;
-	justify-content: center;
-}
 p{
 	font-size: 20px;	
+ }
 }
-
-}
-/*******Tiny Devices ***************************/
-@media screen and (max-width: 68px) {
-	#content{
-	grid-template-columns: repeat(1, minmax(63px, 65px));
-	margin: 0 auto;
-}
-}
+/*** Tiny Devices ***/
