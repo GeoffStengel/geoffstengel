@@ -15,8 +15,9 @@
     <meta name="description" content="The main page for all news on Stengel Adventures
      Also shop for some of the top rated products i use as well!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="geoff stengel, harmonica, glassblower, food, art, music, adventure,
-    toyota tacoma, chicago, digi nomad">
+    <meta name="keywords" content="geoff stengel, harmonica, glassblower, food, art, music, adventure, youtube, tiktok, vlogger, blog, the peyota, leaving society
+    toyota tacoma, chicago, digi nomad, tire cleanup, 4x4, hippie, solar power, starlink, ebike, photography, lithium batttery, 100ah, for sale, quality, sprouting kit,
+    mesh lids, stainless">
     <link rel="stylesheet" type="reset" href="css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
         <!-- Google tag (gtag.js) -->
@@ -32,79 +33,9 @@
 	<link rel="shortcut icon" type="image/png"type="image/png" href="images/harmonica.svg">
 	<!----Thumbnail Image In Index----Finish--------->	
     <title>🏠 Geoff Stengel Official Website - Music - Adventure - Harmonica - Tech</title>
-    <link rel="stylesheet" type="text/css" href="/mscbot/static/css/chat.css"/>
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
     <body>
-
-<!---New 2nd Button-START--->
-<button id="connect-button">Connect</button>   
-<!---- <img class="metamask-logo" src="/images/metamask_icon_150x150.png" alt="metamask logo"> --->
-<!--- <button id="send-button" style="width:150px; height:30px; margin:0 auto;">💰 Tip 0.01 ETH</button>  -->
-<script>
-    let account;
-
-    document.getElementById('connect-button').addEventListener('click', event => {      
-        let button = event.target; 
-        ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
-            account = accounts[0];
-            console.log(account);
-            button.textContent = account;
-
-            ethereum.request({method: 'eth_getBalance', params: [account, 'latest']}).then(result => {
-                console.log(result);
-                let wei = parseInt(result,16);
-                let balance = wei / (10**18);
-                console.log(balance + " ETH");  
-            });
-        });       
-    });
-    /***Bacon Start Button*****/
-    if(window.ethereum.networkVersion == 10) {
-    document.getElementById('send-button').addEventListener('click', event =>{
-        let  transactionParam = {
-            to: '0xbBa4f79067362a69EF9Ed859e68b2D8b7b03f2E8',
-            from: account,
-            value: '0x38D7EA4C68000'
-        };
-        
-        ethereum.request({method: 'eth_sendTransaction', params:[transactionParam]}).then(txhash => {
-            console.log(txhash);
-            checkTransactionconfirmation(txhash).then(r => alert(r));
-        });
-      });
-    }
-    /***Bacon Start Button*****/ /***
-    if(window.ethereum.networkVersion == 10) {
-    document.getElementById('send-button').addEventListener('click', event => {
-        let  transactionParam = {
-            to: '0xbBa4f79067362a69EF9Ed859e68b2D8b7b03f2E8',
-            from: account,
-            value: '0x38D7EA4C68000'
-        };
-
-        ethereum.request({method: 'eth_sendTransaction', params:[transactionParam]}).then(txhash => {
-            console.log(txhash);
-            checkTransactionconfirmation(txhash).then(r => alert(r));
-        });
-      });
-    }
-    function checkTransactionconfirmation(txhash) {
-        
-        let checkTransactionLoop = () => {
-        return ethereum.request({method:'eth_sendTransactionReceipt',params:[txhash]}).then(r => {
-            if(r !=null) return 'confirmed';
-            else return checkTransactionLoop();
-        });
-      };
-
-      return checkTransactionLoop();
-    } ****/
-    /***Bacon END Button*****/
-     
-</script>   
-<!---New 2nd Button-END--->
 
         <div class="wrapper">
             <a class="tacos" href="https://square.link/u/yu9hDSBt" target="_blank">🌮Tip a Taco</a>
@@ -198,18 +129,6 @@
 </div>
 
 
-    
+    <!--<script src="js/footer.js"></script> -Added This For Google Tag Manager--->
 </body>
-<!----Chatbot Start------->
-<!-- CHAT BAR BLOCK -->
-
-<!-- CHAT BAR BLOCK -->
-<!----Chatbot END------->
-
-<!--<script src="js/footer.js"></script> -Added This For Google Tag Manager--->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-<script src="/mscbot/static/scripts/responses.js"></script>
-<script src="/mscbot/static/scripts/chat.js"></script>
-
 </html>
