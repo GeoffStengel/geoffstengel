@@ -56,7 +56,6 @@ ul{
 	margin: 0 auto;
 	color:black;
 	text-align: center;
-
 	font-size: 20px;
 	text-indent: 17px;
 	line-height: 35px;
@@ -267,6 +266,12 @@ img{
 .stengel-logo{background-image: url(../images/menagerie_icon.jpg);}
 .taco_salad{background-image: url(../images/taco.svg);}
 
+.stengel-logo, .taco_salad {
+	width: 30px;
+	height: 30px;
+	margin: 0 auto;
+}
+
 #title_emojis{
 	margin: 0 auto;
 	text-align: center;
@@ -290,7 +295,59 @@ section{
 @media screen and (max-width: 450px) {
 section{
   width: 95%;	
- }	
+ }
+
+ p{
+	font-size: 16px;
+	text-indent: 17px;
+	line-height: 35px;
+	text-align: left;
+	margin-bottom: 8px;
+ }
+
+#title_emojis{
+	margin: 0 auto;
+	padding: 10px 0px 10px 0px;
+	text-indent: 0px;
+}
+
+
+ul{
+	margin: 0 auto;
+	color:black;
+	text-align: center;
+	font-size: 16px;
+	text-indent: 17px;
+	line-height: 35px;
+	text-align: left;
+	margin-bottom: 8px;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-family: sans-serif;
+	text-shadow: 1px 1px 2px #7dabd2;
+}
+h2{
+	font-size: 30px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	color: #ff8000;
+}
+/**********Tipbot settings**start**********/
+.baconwrap{
+	display: grid;
+	grid-template-columns:repeat(2, minmax(60px, 60px));
+	grid-template-rows: repeat(1,  minmax(60px, auto));
+	max-width: 2600px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 20px;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	justify-content: center;
+	grid-gap: 10px;
+	margin: 0 auto;
+}
+
 }
 
 @media screen and (max-width: 400px) {
