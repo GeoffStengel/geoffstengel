@@ -276,6 +276,7 @@ img{
 	margin: 0 auto;
 	text-align: center;
 	padding: 10px;
+	text-indent: 0;
 }
 
 .section-titles{
@@ -283,6 +284,9 @@ img{
 	text-shadow: 1px 1px 2px #ff00dd;
 	color: #000000;
 	font-size: 26px;
+}
+.click_here{
+	font-size: 16px;
 }
 /*******Mobile Devices ***************************/
 @media screen and (max-width: 930px) {
@@ -333,29 +337,36 @@ h2{
 	color: #ff8000;
 }
 /**********Tipbot settings**start**********/
-.baconwrap{
+.helpful_links{
 	display: grid;
-	grid-template-columns:repeat(2, minmax(60px, 60px));
-	grid-template-rows: repeat(1,  minmax(60px, auto));
-	max-width: 2600px;
-	text-align: center;
-	font-size: 12px;
-	line-height: 20px;
-	padding-top: 20px;
-	padding-bottom: 15px;
-	justify-content: center;
-	grid-gap: 10px;
+	text-indent: 0px;
 	margin: 0 auto;
+	text-align: center;
 }
-
+.helpful_links p{
+	text-indent: 0px;
 }
-
+.click_here{
+	font-size: 12px;
+}
+}
 @media screen and (max-width: 400px) {
 .box{
 	border-radius: 12px;
  }
 }
 
+@media screen and (max-width: 350px) {
+	p{
+	
+		text-indent: 17px;
+		line-height: 30px;
+		text-align: left;
+		margin-bottom: 7px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
 /**************************************************/
 /*******Small Devices ***************************/
 @media screen and (max-width: 315px) {	
@@ -364,12 +375,10 @@ section{
 }
 
 p{
-	font-size: 18px;
-	text-indent: 10px;
-	line-height: 38px;
-	text-align: left;
-	margin-bottom: 8px;
-	padding-left: 10%;
+	
+	text-indent: 16px;
+
+
 }
 	
 .box{

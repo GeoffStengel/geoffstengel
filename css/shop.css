@@ -514,6 +514,9 @@ header{
 h1{
 	font-size: 18px;
  }
+ #item_name{
+	font-size: 13px;
+ }
 }
 
 /*****Media Queries***340px***/
@@ -558,9 +561,7 @@ h1{
 	font-size: 16px;
 }
 
-#item_name{
-	font-size: 16px;
- } 
+
 }
 
 /*****Media Queries***258px***/
