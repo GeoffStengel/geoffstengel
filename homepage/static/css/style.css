@@ -1,0 +1,414 @@
+/***CSS*Index*Page***Geoff*Stengel* Main geoffstengel.com Landing Page***/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html{
+	background-image: repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(22.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(194,74%,56%),hsl(266,74%,56%),hsl(338,74%,56%),hsl(50,74%,56%),hsl(122,74%,56%));
+    scroll-behavior: smooth;
+}
+ 
+body, html{
+    width: 100%;
+    height:100%;
+}
+
+body{
+    display: grid;
+    max-width: 420px;
+    max-height: 100%;
+    /*** grid-template-rows: 30px;  **/
+    justify-content: center;
+    padding-top: 1%;
+    background-color: transparent;
+	max-height: 100%;
+    grid-gap: 3px;
+}
+
+#connect-button{
+    width: 60px;
+    height: 25px;
+    /**background:url('../images/metamask_icon_150x150.png') no-repeat;**/
+    margin: 0 auto;
+    border-radius:3px;
+    background-position: center;
+	background-size: cover;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    background-color: orangered;
+    border-color: #ddd;
+    border:3px;
+    border-style: solid;
+	border-width:2px;
+	border-color: #3aad09;
+    box-shadow: 1px 1px 2px #262e36;
+    justify-content: center;
+}
+
+.metamask-logo{
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    
+}
+
+
+body, html, .tacos, h1, h2, #wrapper, .wrapper h2, .nav, .box, #creative_projects, .img_item, .youtube,
+ .box.youtube, .img_item_youtube {
+    margin: 0 auto;
+}
+
+.tacos{
+    max-width: 72px;
+    max-height:23px;
+    text-decoration: none;
+    text-align: right;
+    font-size: 12px;
+    grid-row: 1;
+}
+
+.tacos:hover{
+    color: hotpink;
+}
+
+h1, h2, .tacos, .nav a, #creative_projects{
+    color: #ddd;
+}
+
+h1{
+    font-family: 18thcentury;
+    font-size: 1rem;
+    height: 100%;
+    text-shadow: 1px 1px 2px #12181d;
+    text-align: center;
+    padding-left: 3px;
+    padding-right: 3px;
+    grid-row: 8;
+}
+
+h2{
+    font-family: 18thcentury;
+    font-size: 20px;
+    padding: 0;
+    height:  100%;
+    text-shadow: 1px 1px 2px #12181d; 
+    padding-left: 1px;
+    padding-right: 1px;
+    grid-row: 3; 
+}
+ 
+/****Main Section Tag Wrapping Everything Content**Inside Body*******/
+.wrapper{
+    display: grid;
+    max-width: 180em;
+    max-height:650px;
+    padding: 10px;
+    border-radius: 10px;
+    grid-template-columns: repeat(1, minmax(50px, auto));
+    grid-template-rows: 15px 90px 60px 10px 180px 40px 1fr;
+    background: url('../images/geoff_stengel_chicago_by_Zouhair_bkgd.png') no-repeat;
+    background-position: center;
+	background-size: cover;
+    box-shadow: 0 0 10px black;
+    border-style: solid;
+	border-width:5px;
+	border-color: #ddd;
+}
+
+.wrapper h2{
+    display: grid;
+    float: bottom;
+    align-content: center;
+    text-align: center;
+}
+
+/**Nav Bar Holding Main Page Buttons***/
+.nav{ 
+    display: grid;
+    max-width:100%;
+    max-height:100%;
+    grid-template-columns: repeat(4, minmax(30px, auto));
+    grid-template-rows: auto;
+    column-gap: 5%;
+ /**   justify-content: center;**/
+    align-content: center;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    grid-row:2;
+} 
+
+.nav a{
+    font-size: 14px;
+    text-decoration: none;
+}
+.nav p{
+    margin-top: 3px;
+}
+
+.header_text{
+    height: 150px;
+    display:grid;
+}
+
+.box0, .box1, .box2, .box3{
+    border-style: solid;
+	border-width:2px;
+	border-color: #3aad09;
+}
+
+ /**.box0{background-image: url(../images/home-rickety.svg);} **/
+/** .box0{background-image: url({% static 'images/home-rickety.svg' %} );}**/
+/**.box1{background-image: url(../images/house-W-leafs.svg);} **/
+/**.box2{background-image: url(../images/chat-icon.svg);} **/
+/**.box3{background-image: url(../images/cash_giving_icon.svg);} **/
+
+/***Adjust Boxes For Nav Buttons******/
+.box {
+    height: 55px;
+    width: 55px;
+    border-radius: 10px;
+	margin-top: 10px;
+	justify-content: center;
+	align-content: center;
+	box-shadow: 0 0 10px black;
+	background-color: #ddd;
+    text-align: center;	
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   /** box-shadow: 2px 2px 2px 2px rgb(26, 26, 26);**/
+}
+ 
+.box:hover, .box.youtube:hover{
+    border-style: solid;
+	background-color: hotpink;
+	border-width:2px;
+	border-color: #DCF506;
+}
+
+/****Box*Presses*In*Effect*When*Pressed**Start***/
+.box:active{
+	height: 40px;
+	width: 40px;
+} 
+
+/****Grid For Projects Youtube BitcoinDavida Twitter etc..*******/
+#creative_projects{
+    display: grid;
+    max-width: 500px;
+    max-height: 100%;
+    grid-template-columns: repeat(4, minmax(20px, 90px));
+    grid-template-rows:auto;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 0 0 10px black;
+    grid-gap: 5px;
+    row-gap: 10px;
+    grid-row: 7;
+}
+
+img{
+	width: 100%;
+	border-radius: 10px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 5px black;
+}
+
+.img_item{
+    width: 100%;
+}
+
+/***. youtube is wrapper for Logo & Project Name***/
+.youtube{
+    max-width:65px;
+    max-height:95px;
+    font-size: 12px;
+    padding: 5px;
+    padding-top: 8px;
+    justify-items: center;
+	align-items: center;
+}
+
+/***The Box around Cards For Projects ********/
+.box.youtube{
+    /**width:auto;**/
+    width: 80%;
+    height:90px;
+    color: blue;
+    background-color:#dddddd88;
+}
+
+.youtube a, .youtube p{
+    text-decoration: none;
+    color: black;
+    padding-top: 5px;
+ }
+
+.img_item_youtube{
+    width:80%;
+    height:55%;
+    justify-content: center;
+	align-content: center;
+}
+
+@media screen and (max-width:450px) {
+body{
+    padding:0;
+}
+
+#wrapper{
+    margin:0;
+}
+
+.youtube p{
+    font-size: 10px;
+ }
+}
+
+@media screen and (max-width:411px){
+    /***The Box around Cards For Projects ********/
+#creative_projects{
+    grid-template-columns: repeat(4, minmax(20px, 80px));
+}
+}
+
+@media screen and (max-width:383px) {
+
+h1{
+    height: 30px;
+}
+
+#wrapper{
+    padding:2px;
+ }
+}
+
+@media screen and (max-width:269px) {
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+h1{
+    font-size: 14px;
+}
+
+h2{
+    font-size: 100%;
+}  
+
+.header_text{
+    height: 80%;
+    display:grid;
+}
+
+.nav{
+    grid-gap:1px;
+}
+
+.nav p{
+    font-size: 14px;
+}
+
+.box {
+    height: 35px;
+    width: 35px;
+    padding: 0;
+    margin: 0 auto;
+    grid-gap:1px;
+}
+
+.wrapper{
+    padding: 0;
+    width:100vw;
+    border: none;
+ }
+ #creative_projects{
+    padding: 0;
+ }
+}
+
+/****iwatches Sizes & Such***204px*****/  
+@media screen and (max-width:204px) { 
+h1{
+    grid-row: 8;
+}
+
+h2{
+    height: 28px;
+    font-size: 12px;
+    grid-row: 7;
+}
+
+/**Nav Bar Holding Main Page Buttons***/
+.nav{ 
+    grid-template-columns: repeat(2, minmax(30px, auto));
+    grid-template-rows: auto;
+    column-gap: 2px;
+    font-size: 16px;
+    grid-row: 2;
+} 
+
+.nav a{
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.nav p{
+    margin-top: 3px;
+}
+
+.wrapper{
+    max-height: 300px;
+    max-width: 180em;
+    padding: 10px;
+    grid-template-columns: repeat(1, minmax(30px, auto));
+    grid-template-rows: 20px 120px auto 20px;
+    border: none;
+    padding:0;
+}
+
+.youtube{
+    grid-row: 4;
+}
+
+/****Grid For Projects Youtube BitcoinDavida Twitter etc..*******/
+#creative_projects{
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4, minmax(30px, 50px));
+    grid-template-rows:2;
+    font-size: 12px;
+    grid-gap: 5px;
+    grid-row: 3;
+}
+
+ .tacos a{
+    max-width: 100%;
+ }
+}
+
+@media screen and (max-width:110px) {   
+.wrapper{
+    font-size: 20px; 
+    padding: 0; 
+    margin: 0;
+    height: 100%;
+}
+
+.creative_projects{
+        height: 100vh;
+}
+h1{
+    display:none;
+ }
+}
