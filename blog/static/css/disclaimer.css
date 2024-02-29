@@ -1,0 +1,352 @@
+/****CSS Disclaimer Page Geoff Stengel******/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+    background: #0052a5;
+    color: #ffffff;	
+	font-size: 1.1em;
+	line-height: 1.3;
+	text-align: center;
+}
+
+header{
+	width: 100%;
+	margin: 0 auto;
+	box-shadow: 0 0 5px black;
+}
+
+h1{
+	font-size: 55px;
+	font-family: fantasy, sans-serif;
+	color: white;
+	padding-bottom:  2%;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	text-shadow: 1px 1px 2px #070a0d;
+}
+
+h2{
+	font-size: 35px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+a{text-decoration: none;}
+
+p{
+	font-size: 20px;
+	text-indent: 17px;
+	line-height: 35px;
+	text-align: left;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-family: sans-serif;
+	margin: 0 auto;
+}
+
+/**Nav Bar Holding Main Page Buttons***/
+.nav{ 
+    display: grid;
+    max-width:380px;
+    height:100%;
+    grid-template-columns: repeat(4, minmax(30px, 60px));
+    grid-template-rows: auto;
+    gap: 5%;
+    align-items: center;
+	justify-content: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+	margin: 0 auto;	
+	padding-top: 10px;
+} 
+
+.nav a, nav p{
+	margin: 0 auto;
+	color: #ddd;
+    font-size: 14px;
+	text-align: center;
+	align-content: center;
+    text-decoration: none;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.nav p{
+    margin-top: 3px;
+	margin: 0 auto;
+	font-size: 14px;
+	text-align: center;
+}
+
+.container{
+	max-width: 720px;
+	height: 100%;
+	background-color: #ddd;
+	margin: 0 auto;
+	box-shadow: 0 0 5px black;
+}
+
+/******Section Body Grid Area***********/
+.wrapper{
+	display: grid;
+	max-width: 700px;
+	height: 100%;
+	grid-template-columns: 1fr;
+    grid-template-rows: auto;
+	background-color: chocolate;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+	margin-top: 10px;
+	margin:0 auto;
+	justify-content: center;
+	align-content: center;
+	box-shadow: 0 0 10px black;
+	background-color: #ddd;
+    text-align: center;	
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   /** box-shadow: 2px 2px 2px 2px rgb(26, 26, 26);**/
+}
+/****Box*Presses*In*Effect*When*Pressed**Start***/
+.box:active{
+	height: 40px;
+	width: 40px;
+} 
+
+.box0, .box1, .box2, .box3{
+    border-style: solid;
+	border-width:2px;
+	border-color: #3aad09;
+}
+
+.box:hover{
+    border-style: solid;
+	background-color: hotpink;
+	border-width:2px;
+	border-color: #DCF506;
+}
+
+.box0{background-image: url(../images/home-rickety.svg);}
+.box1{background-image: url(../images/house-W-leafs.svg);}
+.box2{background-image: url(../images/chat-icon.svg);}
+.box3{background-image: url(../images/cash_giving_icon.svg);}
+
+
+.disclaimerish{
+	width: 100%;
+	max-height: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.disclaimerish p{
+    margin-top: 2%;
+    font-size: 16px;
+	line-height: 22px;
+	letter-spacing: .1rem;
+	text-shadow: 1px 1px 2px #070a0d;
+		
+}
+
+
+#adlogo{   /**Trezor ** Ad ** Logo ** At ** Bottom***/
+	background-image: url(/img_blogs/business_dude.png);
+	width: 250px;
+	height: 200px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-radius: 20px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 20px black;
+}
+#adlogo a{
+	width: 250px;
+	height: 200px;
+	margin: 0 auto;
+}
+/**********Tipbot settings**start**********/
+.tip_a_taco{
+    background-image: url(../images/taco.svg);	    
+}
+
+.tip_a_taco p{
+	text-align: center;
+}
+
+/***********Tipbot settings***finish*********/
+
+.footer{
+	display: grid;
+	max-width: 2600px;
+	max-height: 100%;
+	grid-template-columns:repeat(2, minmax(60px, 100px));
+	grid-template-rows: repeat(1,  minmax(60px, auto));
+	text-align: center;
+	font-size: 12px;
+	line-height: 20px;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	justify-content: center;
+/*	background-color: chocolate;   */
+	grid-gap: 10px;
+	margin: 0 auto;
+}
+
+
+.bottom_section{
+	width: 100%;
+	height: 100%;
+	margin:0 auto;
+}
+
+.footer div{
+	padding: 10px;
+	border-radius: 10px;
+}
+.footer a{
+	width: 100%;
+	max-height:50px;
+}
+
+.footer p{
+	width: 100px;
+	height: 100%;
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin:0 auto;
+	text-align: center;
+	padding: 0px
+}
+.my_logo, .tip_a_taco{
+	width: 35px;
+	height: 35px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.my_logo{
+	background-image: url(../images/menagerie_icon.jpg);
+}
+.my_logo p{
+	color: #fff;
+	opacity: 0;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+/*******Mobile Devices ***************************/
+@media screen and (max-width: 930px) {
+	section{
+	width: 95%;	
+	}
+}
+/**************************************************/
+/*******Mobile Devices ***************************/
+@media screen and (max-width: 450px) {
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+	
+
+section{
+  width: 95%;	
+}	
+	
+}
+
+@media screen and (max-width: 400px)	{		
+* {
+	margin: 0 auto;
+	padding: 0;
+}	
+
+.box{
+	border-radius: 12px;
+}
+}
+
+/**************************************************/
+/*******Small Devices ***************************/
+@media screen and (max-width: 315px) {
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+		
+section{
+	width: 16em;
+}
+	
+p{
+	font-size: 18px;
+	text-indent: 10px;
+	line-height: 38px;
+	text-align: left;
+	margin-bottom: 8px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+	
+.box{
+    border-radius: 10px;		
+}
+	
+#adlogo{
+	background-image: url(/img_blogs/business_dude.png);
+	width: 10em;
+	height:8em;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-radius: 20px;
+}
+	
+}
+
+/**************************************************/
+/*******Tiny Devices ***************************/
+@media screen and (max-width: 210px) {
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+	
+body{
+	font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    	
+}
+	
+section{
+	background-color: chocolate;
+	background-position: center;
+	height: 100%;
+	width: 14em;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+p{
+	font-size: 20px;	
+	
+}
+}

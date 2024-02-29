@@ -1,0 +1,418 @@
+/***Styling for Indididual Blog Articles*GEoffStengel Website***/
+* {
+	margin: 0;
+	padding: 0;
+}
+ 
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	line-height: 1.5;
+	text-align: center;
+    color: #ffffff;
+	background: #0052a5;
+}
+
+/*******Section Main Grid Area*********/
+section{
+	max-width: 700px;
+	height: 100%;
+    margin: 0 auto;
+	border-radius: 8px;
+	background-color: #ddd;
+	box-shadow: 0 0 20px black;
+}
+
+/**Nav Bar Holding Main Page Buttons***/
+.nav{ 
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4, minmax(50px, auto));
+    grid-template-rows: auto;
+    column-gap: 5%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    grid-row: 1;
+}
+
+.nav p{
+    font-size: 12px;
+    color: #ddd;
+    text-decoration: none;
+	margin: 0 auto;
+	text-justify: center;
+}
+
+p, a{
+	margin: 0 auto;
+	color:black;
+	text-align: center;
+}
+
+ul{
+	margin: 0 auto;
+	color:black;
+	text-align: center;
+	font-size: 20px;
+	text-indent: 17px;
+	line-height: 35px;
+	text-align: left;
+	margin-bottom: 8px;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-family: sans-serif;
+	text-shadow: 1px 1px 2px #7dabd2;
+}
+/**
+#content{
+	display: grid;
+	max-height: 96%;
+	max-width: 920px;
+	grid-template-columns: repeat(4, minmax(60px, 60px));
+	grid-auto-rows: repeat(10, minmax(80px, .4fr));
+	margin: 0 auto;
+	grid-gap: 15px;
+	text-align: center;
+	padding: 10px;
+	justify-content: center;
+	box-shadow: 0 0 20px black;
+	padding-top: 10px;
+}**/
+
+#content div{
+	padding: 8px;
+}
+
+/**
+.header_img{
+	width: 50%;
+	height: 50%; 
+	margin: 0 auto;
+	box-shadow: 0 0 10px black; 
+} **/
+
+/***Header Wraps Nav & Logo*****/
+header{
+	display: grid;
+	max-width: 900px;
+	height: 110px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 70px 30px;
+	align-content: center;
+	border-radius: 10px;
+	text-align: center;
+	margin: 0 auto;
+	border-style: outset;
+	border-width: 4px;
+	border-color: #ddd;
+	background: #0075D9;
+	box-shadow: 0 0 10px black;
+}
+
+h1{
+	font-size: 45px;
+	font-family: fantasy, sans-serif;
+	color: #0075D9;
+	padding-bottom:  2%;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	box-shadow: 0 0 20px black;
+	text-align: center;
+	padding: 0;
+}
+
+h2{
+	font-size: 35px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #ff8000;
+}
+h3{
+	font-size: 12px;
+	color: #0075D9;
+}
+/**Color For Text Links In Blog****/
+a{
+	color:#0075D9;
+	text-decoration: none;
+}
+
+p{
+	font-size: 20px;
+	text-indent: 17px;
+	line-height: 35px;
+	text-align: left;
+	margin-bottom: 8px;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-family: sans-serif;
+	text-shadow: 1px 1px 2px #7dabd2;
+}
+
+/***Adjust Boxes For Nav Buttons******/
+.box {
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 10px;
+	justify-content: center;
+	align-content: center;
+	box-shadow: 0 0 10px black;
+	background-color: #ddd;
+    text-align: center;	
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   /** box-shadow: 2px 2px 2px 2px rgb(26, 26, 26);**/
+}
+
+.box:hover{
+	background-color: hotpink;
+}
+
+/****Box*Presses*In*Effect*When*Pressed**Start***/
+.box:active{
+	height: 40px;
+	width: 40px;
+}
+.box p{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.box0, .box1, .box2, .box3{
+	border-style: solid;
+	border-width: 2px;
+	border-color: #3aad09;
+}
+
+.box0{background-image: url(../images/home-rickety.svg);}
+.box1{background-image: url(../images/house-W-leafs.svg);}
+.box2{background-image: url(../images/chat-icon.svg);}
+.box3{background-image: url(../images/cash_giving_icon.svg);}
+
+.blog1{
+	align-content: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+img{
+	display: grid;
+	width: 70%;
+	height: 70%;
+	align-content: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.disclaimerish p{
+	font-size: 16px;
+}
+
+.youtube_logo{
+	width: 100%;
+}
+
+.rarible_logo{   /**Trezor ** Ad ** Logo ** At ** Bottom***/
+	width: 25%;
+	height: 25%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-radius: 20px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 20px black;
+}
+
+/**********Tipbot settings**start**********/
+.baconwrap{
+	display: grid;
+	grid-template-columns:repeat(2, minmax(60px, 60px));
+	grid-template-rows: repeat(1,  minmax(60px, auto));
+	max-width: 2600px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 20px;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	justify-content: center;
+	grid-gap: 10px;
+	margin: 0 auto;
+}
+
+.baconwrap div{
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.tacos {
+	width: 50px;
+	height: 20px;
+	grid-row: 2;
+} 
+/***********Tipbot settings***finish*********/
+.stengel-logo, .tacos{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    margin: 0 auto;
+	color: #fff;
+}
+.stengel-logo{background-image: url(../images/menagerie_icon.jpg);}
+.taco_salad{background-image: url(../images/taco.svg);}
+
+.stengel-logo, .taco_salad {
+	width: 30px;
+	height: 30px;
+	margin: 0 auto;
+}
+
+#title_emojis{
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px;
+	text-indent: 0;
+}
+
+.section-titles{
+	font-family: sans-serif;
+	text-shadow: 1px 1px 2px #ff00dd;
+	color: #000000;
+	font-size: 26px;
+}
+.click_here{
+	font-size: 16px;
+}
+/*******Mobile Devices ***************************/
+@media screen and (max-width: 930px) {
+section{
+	width: 95%;	
+	}
+}
+/**************************************************/
+/*******Mobile Devices ***************************/
+@media screen and (max-width: 450px) {
+section{
+  width: 95%;	
+ }
+
+ p{
+	font-size: 16px;
+	text-indent: 17px;
+	line-height: 35px;
+	text-align: left;
+	margin-bottom: 8px;
+ }
+
+#title_emojis{
+	margin: 0 auto;
+	padding: 10px 0px 10px 0px;
+	text-indent: 0px;
+}
+
+
+ul{
+	margin: 0 auto;
+	color:black;
+	text-align: center;
+	font-size: 16px;
+	text-indent: 17px;
+	line-height: 35px;
+	text-align: left;
+	margin-bottom: 8px;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-family: sans-serif;
+	text-shadow: 1px 1px 2px #7dabd2;
+}
+h2{
+	font-size: 30px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	color: #ff8000;
+}
+/**********Tipbot settings**start**********/
+.helpful_links{
+	display: grid;
+	text-indent: 0px;
+	margin: 0 auto;
+	text-align: center;
+}
+.helpful_links p{
+	text-indent: 0px;
+}
+.click_here{
+	font-size: 12px;
+}
+}
+@media screen and (max-width: 400px) {
+.box{
+	border-radius: 12px;
+ }
+}
+
+@media screen and (max-width: 350px) {
+	p{
+	
+		text-indent: 17px;
+		line-height: 30px;
+		text-align: left;
+		margin-bottom: 7px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+/**************************************************/
+/*******Small Devices ***************************/
+@media screen and (max-width: 315px) {	
+section{
+	width: 16em;
+}
+
+p{
+	
+	text-indent: 16px;
+
+
+}
+	
+.box{
+    border-radius: 10px;		
+}
+	
+#adlogo{
+	background-image: url(/images/trezor_ad.jpg);
+	width: 10em;
+	height: 8em;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-radius: 20px;
+ }
+}
+
+/************************************************/
+/*******Tiny Devices ***************************/
+@media screen and (max-width: 210px) {
+body{
+    background: #333;	
+}
+	
+section{
+	background-color: chocolate;
+	background-position: center;
+	height: 100%;
+	width: 14em;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+p{
+	font-size: 20px;	
+ }
+}
+/*** Tiny Devices ***/
