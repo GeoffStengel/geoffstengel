@@ -1,0 +1,129 @@
+<!--
+####    ######   ######   ##  ##    ####    ######   ##      
+##  ##     ##     ##       ### ##   ##  ##   ##       ##      
+##         ##     ##       ######   ##       ##       ##      
+ ####      ##     ####     ######   ## ###   ####     ##      
+    ##     ##     ##       ## ###   ##  ##   ##       ##      
+##  ##     ##     ##       ##  ##   ##  ##   ##       ##      
+ ####      ##     ######   ##  ##    ####    ######   ######  
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FBDT4QH7FZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FBDT4QH7FZ');
+</script> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="The main page for all news on Stengel Adventures
+     Also shop for some of the top rated products i use as well!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="geoff stengel, harmonica, glassblower, food, art, music, adventure,
+    toyota tacoma, chicago, digi nomad">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/watch.css"/>
+	<!-----Thumbnail Image In Index---Start-------->
+	<link rel="shortcut icon" type="image/png"type="image/png" href="images/harmonica.svg">
+	<!----Thumbnail Image In Index----Finish--------->	
+	<!-- <script src="js/index.js" type="module"></script> -->
+    <title>Watch Videos Of Adventures</title>
+</head>
+<body>
+    <header> 
+        <nav class="nav">
+            <a href="index.html"><div class="box box0"></div><p>Home</p></a>
+            <a href="shop.html"><div class="box box1"></div><p>Shop</p></a>		
+            <a href="blog.html"><div class="box box2"></div><p>Blog</p></a>
+            <a href="donate.html"><div class="box box3"></div><p>Tip</p></a>
+        </nav>
+    </header>
+
+<!---- <h3 class="heading">video gallery</h3> --->
+
+<div class="container">
+
+    <div class="main-video">
+        <div class="video">
+            <video src="videos/ep_11_el_milagro_media_4k.mp4" controls muted></video>
+            <h3 class="title">(Ep.11) El Milagro Taco 🌮</h3>
+        </div>
+    </div>
+
+    <div class="video-list">
+        <div class="vid active">
+            <video src="videos/ep_11_el_milagro_media_4k.mp4" muted></video>
+            <h3 class="title">(Ep.11) El Milagro Taco 🌮</h3>
+        </div>
+        <div class="vid">
+            <video src="videos/ep_10_Bombay_Wraps_media.mp4" muted></video>
+            <h3 class="title">(Ep.10) Bike Courier Eats First Paratha Bread</h3>
+        </div>
+        <div class="vid">
+            <video src="videos/ep_9_bolivar_and_lincoln_media.mp4" muted></video>
+            <h3 class="title">(Ep.9) Eating First Arepas!!</h3>
+        </div>
+        <div class="vid">
+            <video src="videos/ep_8_plug_n_play_media.mp4" muted></video>
+            <h3 class="title">(Ep.8) Plug n Play eBike</h3>
+        </div>
+        <div class="vid">
+            <video src="videos/ep_7_bao_buns_media.mp4" muted></video>
+            <h3 class="title">(Ep.7) Bao Buns</h3>
+        </div>
+        <div class="vid">
+            <video src="videos/ep_11_el_milagro_media_4k.mp4" muted></video>
+            <h3 class="title">(Ep.6) Bar Mitts Review</h3>
+        </div>
+        <div class="vid">
+            <video src="videos/ep_11_el_milagro_media_4k.mp4" muted></video>
+            <h3 class="title">(Ep.5) Superbowl Sunday 2023 Wrigley Lakeview</h3>
+        </div>
+        <div class="vid">
+            <video src="videos/ep_11_el_milagro_media_4k.mp4" muted></video>
+            <h3 class="title">(Ep.4) Fried Wire ebike</h3>
+        </div>
+        <div class="vid">
+            <video src="videos/ep_11_el_milagro_media_4k.mp4" muted></video>
+            <h3 class="title">(Ep.3) Edgewater to Evenston</h3>
+        </div>
+        <div class="vid">
+            <video src="videos/ep_11_el_milagro_media_4k.mp4" muted></video>
+            <h3 class="title">(Ep.2) Wholefoods to Wrigley Ride</h3>
+        </div>
+        <div class="vid">
+            <video src="videos/ep_11_el_milagro_media_4k.mp4" muted></video>
+            <h3 class="title">(Ep.1) Wrigley Ride</h3>
+        </div>
+    </div>
+</div>
+
+<!---JS For Video Being Active--Start--->
+<script>
+    let listVideo = document.querySelectorAll('.video-list .vid');
+    let mainVideo = document.querySelector('.main-video video');
+    let title = document.querySelector('.main-video .title');
+
+    listVideo.forEach(video =>{
+        video.onclick = () =>{
+            listVideo.forEach(vid => vid.classList.remove('active'));
+            video.classList.add('active');
+            if(video.classList.contains('active')){
+                let src = video.children[0].getAttribute('src');
+                mainVideo.src = src;
+                let text = video.children[1].innerHTML;
+                title.innerHTML = text;
+            };
+        };
+    });
+</script>
+<!---JS For Video Being Active--End--->
+
+</body>
+</html>
+
