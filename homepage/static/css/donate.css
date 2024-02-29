@@ -87,7 +87,7 @@ h1{
 .box3{background-image: url(../images/cash_giving_icon.svg);}
 .property_Fund{background-image: url(../images/tree_oak.svg);}
 .taco_Fund{background-image: url(../images/taco.svg);}
-.square{background-image: url(../images/Square_Jewel_Black.svg);}
+/**.square{background-image: url(../images/Square_Jewel_Black.svg);} **/
 
 /***Adjust Boxes For Nav Buttons******/
 .box {
