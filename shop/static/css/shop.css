@@ -1,0 +1,641 @@
+/***CSS*Shop*Main*Page***Geoff*Stengel*Django**/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    font-family: 18thCentury, Arial, Helvetica, sans-serif;
+    /**background-image: radial-gradient(circle at 85% 1%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 96%,transparent 96%, transparent 100%),radial-gradient(circle at 14% 15%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 1%,transparent 1%, transparent 100%),radial-gradient(circle at 60% 90%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 20%,transparent 20%, transparent 100%),radial-gradient(circle at 79% 7%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 78%,transparent 78%, transparent 100%),radial-gradient(circle at 55% 65%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 52%,transparent 52%, transparent 100%),linear-gradient(135deg, rgb(37, 56, 222),rgb(96, 189, 244));
+    **/
+	background-color: #0075D9;
+	margin: 0 auto;	
+	text-align: center;
+	padding: 1%;
+}
+
+a{
+    text-decoration: none;	
+}
+
+/***Shop Harmonicas Text*****/
+h1{
+   /** margin: 1% 0 1% 0; **/
+    color: #ddd;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    text-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+	grid-column: 1/3;
+	grid-row:1;
+	-webkit-text-fill-color: #fbb505;
+	-webkit-text-stroke-color: #ad097e;
+	-webkit-text-stroke-width: .02rem;
+	stroke: solid;
+	text-shadow: 1px 5px 16px #02070a;
+	text-align: center;
+	margin:0 auto;
+	align-self: center;
+	grid-column: 1;
+}
+ 
+p{
+    font-size: 16px;
+	line-height: 24px;
+	word-spacing: 3px;
+	color: black;
+	font-family: 18century;
+	margin-top: 10px;
+   /*** box-shadow: 10px 10px 30px rgba(0,0,0,0.1); /**special for text* from gary**/
+}
+
+/****Main Background Section Behind Content and Nav*****/
+section{
+	background-color: #ddd; /***background**/
+	background-position: center;
+	height: 100%;
+	max-width: 1900px;
+	background-size: cover;
+	background-repeat: no-repeat;
+    margin: 0 auto;
+	margin-top: 1px;
+	margin-bottom: 10px;
+	padding: 10px 1% 10px 1%; /***Space inbetween Main Grid Container - Nav - Grid Space***/
+	border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+header{
+	display: grid;
+	max-height: 70px;
+	max-width: 100%;
+	margin: 0 auto;
+	/**grid-template-columns: repeat(auto-fit, minmax(40px, auto));**/
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: repeat(1, minmax(80px, .4fr));
+	grid-gap: 2%;
+	text-align: center;
+	padding: 3px;
+	padding-top: 10px;
+	justify-content: center;
+	align-content: center;
+	border-radius: 10px;
+	background-color: #0075D9;
+    box-shadow: 0 0 10px black;
+	border-style: outset;
+	border-width:4px;
+	border-color: #ad097e;
+}
+/**Nav Bar Holding Main Page Buttons***/
+.nav{
+	display: grid;
+	max-height: 70px;
+	max-width: 100%;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-auto-rows: repeat(10, minmax(80px, .4fr));
+	margin: 0 auto;
+	grid-gap: 20%;
+	text-align: center;
+	padding: 3px;
+	padding-top: 5px;
+	justify-content: center;
+	align-content: center;
+}
+
+h4{
+	font-size:12px;
+}
+
+.nav div{
+    background-color: #ddd;
+    padding: 5px;
+}
+
+.nav p{
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  color: #ddd;
+  margin-top: 1px;
+  
+}
+
+/****Test dropdown****/
+
+ul {
+	list-style: none;
+	background: #22438c;
+	
+}
+
+ul li {
+	display: inline-block;
+	position: relative;
+}
+
+ul li a {
+	display: block;
+	padding: 10px 15px;
+	color: #fff; 
+	text-decoration: none;
+	text-align: center;
+	font-size: 16px;
+}
+
+li a {
+	text-decoration: none;
+	color: #3aad09;
+
+}
+
+ul li ul.dropdown li { 
+	display: block;
+}  
+
+ul li ul.dropdown {
+	width: 100%;
+	background: #22438c;
+	position: absolute;
+	z-index: 999;
+	display: none;
+} 
+
+
+
+ul li:hover > ul{
+	background: #112c66;
+	display: inherit;
+}
+
+ul ul li{
+	width: 150px;
+	float: none;
+	display: list-item;
+	position: relative;
+}
+
+/**
+ul li a:hover{
+	background: #112c66;
+}
+
+ul li:hover ul.dropdown {
+	display:flex; 
+} **/
+
+/****Test dropdown****/
+
+/********Nav**Area**Finish*******************************/
+.box{
+	border-radius: 10px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;	
+	padding: 5px;
+	border-style: solid;
+}
+
+.box0, .box1, .box2, .box3 {
+	height: 40px;
+	width: 40px;
+	margin: 0 auto;
+	box-shadow: 2px 2px 2px 2px rgb(26, 26, 26);
+	border-width:3px;
+	border-color: #3aad09;
+	background-color: #ddd;
+	background-position: center;
+    background-size: cover;
+	background-repeat: no-repeat;
+	padding: 0;
+}
+
+.box3{
+	margin-right: 5px;
+}
+ 
+.box0:active, .box1:active, .box2:active, .box3:active {
+	height: 30px;
+	width: 30px;
+}
+.box0:hover, .box1:hover, .box2:hover, .box3:hover {
+	height: 33px;
+	width: 33px;
+}
+
+.box:hover{	
+	background-color: #b1d8f7;
+	border-width:4px;
+	border-color: #DCF506;
+}
+
+.box0:hover, .box1:hover, .box2:hover{
+	border-width:4px;
+	border-color: #3aad09;
+}
+
+.container{
+	display: grid;
+	max-height: 100%;
+	max-width: 100%;
+	grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+	/**grid-auto-rows: repeat(auto-fill, minmax(250px, auto)); **/
+	
+	/**grid-gap: 15px;**/
+	grid-gap: 15px;
+	grid-column-gap: 20px;
+	padding: 1em 1% 1em 1%; /***Space Between Card & Outer Grid****/ 
+	margin: 0 auto;
+	margin-top: 1%;
+	text-align: center;
+	justify-content: center;
+	border-radius: 10px;
+	background-color: #0075D9;
+	box-shadow: 0 0 10px black;
+	text-shadow: 1px 1px 2px #7dabd2;
+}
+
+.container div{
+    padding: 9%; /**Adjust Space Between Image & Card Section***/ 
+    box-shadow: 0 0 20px black;
+    background-color: #ddd;
+	border-style: solid;
+	border-width:4px;
+	border-color: #3aad09;
+	border-color: #ad097e;
+	border-radius: 20px;
+}
+
+.container a{
+    margin: 0 auto;
+}
+
+.container p{
+	margin: 5% 10% 0 10%;
+	font-size: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+	font-family: Consolas;
+}
+
+#shop{
+	display: grid;
+	max-height: 100%;
+	max-width: 100%;
+	grid-template-columns: repeat(auto-fit, minmax(275px, auto));
+	grid-auto-rows: repeat(auto-fit, minmax(250px, auto));
+	grid-gap: 15px;
+	padding: 1em 1% 1em 1%; /***Space Between Card & Outer Grid****/ 
+	margin: 0 auto;
+	margin-top: 2%;
+	text-align: center;
+	justify-content: center;
+	border-radius: 10px;
+	background-color: #0075D9;
+	box-shadow: 0 0 10px black;
+	text-shadow: 1px 1px 2px #7dabd2;
+}
+
+/***This is The Individual Cards or Selections************/
+
+#shop div{
+    padding: 10px; /**Adjust Space Between Image & Card Section***/
+    box-shadow: 0 0 20px black;
+    background-color: #ddd;
+	border-style: solid;
+	border-width: 4px;
+	border-color: #3aad09;
+}
+
+#shop a{
+    margin: 0 auto;
+}
+
+#shop p{
+	margin: 5% 10% 0 10%;
+	font-size: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+	font-family: Consolas;
+}
+/********Test***********/
+
+/****Info For Items Name Price Buy Now Button***START***/
+#item_info_grid{
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: repeat(1, minmax(20px, auto));
+	/**grid-template-rows: 80px 25px 30px;**/
+	grid-template-rows: 60px 20px 23px;
+	grid-gap: 5px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: none;
+	background: none;
+	border: none;
+	box-shadow: 0px;
+	box-shadow: 0 0 0 rgb(214, 17, 152);
+	padding:  5px;
+}
+
+#item_info_grid img, #item_info_grid p{
+	margin: 0 auto;
+}
+
+#item_info_grid{
+	margin: 0 auto;
+	padding-top: 0;
+	margin-top: 8px;
+}
+
+#item_name{
+	font-size: 14px;
+	text-shadow: 1px 1px 2px #7dabd2;
+	padding: 0;
+	margin-top: 0;
+	line-height: 18px;
+	word-spacing: 1px;
+}
+/****Info For Items Name Price Buy Now Button***END***/
+
+/*****Prices On Items Says Check Best Price atm********/
+#prices{
+	font-size: 10px;
+	color: #0075D9;
+	text-shadow: 1px 1px 2px #7dabd2;
+}
+
+/*****Nav Images**Start***//**
+.box0{background-image: url(../images/home-rickety.svg);}
+.box1{background-image: url(../images/house-W-leafs.svg);}
+.box2{background-image: url(../images/chat-icon.svg);}
+.box3{background-image: url(../images/cash_giving_icon.svg);
+	  margin-right: 5px;}**/
+/*****Nav Images**END***/
+
+img{
+	width: 100%;
+	border-radius: 10px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 5px black;
+}
+
+/***Images Showing Items*********/
+.img_item{
+	border-style: solid;
+	border-width: 2px;
+	border-color: #ddd;
+}
+
+.buy_now{
+	width: 50%;
+}
+
+/***Amazon Discalimer For Amazon Products***/
+.amazon_disclaimer{
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+/*****Media Queries***655px***/
+@media screen and (max-width: 655px) {
+h1{
+	font-size: 25px;
+ }
+}
+
+/*****Media Queries***580px***/
+@media screen and (max-width: 580px) {
+h1{
+	font-size: 25px;
+}
+
+h4{
+	font-size: 12px;
+}
+
+/**Nav Bar Holding Main Page Buttons***/
+.nav{
+	max-height: 70px;
+}
+
+.nav p{
+  font-size: 14px;
+}
+
+.box0, .box1, .box2, .box3{
+	width: 30px;
+	height: 30px;
+}
+
+.container{
+	grid-template-columns: repeat(auto-fill, minmax(150px, auto));
+ }
+}
+
+/*****Media Queries***756px***/
+@media screen and (max-width: 756px) {
+.nav{
+	grid-gap: 15%;
+	}
+}
+
+/*****Media Queries***660px***/
+@media screen and (max-width: 660px) {
+.nav{
+	grid-gap: 10%;
+	}
+}
+
+/*****Media Queries***540px***/
+@media screen and (max-width: 540px) {
+.nav{
+	grid-gap: 5%;
+	}
+}
+
+/*****Media Queries***505px***/
+@media screen and (max-width: 505px) {
+body{
+	padding: 0; 
+}
+
+h1{
+    font-size: 24px;
+ }
+}
+
+/*****Media Queries***477px***/
+@media screen and (max-width: 477px) {
+
+header{
+	grid-template-columns: 40% 1fr;
+	grid-auto-rows: repeat(1, minmax(80px, .4fr));
+	grid-gap: 2%;
+}
+.nav{
+	grid-gap: 10%;
+	}
+}
+/*****Media Queries***448px***/
+@media screen and (max-width: 448px) {
+.nav{
+	grid-gap: 8%;
+	}
+}
+
+/*****Media Queries***420px***/
+@media screen and (max-width: 420px) {
+.nav{
+	grid-gap:20%;
+}
+
+h1{
+	font-size: 18px;
+	display: none;
+}
+
+header{
+	height: 60px;
+	grid-template-columns: 1fr;
+	grid-auto-rows: 30px 85px;
+	grid-gap: 2%;
+ }
+
+ .box0, .box1, .box2, .box3 {
+	height: 28px;
+	width: 28px;
+} 
+}
+
+/*****Media Queries***378px***/
+@media screen and (max-width: 378px) {
+.box0, .box1, .box2, .box3 {
+	height: 28px;
+	width: 28px;
+}
+
+.box0:active, .box1:active, .box2:active, .box3:active{
+	height: 25px;
+	width: 25px;
+}
+
+h1{
+	font-size: 18px;
+ }
+ #item_name{
+	font-size: 13px;
+ }
+}
+
+/*****Media Queries***340px***/
+@media screen and (max-width: 340px) {
+body{
+	padding: 0; 
+}
+
+h1{
+	font-size: 20px;
+}
+
+h1{
+	display: none;
+ }
+
+.nav{
+	grid-gap:8%;
+}
+
+section{
+	padding: 5px 1% 10px 1%; /***Space inbetween Main Grid Container - Nav - Grid Space***/
+ } 	
+}
+
+/*****Media Queries***310px*****/
+@media screen and (max-width: 310px) {
+h1{
+	font-size: 20px;
+}	
+
+/***Container Grid Hold Shop Items***/
+.container{
+	display: grid;
+	max-height: 100%;
+	max-width: 100%;
+	grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+	grid-auto-rows: repeat(auto-fit, minmax(250px, auto));
+}
+
+.container p{
+	font-size: 16px;
+}
+
+
+}
+
+/*****Media Queries***258px***/
+@media screen and (max-width: 258px) {
+.box0, .box1, .box2, .box3 {
+	height: 20px;
+	width: 20px;
+}
+.nav p{
+	font-size: 12px;
+}
+}	
+/*****Media Queries***203px***/
+@media screen and (max-width: 203px) {
+
+.box0, .box1, .box2, .box3 {
+	height: 15px;
+	width: 15px;
+}
+.box0:active, .box1:active, .box2:active, .box3:active {
+	height: 18px;
+	width: 18px;
+}
+
+.nav{
+	grid-gap: 8%;	
+}
+
+.nav p{
+	font-size: 10px;
+ }
+
+header{
+	height: 50px;
+	margin-bottom: 5px;
+ } 
+}
+
+/*****Media Queries***176px***/
+@media screen and (max-width: 176px) {
+.box0, .box1, .box2, .box3 {
+	height: 15px;
+	width: 15px;
+}
+.nav{
+	grid-gap: 5%;	
+}
+.container div{
+    padding: 6%; /**Adjust Space Between Image & Card Section***/  
+}
+
+}
+
+/*****Media Queries***155px***/
+@media screen and (max-width: 155px) {
+.box0, .box1, .box2, .box3 {
+	height: 12px;
+	width: 12px;
+}
+.nav{
+	grid-gap: 5%;	
+}
+.nav p{
+	font-size: 8px;
+ }
+
+
+}
