@@ -15,9 +15,9 @@
     <meta name="description" content="The main page for all news on Stengel Adventures
      Also shop for some of the top rated products i use as well!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="geoff stengel, harmonica, glassblower, food, art, music, adventure, youtube, tiktok, vlogger, blog, the peyota, leaving society
-    toyota tacoma, chicago, digi nomad, tire cleanup, 4x4, hippie, solar power, starlink, ebike, photography, lithium batttery, 100ah, for sale, quality, sprouting kit,
-    mesh lids, stainless">
+    <meta name="keywords" content="geoff stengel, harmonica, glassblower, food, art, music, adventure, youtube, tiktok, vlogger, blog, the peyota, leaving society, toyota tacoma, chicago, digi nomad, tire cleanup, 4x4, hippie, solar power,
+    starlink, ebike, photography, lithium battery, 100ah, for sale, quality, sprouting kit, mesh lids, stainless">
+    
     <link rel="stylesheet" type="reset" href="css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
         <!-- Google tag (gtag.js) -->
@@ -33,104 +33,467 @@
 	<link rel="shortcut icon" type="image/png"type="image/png" href="images/harmonica.svg">
 	<!----Thumbnail Image In Index----Finish--------->	
     <title>🏠 Geoff Stengel Official Website - Music - Adventure - Harmonica - Tech</title>
-
 </head>
-    <body>
-
-        <div class="wrapper">
-            <a class="tacos" href="https://square.link/u/yu9hDSBt" target="_blank">🌮Tip a Taco</a>
-            <h1>Made in U.S.A played everywhere</h1>
-        <header> 
-            <nav class="nav">
-                <a href="index.html"><div class="box box0"></div><p>Home</p></a>
-                <a href="shop.html"><div class="box box1"></div><p>Shop</p></a>		
-                <a href="blog.html"><div class="box box2"></div><p>Blog</p></a>
-                <a href="https://square.link/u/yu9hDSBt"><div class="box box3"></div><p>Tip</p></a>
-            </nav>
-        </header>
+<body>
         
-        <h2>Geoff Stengel Official Website</h2>
-     
+<div id="main_wrapper_grid">               
+    <header><!---
+        <top-nav>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a class="nav-buttons" href="index.html">Home</a></li>
+                <li><a class="nav-buttons" href="shop.html">Shop</a></li>
+                <li><a class="nav-buttons" href="blog.html">Blog</a></li>
+                <li><a class="nav-buttons" href="https://square.link/u/yu9hDSBt">Tip</a></li>
+            </ul>        
+        </top-nav>  --->
+        <nav class="nav">
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html"><div class="box box0 nav-buttons"></div><p>Home</p></a></li>
+                <li><a href="shop.html"><div class="box box1"></div><p>Shop</p></a></li>		
+                <li><a href="blog.html"><div class="box box2"></div><p>Blog</p></a></li>
+                <li><a href="solar.html"><div class="box box4"></div><p>Solar</p></a></li>
+                <li><a href="sprout.html"><div class="box box5"></div><p>Sprout</p></a></li>
+                <li><a href="music.html"><div class="box box6"></div><p>Musical</p></a></li>
+                <li><a href="https://square.link/u/yu9hDSBt"><div class="box box3"></div><p>Tip</p></a></li>
+            </ul>
+        </nav>
+    </header>   
+
+<!---SIDEBAR SRART--->    
+    <aside class="aside"> <!---navbar--->
+        <ul id="sidebar"> <!---navbar-nav--->
+            <li class="sidebar-logo">
+                <a href="index.html" class="sidebar-link">
+                    <span class="link-text logo-text">STENGEL</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#e8eaed"><g><rect fill="none" height="24" width="24"/></g><g><g><polygon points="15.5,5 11,5 16,12 11,19 15.5,19 20.5,12"/><polygon points="8.5,5 4,5 9,12 4,19 8.5,19 13.5,12"/></g></g>
+                    </svg>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#e8eaed"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                    </svg>
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="shop.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#e8eaed"><path d="M0 0h24v24H0z" fill="none"/><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                    <span class="link-text">Shop</span>
+                </a>
+            </li>
+            
+        <li class="sidebar-item">
+            <a class="sidebar-link" href="blog.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#e8eaed"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 1l-5 5v11l5-4.5V1zM1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5V6c-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6zm22 13.5V6c-.6-.45-1.25-.75-2-1v13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5v2c1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5v-1.1z"/></svg>
+                <span class="link-text">Blog</span>
+            </a>
+        </li> 
+        <li class="sidebar-item">
+            <a class="sidebar-link" href="https://square.link/u/yu9hDSBt">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#e8eaed"><g><rect fill="none" height="24" width="24"/></g><g><path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M12.88,17.76V19h-1.75v-1.29 c-0.74-0.18-2.39-0.77-3.02-2.96l1.65-0.67c0.06,0.22,0.58,2.09,2.4,2.09c0.93,0,1.98-0.48,1.98-1.61c0-0.96-0.7-1.46-2.28-2.03 c-1.1-0.39-3.35-1.03-3.35-3.31c0-0.1,0.01-2.4,2.62-2.96V5h1.75v1.24c1.84,0.32,2.51,1.79,2.66,2.23l-1.58,0.67 c-0.11-0.35-0.59-1.34-1.9-1.34c-0.7,0-1.81,0.37-1.81,1.39c0,0.95,0.86,1.31,2.64,1.9c2.4,0.83,3.01,2.05,3.01,3.45 C15.9,17.17,13.4,17.67,12.88,17.76z"/></g></svg>
+                <span class="link-text">Tip</span>
+            </a>
+        </li>
+
+        <li class="sidebar-item">
+            <a class="sidebar-link" href="solar.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m80-80 80-400h640l80 400H80Zm40-720v-80h120v80H120Zm58 640h262v-80H194l-16 80Zm67-427-57-56 85-85 57 56-85 85Zm-35 267h230v-80H226l-16 80Zm270-360q-83 0-141.5-58.5T280-880h80q0 50 35 85t85 35q50 0 85-35t35-85h80q0 83-58.5 141.5T480-680Zm0-200Zm-40 360v-120h80v120h-80Zm80 360h262l-16-80H520v80Zm0-160h230l-16-80H520v80Zm195-267-84-85 56-56 85 84-57 57Zm5-213v-80h120v80H720Z"/></svg>
+                <span class="link-text">Solar</span>
+            </a>
+        </li>
+    </ul>
+</aside>
+<!---SIDEBAR END--->
+<div class="top_banner_grid">
+<div class="wrapper">
+    <a class="tacos" href="https://square.link/u/yu9hDSBt" target="_blank">🌮Tip a Taco</a>
+    <h1>Made in U.S.A played everywhere</h1>
+    <h2>Geoff Stengel Official Website</h2>
+</div>
+
+<div class="social_grid">
+<a href="https://www.youtube.com/@eugeneglassmenagerie"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" width="250"  height="170" viewBox="0 0 250 160"><path d="M229.763 25.817c-2.699-10.162-10.65-18.165-20.748-20.881C190.716 0 117.333 0 117.333 0S43.951 0 25.651 4.936C15.553 7.652 7.6 15.655 4.903 25.817 0 44.236 0 82.667 0 82.667s0 38.429 4.903 56.85C7.6 149.68 15.553 157.681 25.65 160.4c18.3 4.934 91.682 4.934 91.682 4.934s73.383 0 91.682-4.934c10.098-2.718 18.049-10.72 20.748-20.882 4.904-18.421 4.904-56.85 4.904-56.85s0-38.431-4.904-56.85" fill="red"/><path d="M93.333 117.559l61.333-34.89-61.333-34.894z" fill="#fff"/></svg></a>
+
+<a href="https://www.tiktok.com/@stengelgeoff"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    width="250px"  viewBox="0 0 1000 291.379" enable-background="new 0 0 1000 291.379" xml:space="preserve">
+<g>
+   <path fill="#FF004F" d="M191.102,105.182c18.814,13.442,41.862,21.351,66.755,21.351V78.656c-4.711,0.001-9.41-0.49-14.019-1.466
+       v37.686c-24.891,0-47.936-7.909-66.755-21.35v97.703c0,48.876-39.642,88.495-88.54,88.495c-18.245,0-35.203-5.513-49.29-14.968
+       c16.078,16.431,38.5,26.624,63.306,26.624c48.901,0,88.545-39.619,88.545-88.497v-97.701H191.102z M208.396,56.88
+       c-9.615-10.499-15.928-24.067-17.294-39.067v-6.158h-13.285C181.161,30.72,192.567,47.008,208.396,56.88L208.396,56.88z
+        M70.181,227.25c-5.372-7.04-8.275-15.652-8.262-24.507c0-22.354,18.132-40.479,40.502-40.479
+       c4.169-0.001,8.313,0.637,12.286,1.897v-48.947c-4.643-0.636-9.329-0.906-14.013-0.807v38.098c-3.976-1.26-8.122-1.9-12.292-1.896
+       c-22.37,0-40.501,18.123-40.501,40.48C47.901,206.897,56.964,220.583,70.181,227.25z"/>
+   <path d="M177.083,93.525c18.819,13.441,41.864,21.35,66.755,21.35V77.189c-13.894-2.958-26.194-10.215-35.442-20.309
+       c-15.83-9.873-27.235-26.161-30.579-45.225h-34.896v191.226c-0.079,22.293-18.18,40.344-40.502,40.344
+       c-13.154,0-24.84-6.267-32.241-15.975c-13.216-6.667-22.279-20.354-22.279-36.16c0-22.355,18.131-40.48,40.501-40.48
+       c4.286,0,8.417,0.667,12.292,1.896v-38.098c-48.039,0.992-86.674,40.224-86.674,88.474c0,24.086,9.621,45.921,25.236,61.875
+       c14.087,9.454,31.045,14.968,49.29,14.968c48.899,0,88.54-39.621,88.54-88.496V93.525L177.083,93.525z"/>
+   <path fill="#00F2EA" d="M243.838,77.189V66.999c-12.529,0.019-24.812-3.488-35.442-10.12
+       C217.806,67.176,230.197,74.276,243.838,77.189z M177.817,11.655c-0.319-1.822-0.564-3.656-0.734-5.497V0h-48.182v191.228
+       c-0.077,22.29-18.177,40.341-40.501,40.341c-6.554,0-12.742-1.555-18.222-4.318c7.401,9.707,19.087,15.973,32.241,15.973
+       c22.32,0,40.424-18.049,40.502-40.342V11.655H177.817z M100.694,114.408V103.56c-4.026-0.55-8.085-0.826-12.149-0.824
+       C39.642,102.735,0,142.356,0,191.228c0,30.64,15.58,57.643,39.255,73.527c-15.615-15.953-25.236-37.789-25.236-61.874
+       C14.019,154.632,52.653,115.4,100.694,114.408z"/>
+   <path fill="#FF004F" d="M802.126,239.659c34.989,0,63.354-28.136,63.354-62.84c0-34.703-28.365-62.844-63.354-62.844h-9.545
+       c34.99,0,63.355,28.14,63.355,62.844s-28.365,62.84-63.355,62.84H802.126z"/>
+   <path fill="#00F2EA" d="M791.716,113.975h-9.544c-34.988,0-63.358,28.14-63.358,62.844s28.37,62.84,63.358,62.84h9.544
+       c-34.993,0-63.358-28.136-63.358-62.84C728.357,142.116,756.723,113.975,791.716,113.975z"/>
+   <path d="M310.062,85.572v31.853h37.311v121.374h37.326V118.285h30.372l10.414-32.712H310.062z M615.544,85.572v31.853h37.311
+       v121.374h37.326V118.285h30.371l10.413-32.712H615.544z M432.434,103.648c0-9.981,8.146-18.076,18.21-18.076
+       c10.073,0,18.228,8.095,18.228,18.076c0,9.982-8.15,18.077-18.228,18.077C440.58,121.72,432.434,113.63,432.434,103.648z
+        M432.434,134.641h36.438v104.158h-36.438V134.641z M484.496,85.572v153.226h36.452v-39.594l11.283-10.339l35.577,50.793h39.05
+       l-51.207-74.03l45.997-44.768h-44.258l-36.442,36.153V85.572H484.496z M877.623,85.572v153.226h36.457v-39.594l11.278-10.339
+       l35.587,50.793H1000l-51.207-74.03l45.995-44.768h-44.256l-36.452,36.153V85.572H877.623z"/>
+   <path d="M792.578,239.659c34.988,0,63.358-28.136,63.358-62.84c0-34.703-28.37-62.844-63.358-62.844h-0.865
+       c-34.99,0-63.355,28.14-63.355,62.844s28.365,62.84,63.355,62.84H792.578z M761.336,176.819c0-16.881,13.8-30.555,30.817-30.555
+       c17.005,0,30.804,13.674,30.804,30.555s-13.799,30.563-30.804,30.563C775.136,207.379,761.336,193.7,761.336,176.819z"/>
+</g>
+</svg>
+</a>
+</div>
+</div>
+
+
+<div id="shop_grid">
+
+<div class="homepage_grid_01">
+    <h4><a href="sprout.html">Sprouting Products From Our Youtube</a></h4>
+
+<div class="sprouting_grid">
+    <!------  Sprouting Lids Start ------->
+<div class="item_frame sprouting_lids_6_pck">
+	<a href="https://amzn.to/3OPIzSl" target="_blank">
+	<img class="img_item" src="img_shop/sprouting_lids_stainless_6_pck.png" alt="Stainless Sprouting Lids 6 pck">	 
+<div id="item_info_grid">	
+    <p id="item_name">Stainless Sprouting Lids 6 Pck</p> 	
+	<p id="prices">View Prices</p>	
+	<img class="buy_now" src="images/buy_now.png" alt="buy now image">
+</div>
+    </a>
+</div>
+<!------  Sprouting Lids END ------->
+
+<!------  Sprouting Kit Start ------->
+<div class="item_frame sprouting_kit_2_pck">
+	<a href="https://amzn.to/450u2sX" target="_blank">
+	<img class="img_item" src="img_shop/sprouting_kit.png" alt="Stainless Sprouting Kit 2 pck">	 
+<div id="item_info_grid">	
+    <p id="item_name">Stainless Sprouting Kit 2 Pck</p> 	
+	<p id="prices">View Prices</p>		
+	<img class="buy_now" src="images/buy_now.png" alt="buy now image">
+</div>
+    </a>
+</div>
+<!------  Sprouting Kit END ------->
+
+<!------  Mason Jar Sprouting Lids - 316 Surgical Stainless Steel Start ------->
+<div class="item_frame sprouting_lids_316_stainless_2pck">
+	<a href="https://amzn.to/3UMhVxm" target="_blank">
+	<img class="img_item" src="img_shop/sprouting_lids_316_stainless_2_sets.png" alt="Mason Jar Sprouting Lids - 316 Surgical Stainless Steel">	 
+<div id="item_info_grid">	
+    <p id="item_name">Mason Jar Sprouting Lids - Stainless Steel</p> 	
+	<p id="prices">View Prices</p>
+	<img class="buy_now" src="images/buy_now.png" alt="buy now image">
+</div>
+    </a>
+</div>
+<!------  Mason Jar Sprouting Lids - 316 Surgical Stainless Steel END ------->
+
+<!------  Nature Jims Sprouts Salad Sprout Mix Start ------->
+<div class="item_frame nature_jims_sprout_salad_mix">
+	<a href="https://amzn.to/49hJO4t" target="_blank">
+	<img class="img_item" src="img_shop/sprouts_salad_mix.png" alt="Nature Jims Sprouts Salad Sprout Mix - Organic Salad Mix for Growing - Non-GMO Microgreen Seeds - Healthy Broccoli, Alfalfa, Radish, Clover Sprouting Seeds Variety Mix - Microgreens Growing 1lb">	 
+<div id="item_info_grid">	
+    <p id="item_name">Nature Jims Sprouts Salad Sprout Mix</p> 	
+	<p id="prices">View Prices</p>
+	<img class="buy_now" src="images/buy_now.png" alt="buy now image">
+</div>
+    </a>
+</div>
+<!------  Nature Jims Sprouts Salad Sprout Mix END ------->
+
+<!------  Aurora Natural French Lentils Start ------->
+<div class="item_frame aurora_natural_french_lentils">
+	<a href="https://amzn.to/42NFgjZ" target="_blank">
+	<img class="img_item" src="img_shop/aurora_natural_french_lentils.png" alt="Aurora Products Organic French Lentils 24 OZ">	 
+<div id="item_info_grid">	
+    <p id="item_name">Aurora Products Organic French Lentils, 24 OZ</p> 	
+	<p id="prices">View Prices</p>
+	<img class="buy_now" src="images/buy_now.png" alt="buy now image">
+</div>
+    </a>
+</div>
+<!------  Aurora Natural French Lentils END ------->
+
+<!------  Alfalfa Sprouting Seeds HOME GROWN Start ------->
+<div class="item_frame home_grown_alfalfa_sprouting_seeds">
+	<a href="https://amzn.to/3uzM5cp" target="_blank">
+	<img class="img_item" src="img_shop/alfalfa_sprouts_HOME_GROWN.png" alt="HOME GROWN Alfalfa Sprout Seeds for Sprouting and Microgreens (16oz) Premium USA Alfalfa Seeds Indoor or Outdoor Planting Sprouts | Non-GMO | Micro Greens Seed in Resealable Bag">	 
+<div id="item_info_grid">	
+    <p id="item_name">HOME GROWN Alfalfa Seeds - Sprouting or Microgreens</p> 	
+	<p id="prices">View Prices</p>
+	<img class="buy_now" src="images/buy_now.png" alt="buy now image">
+</div>
+    </a>
+</div>
+<!------  Alfalfa Sprouting Seeds HOME GROWN END ------->
+</div>
+</div>
+
+<div class="homepage_grid_02">
+<h4><a href="solar.html">Solar Items Seen On Our Youtube</a></h4>
+<div class="solar_grid">
+    
+    <!------  BougeRV 200W CIG Solar Panel Start ------->
+<div class="item_frame bougerv_200w_cig">
+	<a href="https://amzn.to/3whQBg0" target="_blank">
+	<img class="img_item" src="img_shop/bougerv_200w_cig.png" alt="BougeRV Yuma 200W CIGS Thin-Film Flexible Solar Panel, The Most Flexible Solar Panel with Pre-Punched Holes for Easy Installation">	 
+<div id="item_info_grid">	
+    <p id="item_name">BougeRV 200W CIG Flexible Solar Panel</p> 	
+	<p id="prices">View Prices</p>	
+	<img class="buy_now" src="images/buy_now.png" alt="buy now image">
+</div>
+    </a>
+</div>
+<!------  BougeRV 200W CIG Solar Panel END ------->
+
+<!------  BougeRV 30amp Solar Controller Start ------->
+<div class="item_frame bougerv_30amp_controller">
+	<a href="https://amzn.to/3ORmtyJ" target="_blank">
+	<img class="img_item" src="img_shop/bougerv_30amp_controller.png" alt="BougeRV MPPT Solar Charge Controller 30A, with Remote APP Control, Backlit LCD Display, Temperature Sensor,
+     12V/24V Battery Regulator, for LiFePO4, SLD, AGM, FLD, Gel Battery, Negative Ground">	 
+<div id="item_info_grid">	
+    <p id="item_name">BougeRV MPPT Solar Charge Controller 30A</p> 	
+	<p id="prices">View Prices</p>	
+	<img class="buy_now" src="images/buy_now.png" alt="buy now image">
+</div>
+    </a>
+</div>
+<!------  BougeRV 30Amp Solar Controller END ------->
+
+<!------  BougeRV 40amp Solar Controller Start ------->
+<div class="item_frame bougerv_40amp_controller">
+	<a href="https://amzn.to/3T1SdU5" target="_blank">
+	<img class="img_item" src="img_shop/bougerv_40amp_controller.png" alt="BougeRV MPPT Solar Charge Controller 40A, with Remote APP Control, Backlit LCD Display, Temperature Sensor,
+     12V/24V Battery Regulator, for LiFePO4, SLD, AGM, FLD, Gel Battery, Negative Ground">	 
+<div id="item_info_grid">	
+    <p id="item_name">BougeRV MPPT Solar Charge Controller 40A</p> 	
+	<p id="prices">View Prices</p>	
+	<img class="buy_now" src="images/buy_now.png" alt="buy now image">
+</div>
+    </a>
+</div>
+<!------  BougeRV 40Amp Solar Controller END ------->
+
+<!------  Weize Solar Battery Start ------->
+<div class="item_frame weize_12_100ah_battery">
+	<a href="https://amzn.to/3ZqvW40" target="_blank">
+	<img class="img_item" src="img_shop/weize_100ah_battery.png" alt="WEIZE 12V 100Ah LiFePO4 Lithium Battery, Up to 8000 Cycles">	 
+<div id="item_info_grid">	
+    <p id="item_name">WEIZE 12V 100Ah LiFePO4 Lithium Battery</p> 	
+	<p id="prices">View Prices</p>	
+	<img class="buy_now" src="images/buy_now.png" alt="buy now image">
+</div>
+    </a>
+</div>
+<!------  Weize Solar Battery END ------->
+
+<!------  BougeRV Y Adapter Start ------->
+<div class="item_frame bougerv_Y_adapter">
+	<a href="https://amzn.to/4bHIIAN" target="_blank">
+	<img class="img_item" src="img_shop/bougerv_Y_adapter.png" alt="BougeRV Solar Connectors Y Branch Parallel Adapter Cable Wire Plug Tool Kit for Solar Panel">	 
+<div id="item_info_grid">	
+    <p id="item_name">BougeRV Solar Connectors Y Branch Parallel Adapter</p> 	
+	<p id="prices">View Prices</p>	
+	<img class="buy_now" src="images/buy_now.png" alt="buy now image">
+</div>
+    </a>
+</div>
+<!------  BougeRV Y Adapter END ------->
+
+<!------  BougeRV 1000W Inverter Start ------->
+<div class="item_frame bougerv_1000w_inverter">
+	<a href="https://amzn.to/3P0vQvr" target="_blank">
+	<img class="img_item" src="img_shop/bougerv_1000w_inverter.png" alt="BougeRV Pure Sine Wave Inverter 1000W Convert DC 12V to AC 120V, with LCD Digital Displayer,
+     Wired Remote Controller, for Off-Grid Solar Power System, RV, Home Backup Power">	 
+<div id="item_info_grid">	
+    <p id="item_name">BougeRV Pure Sine Wave Inverter 1000W</p> 	
+	<p id="prices">View Prices</p>	
+	<img class="buy_now" src="images/buy_now.png" alt="buy now image">
+</div>
+    </a>
+</div>
+<!------  BougeRV 1000W Inverter END ------->
+</div>
+</div>
+
+<div class="homepage_grid_03">
+    <h4><a href="music.html">Music Instruments For Your Travels</a></h4>
+    <h5><a href="music.html">Click Here</a></h5>
+<div class="music_grid">
+<!------Hohner Special 20 Harmonica - Key of C-Start ------->		 
+<div class="item_frame hohner_special20_keyC">
+	<a href="https://amzn.to/3l93C6s" target="_blank">
+	<img class="img_item" src="img_shop/hohner_special20_keyC.png" alt="hohner_special20_keyC">	 
+<div id="item_info_grid">	
+    <p id="item_name">Hohner Special 20 KeyC +Soft Case</p> 	
+	<p id="prices">View Prices</p>
+	<img class="buy_now" src="images/buy_now.png" alt="buy now image">
+</div>
+    </a>
+</div>
+<!------Hohner Special 20 Harmonica - Key of C-Finish ------->
+ 
+<!------ Hohner Harmonica Marine Band (1896BX-G) -- Start ------->		 
+<div class="item_frame hohner_Harmonica_Marine_Band_1896BX-G">
+    <a href="https://amzn.to/3ng1Kd7" target="_blank">
+    <img class="img_item" src="img_shop/hohner_Harmonica_Marine_Band_1896BX-G.png" alt="Hohner Harmonica Marine Band (1896BX-G)">	 
+<div id="item_info_grid">
+        <p id="item_name">Hohner Marine Band KeyG</p> 	
+        <p id="prices">View Prices</p>	
+        <img class="buy_now" src="images/buy_now.png" alt="buy now image">
+    </div>
+    </a>
+</div>
+<!------ Hohner Harmonica Marine Band (1896BX-G) -- Finish ------->
+
+
+<!------ Hohner Marine Band 1896 keyC-Start ------->		 
+<div class="item_frame hohner_marine_band_1896_keyC">
+	<a href="https://amzn.to/3LiEzZq" target="_blank">
+	<img class="img_item" src="img_shop/hohner_marine_band_1896_keyC.png" alt="hohner_marine_band_1896_keyC">	 
+<div id="item_info_grid">
+    <p id="item_name">Hohner Marine Band 1896 KeyC</p> 	 
+	<p id="prices">View Prices</p>	
+	<img class="buy_now" src="images/buy_now.png" alt="buy now image">
+</div>
+	</a>
+</div>
+<!------ Hohner Marine Band 1896 keyC-Finish ------->
+
+<!------ Hohner M2011BXLC Marine Band Thunderbird Harmonica - Key of LC(M2011BXL-C) -- Start ------->		 
+<div class="item_frame hohner_M2011BXLC_Marine_Band_Thunderbird Harmonica_Key_LC_M2011BXL-C">
+    <a href="https://amzn.to/3VxAyU9" target="_blank">
+    <img class="img_item" src="img_shop/hohner_M2011BXLC_Marine_Band_Thunderbird Harmonica_Key_LC_M2011BXL-C.png" alt="Hohner M2011BXLC Marine Band Thunderbird Harmonica - Key of LC(M2011BXL-C)">	 
+<div id="item_info_grid">
+    <p id="item_name">Hohner Marine Band Thunderbird KeyLC</p> 	
+    <p id="prices">View Prices</p>	
+    <img class="buy_now" src="images/buy_now.png" alt="buy now image">
+</div>
+    </a>
+</div>
+<!------ Hohner M2011BXLC Marine Band Thunderbird Harmonica - Key of LC(M2011BXL-C) -- Finish ------->
+
+<!------ Hohner Harmonica CX-12 Chromatic Harmonica, Key of D, Black (7545-D) -- Start ------->		 
+<div class="item_frame hohner_Harmonica_CX_12_Chromatic_keyD">
+    <a href="https://amzn.to/3J9KUDS" target="_blank">
+    <img class="img_item" src="img_shop/hohner_Harmonica_CX_12_Chromatic_keyD.png" alt="Hohner Harmonica CX-12 Chromatic Harmonica, Key of D, Black (7545-D)">	 
+<div id="item_info_grid">
+    <p id="item_name">Hohner CX-12 Chromatic Harmonica KeyD</p> 	
+    <p id="prices">Check Prices</p>	
+    <img class="buy_now" src="images/buy_now.png" alt="buy now image">
+</div>
+    </a>
+</div>
+<!------ Hohner Harmonica CX-12 Chromatic Harmonica, Key of D, Black (7545-D) -- Finish ------->
+
+<!------Hohner 7545G CX12 Chromatic Harmonica - Key of G, Black -- Start ------->		 
+<div class="item_frame hohner_Harmonica_CX_12_Chromatic_keyG">
+    <a href="https://amzn.to/3YI36Kt" target="_blank">
+    <img class="img_item" src="img_shop/hohner_Harmonica_CX_12_Chromatic_keyG.png" alt="Hohner 7545G CX12 Chromatic Harmonica - Key of G, Black">	 
+<div id="item_info_grid">
+    <p id="item_name">Hohner CX-12 Chromatic Harmonica KeyG</p> 	
+    <p id="prices">Check Prices</p>	
+    <img class="buy_now" src="images/buy_now.png" alt="buy now image">
+</div>
+    </a>
+</div>
+<!------ Hohner 7545G CX12 Chromatic Harmonica - Key of G, Black -- Finish ------->
+</div>
+</div>
+</div>
 <div id="creative_projects">
-<!------Youtube-Start ------->		 
-<div class="box youtube">
-    <a href="https://www.youtube.com/@eugeneglassmenagerie" target="_blank">
-    <img class="img_item_youtube" src="images/youtube_play_button.svg" alt="Geoff Stengel Eugene Glass Menagerie youtube channel">	 
-    <p>Youtube Channel</p> 
-    </a>
-</div>
-<!------Youtube-Finish ------->
-
-<!------TikTok-Start ------->		 
-<div class="box youtube">
-    <a href="https://www.tiktok.com/@stengelgeoff" target="_blank">
-    <img class="img_item_youtube" src="images/tikTok_logo.jpg" alt="TikTok Profile for Geoff Stengel">	 
-    <p>TikTok Profile</p> 
-    </a>
-</div>
-<!------TikTok-Finish ------->
-
-<!------BitcoinDavida-Start ------->		 
-<div class="box youtube">
-    <a href="https://bitcoindavida.com/" target="_blank">
-    <img class="img_item_youtube" src="images/bitcoin.svg" alt="BitcoinDavida Site for Crypto Info">	 
-    <p>Bitcoin Davida</p> 
-    </a>
-</div>
-<!------BitcoinDavida-Finish ------->
-
-<!------Sprouting-Start ------->	
-<div class="box youtube">
-    <a href="shop.html">
-    <img class="img_item_youtube" src="img_shop/sprouting_gear_icon.png" alt="Sprouting herb icon">	 
-    <p>Sprouting Kits</p> 
-    </a>
-</div>  
-<!------Sprouting-Finish ------->
-
-<!------Rarible-Start ------->		 
-<div class="box youtube">
-    <a href="https://rarible.com/token/0xf746adc2aaa0aa9394fc2e6a64a1e01de60f1843:41" target="_blank">
-    <img class="img_item_youtube" src="images/rarible_icon.png" alt="Rarible Profile for Geoff Stengel Digital Art">	 
-    <p>Rarible Profile</p> 
-    </a>
-</div>
-<!------Rarible-Finish ------->
-
-<!------Github-Start ------->		 
-<div class="box youtube">
-    <a href="https://github.com/GeoffStengel" target="_blank">
-    <img class="img_item_youtube" src="images/github-mark.svg" alt="Github Profile for Geoff Stengel">	 
-    <p>Github Profile</p> 
-    </a>
-</div>
-<!------Github-Finish ------->
-
-<!------Website Layouts-Start ------->
-<!--		 
-<div class="box youtube">
-    <a href="Website-Layouts/index.html">
-    <img class="img_item_youtube" src="images/harmonica.svg" alt="Website Layout Ideas & Projects">	 
-    <p>Website Layouts</p> 
-    </a>
-</div>
---->
-<!------Website Layouts ------->
-
-<!------Twitter-Start ------->	
-<!----	 
-<div class="box youtube">
-    <a href="https://twitter.com/GeoffStengel" target="_blank">
-    <img class="img_item_youtube" src="images/twitter-logo.png" alt="Twitter Profile for Geoff Stengel">	 
-    <p>Twitter Profile</p> 
-    </a>
-</div>  ------->
-<!------Twitter-Finish ------->
-
-</div>
+    <!------Youtube-Start ------->		 
+    <div class="box youtube">
+        <a href="https://www.youtube.com/@eugeneglassmenagerie" target="_blank">
+        <img class="img_item_youtube" src="images/youtube_play_button.svg" alt="Geoff Stengel Eugene Glass Menagerie youtube channel">	 
+        <p>Youtube Channel</p> 
+        </a>
+    </div>
+    <!------Youtube-Finish ------->
+    
+    <!------TikTok-Start ------->		 
+    <div class="box youtube">
+        <a href="https://www.tiktok.com/@stengelgeoff" target="_blank">
+        <img class="img_item_youtube" src="images/tikTok_logo.jpg" alt="TikTok Profile for Geoff Stengel">	 
+        <p>TikTok Profile</p> 
+        </a>
+    </div>
+    <!------TikTok-Finish ------->
+    
+    <!------BitcoinDavida-Start ------->		 
+    <div class="box youtube">
+        <a href="https://bitcoindavida.com/" target="_blank">
+        <img class="img_item_youtube" src="images/bitcoin.svg" alt="BitcoinDavida Site for Crypto Info">	 
+        <p>Bitcoin Davida</p> 
+        </a>
+    </div>
+    <!------BitcoinDavida-Finish ------->
+    
+    <!------Sprouting-Start ------->	
+    <div class="box youtube">
+        <a href="shop.html">
+        <img class="img_item_youtube" src="img_shop/sprouting_gear_icon.png" alt="Sprouting herb icon">	 
+        <p>Sprouting Kits</p> 
+        </a>
+    </div>  
+    <!------Sprouting-Finish ------->
+    
+    <!------Rarible-Start ------->		 
+    <div class="box youtube">
+        <a href="https://rarible.com/token/0xf746adc2aaa0aa9394fc2e6a64a1e01de60f1843:41" target="_blank">
+        <img class="img_item_youtube" src="images/rarible_icon.png" alt="Rarible Profile for Geoff Stengel Digital Art">	 
+        <p>Rarible Profile</p> 
+        </a>
+    </div>
+    <!------Rarible-Finish ------->
+    
+    <!------Github-Start ------->		 
+    <div class="box youtube">
+        <a href="https://github.com/GeoffStengel" target="_blank">
+        <img class="img_item_youtube" src="images/github-mark.svg" alt="Github Profile for Geoff Stengel">	 
+        <p>Github Profile</p> 
+        </a>
+    </div>
+    <!------Github-Finish ------->
+    
+    <!------Website Layouts-Start ------->
+    <!--		 
+    <div class="box youtube">
+        <a href="Website-Layouts/index.html">
+        <img class="img_item_youtube" src="images/harmonica.svg" alt="Website Layout Ideas & Projects">	 
+        <p>Website Layouts</p> 
+        </a>
+    </div>
+    --->
+    <!------Website Layouts ------->
 </div>
 
-
-    <!--<script src="js/footer.js"></script> -Added This For Google Tag Manager--->
+        
+</div> 
+    <script src="js/hamburger.js"></script> <!--footer.js-Added This For Google Tag Manager--->
 </body>
 </html>

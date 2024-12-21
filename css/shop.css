@@ -3,6 +3,9 @@
 	margin: 0;
 	padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: 18thCentury, Arial, Helvetica, sans-serif;
@@ -173,6 +176,9 @@ ul ul li{
 	position: relative;
 }
 
+.dropdown a{
+	color: #fbb505;
+}
 /**
 ul li a:hover{
 	background: #112c66;
