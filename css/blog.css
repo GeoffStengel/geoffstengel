@@ -2,119 +2,346 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
-
+:root {
+    --primary-color: #003366;
+    --secondary-color: #f9f9f9;
+    --accent-color: rgb(238, 28, 175); 
+    --bkgd-color: #ffffff;
+    --card-bkgd: #f9f9f9;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --box-shadow-light: 0 4px 10px rgba(0, 0, 0, 0.1);
+    --text-1: #eaf9fa;
+    --text-2: #555555;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    --transition-speed: 600ms;
+}  
+html{
+    scroll-behavior: smooth;
+}
 body{
 	background-color: rgb(0, 123, 255);
 	background-image: radial-gradient(circle at center center, rgba(33,33,33,0),rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 1px,transparent 1px, transparent 4px),repeating-linear-gradient(45deg, rgb(56,56,56) 0px, rgb(56,56,56) 5px,transparent 5px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
 	margin: 0 auto;
     text-align: center;
+	padding: 1%;
+	padding-top: 0;
 }
 
-h1{
-    color: rgb(0, 123, 255);
-    font-family: 18thcentury;
-    font-size: 34px;
-	margin: 10px 0 10px 0;
-	
-	text-shadow: 1px 1px 2px #000000;
-}
 
 /****Grid Holding Blogs***From Davida take top one out if works*****/
 /*****Test Start*********/
 /****Background Section Behind Content and Nav******************/
 section{
-	background-color: #ddd; /***background**/
 	background-position: center;
 	height: 100%;
-	max-width: 920px;
+	max-width: 1900px;
+	background-size: cover;
+	background-repeat: no-repeat;
     margin: 0 auto;
-	margin-top: .5%;
+	margin-top: 1px;
 	margin-bottom: 10px;
-	padding: 16px 5px 15px 5px;
+	padding: 0 1% 10px 1%; /***Space inbetween Main Grid Container - Nav - Grid Space***/
 	border-radius: 10px;
+    box-shadow: 0 0 10px black;
 }
 
 /***Header Wraps Nav & Logo*****/
 header{
-	max-width: 900px;
+	display: grid;
+	height: 65px;
+	max-width: 100%;
+	margin: 0 auto;
+	grid-template-columns: 1fr auto auto;
+	grid-auto-rows: repeat(1, minmax(80px, .4fr));
+	grid-gap: 2%;
+	text-align: center;
+	padding: 3px;
 	justify-content: center;
 	align-content: center;
-	border-radius: 10px;
-	box-shadow: 0 0 10px black;
-	margin: 0 auto;
-	background: #0075D9;
-	margin:0 10px 0 10px;
-	border-style: outset;
-	border-width:4px;
-	border-color: #ddd;
+	background-color: #24252A;
+    box-shadow: 0 0 10px black;
 }
 
 /********Nav**Area**Start**********/
-.nav{
-	display: grid;
-	height: 70px;
-	max-width: 400px;
-	grid-template-columns: repeat(4, minmax(70px, 70px));
-	grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-	grid-auto-rows: repeat(10, minmax(80px, .4fr));
-	margin: 0 auto;
-	grid-gap: 5px;
-	text-align: center;
-	padding: 5px;
-	justify-content: center;
-	align-content: center;
-	border-radius: 10px;
+#nav-links li{
+	background-color: none;
 }
+#nav-links a:hover{
+    color:#0088a9;
+}
+.nav-links p{
+	display: none;
+} 
 
-.nav p{
-	font-size: 12px;
-	justify-content: center;
-	align-items: center;
+
+h3{
 	color: #ddd;
-	margin: 0 auto;
-	padding-top: 2px;
-	padding-bottom: 0;
 }
-
-.nav div{
-	padding: 5px;
+h4{
+	font-size:12px;
+}
+p{
+   font-size: 16px;
+   line-height: 24px;
+   word-spacing: 3px;
+   color: black;
+   font-family: 18century;
+   margin-top: 10px;
+}
+/**Nav Bar Holding Main Page Buttons***/
+.nav{
+	display: flex;
+    width: 100%;
+    margin: 0 auto;
+    float: right;
+    align-items: center;
+    justify-content: right;
 }
 
 .nav a{
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
 }
+
+.nav p{
+	font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #ddd; 
+    margin-top: 1px;
+}
+/********Nav**Area**Finish*******************************/
+/*geoffstengel.com text in header*/
+.logo_grid{
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr;
+	grid-template-rows: 20px 45px;
+}
+
+#logo{
+	width: 100%;
+	display: flex;
+    color: #ddd;
+    font-family: Montserrat, sans-serif;
+	justify-content: center;
+	grid-row: 1;
+}
+#logo a, #logo p{
+    color: #ddd;
+    font-family: Montserrat, sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+	justify-content: center;
+	font-size: 14px;
+	margin-top: 0;
+}
+h1{
+	color: #ddd;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 2em;
+	text-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+	grid-column: 1/3;
+	grid-row:1;
+	-webkit-text-fill-color: #fbb505;
+	-webkit-text-stroke-color: #ad097e;
+	-webkit-text-stroke-width: .02rem;
+	stroke: solid;
+	text-shadow: 1px 5px 16px #02070a;
+	text-align: center;
+	margin:0 auto;
+	align-self: center;
+	grid-row: 2;
+
+}
+.box{
+	border-radius: 10px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;	
+	padding: 5px;
+	border-style: solid;
+	margin-top: 10px;
+	background-color: #ddd;
+}
+
+.box0, .box1, .box2, .box3, .box4, .box5, .box6 {
+	height: 40px;
+	width: 40px;
+	margin: 0 auto;
+	box-shadow: 2px 2px 2px 2px rgb(26, 26, 26); 
+	border-width:2px;
+	border-color: #0075D9;
+	
+}
+ 
+.box0:active, .box1:active, .box2:active, .box3:active, .box4:active, .box5:active, .box6:active {
+	height: 30px;
+	width: 30px;
+}
+.box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover {
+	border-style: solid;
+	background-color: hotpink;
+	border-width:2px;
+	border-color: #DCF506;
+}
+
+.box:hover{	
+	border-style: solid;
+	background-color: hotpink;
+	border-width:4px;
+	border-color: #DCF506;
+}
+
+.box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover {
+	border-width:2px;
+	border-color: #DCF506;
+}
+
+/**Tooltip Popup Explains What Tab Is START**/
+.box0::before, .box1::before, .box2::before, .box3::before, .box4::before, .box5::before, .box6::before{
+	content: attr(data-tooltip);
+	position: absolute;
+	background-color: #23232e84;
+	color: #ddd;
+	padding: 0.5em .8em;
+	border-radius: 100px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+	transform: translateY(-30) rotate(25deg);
+	opacity: 0;
+	transition: 200ms cubic-bezier(.42,0,.44,1.68);
+	font-size: 10px;
+	margin-left: 15px;
+}
+.box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover{
+	background-color: var(--accent-color);
+	fill: #ddd;
+}
+.box0::after, .box1::after, .box2::after, .box3::after, .box4::after, .box5::after, .box6::after{
+	content: '';
+	position: absolute;
+	height: 0;
+	width: 0;
+	transform: translateY(0) rotate(25deg);
+	opacity: 0;
+	transition: 200ms cubic-bezier(.42,0,.44,1.68);
+}
+.box0:hover::before, .box1:hover::before, .box2:hover::before, .box3:hover::before, .box4:hover::before, .box5:hover::before, .box6:hover::before{
+	transform: translateY(0) rotate(0);
+	opacity: 1;
+}
+.box0:hover::after, .box1:hover::after, .box2:hover::after, .box3:hover::after, .box4:hover::after, .box5:hover::after, .box6:hover::after{
+	transform: translateY(-42px) rotate(0);
+	opacity: 1;
+}
+/**Tooltip Popup Explains What Tab Is START**/
+/*****Nav Images**Start***/
+.box0{background-image: url(../images/home-rickety.svg);}
+.box1{background-image: url(../images/house-W-leafs.svg);}
+.box2{background-image: url(../images/chat-icon.svg);}
+.box3{background-image: url(../images/taco.svg);}
+.box4{background-image: url(../images/sun-emoji-svg.svg);}
+.box5{background-image: url(../images/seedling-emoji.png);}
+.box6{background-image: url(../images/music-note-blue-bkgd.svg);}	  
+
+img{
+	width: 100%;
+	border-radius: 10px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 5px black;
+}
+
+/****Test dropdown START****/
+ul {
+	list-style: none;
+}
+
+ul li {
+	display: inline-block;
+	position: relative;
+}
+
+ul li a {
+	display: block;
+	padding: 10px 15px;
+	color: #fff; 
+	text-decoration: none;
+	text-align: center;
+	font-size: 16px;
+}
+
+li a {
+	text-decoration: none;
+	color: #3aad09;
+}
+
+ul li:hover > ul{
+	background: #112c66;
+	display: inherit;
+}
+
+ul ul li{
+	width: 150px;
+	float: none;
+	display: list-item;
+	position: relative;
+}
+
+/***Grid Section**That**has**the**blog**imgs**or**colors*in*grid***/
 
 .container{
 	display: grid;
 	max-height: 100%;
-	max-width: 920px;
-	grid-template-columns: repeat(auto-fit, minmax(50px, 155px));
-	grid-auto-rows: repeat(10, minmax(80px, .5fr));
-	margin: 0 auto;
-	margin: 5px 10px 0 10px;	
+	max-width: 100%;
+	grid-template-columns: repeat(auto-fill, minmax(200px, auto));
 	grid-gap: 15px;
+	grid-column-gap: 20px;
+	padding: 1em 1% 1em 1%; /***Space Between Card & Outer Grid****/ 
+	margin: 0 auto;
 	text-align: center;
-	padding: 10px;
 	justify-content: center;
 	border-radius: 10px;
-	background: #0075D9;
+	background-color: #0075D9;
 	box-shadow: 0 0 10px black;
-}
-/**BKGD Behind Blog IMGs********/
-.container div{
-    padding: 10px;
-    box-shadow: 0 0 20px black;
-    background-color: #ddd;
-    border-radius: 10px;
+	text-shadow: 1px 1px 2px #7dabd2;
 }
 
-/***Grid Section**That**has**the**blog**imgs**or**colors*in*grid***/
+.container div{
+    padding: 9%; /**Adjust Space Between Image & Card Section***/ 
+    box-shadow: 0 0 20px black;
+    background-color: #ddd;
+	border-style: solid;
+	border-width:4px;
+	border-color: #3aad09;
+	border-color: #ad097e;
+	border-radius: 20px;
+}
+
+.container a{
+    margin: 0 auto;
+}
+
+.container p{
+	margin: 5% 10% 0 10%;
+	font-size: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+	font-family: Consolas;
+}
+
 .blog{
+	width: 130px;
 	height: 130px;
 	box-shadow: 1px 1px 1px 1px rgb(86, 86, 86);
+	padding: 5px;
+	margin: 0 auto;
 }
  
 .blog:active{
@@ -150,44 +377,156 @@ img{
 /*************************/
 /*****Test End*********/
 /*************************/
-/***Adjust Boxes For Nav Buttons******/
-.box {
-    height: 40px;
-    width: 40px;
-    border-radius: 10px;
-	margin: 0 auto;
-	margin-top: 10px;
-	justify-content: center;
-	align-content: center;
-	box-shadow: 0 0 10px black;
-	background-color: #ddd;
-    text-align: center;	
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-   /** box-shadow: 2px 2px 2px 2px rgb(26, 26, 26);**/
+@media screen and (max-width: 1275px){
+#logo{
+    cursor: pointer;
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links p{
+	display: flex;
+	padding-top: 5px;
+} 
+    /**********************************/
+    /*****Hamburger START*************/
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.box:hover{
-	background-color: hotpink;
+img.logo {
+    position: absolute;
+    margin: 10px 10px 10px 0px;
+    padding: 0;
+    align-self: center;
+    left: 45%;
+    width: 100px;
+}
+img.logo {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px 10px 10px 10px;
+  }
+
+.hamburger {
+    cursor: pointer;
+    width: 20px;
+    height: 25px;
+  /*  position: relative; */
+    margin: 10px;
+    position: fixed;
+    top: 15px; 
+    right: 2%; 
+    margin: 10px;
+    margin-top: 0px;
+    z-index: 1000;
 }
 
-/****Box*Presses*In*Nav* Buttons*Effect*When*Pressed**Start***/
-.box:active{
-	height: 35px;
-	width: 35px;
+.bar {
+    height: 2px;
+    margin: 6px 0;
+    transition: all 0.3s ease;
+    border-radius: 12px;
 }
 
-.box0, .box1, .box2, .box3{
-    border-style: solid;
-	border-width:2px;
-	border-color: #3aad09;
+.bar1 {
+    background: orange; /* Orange */
 }
 
-.box0{background-image: url(../images/home-rickety.svg);}
-.box1{background-image: url(../images/house-W-leafs.svg);}
-.box2{background-image: url(../images/chat-icon.svg);}
-.box3{background-image: url(../images/cash_giving_icon.svg);}
+.bar2 {
+    background: #00c853; /* Green */
+}
+
+.bar3 {
+    background: #2979ff; /* Blue */
+}
+
+#nav-links{
+    margin-top: 0px;
+}
+
+.nav-links {
+    display: none;
+    position: fixed;
+    top: 50px; 
+    right: 0;
+    background-color: #23232ecd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    z-index: 1000;
+    opacity: 0; /* Start hidden */
+    transform: translateY(-10px); /* Initial position */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    flex-direction: column;
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+}
+
+.nav-links.show {
+    display: flex;
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+    
+}
+
+.nav-links li {
+    width: 100%; /* Each link takes full width */
+    margin-bottom: 0px; /* Space between links */
+}
+
+.nav-links a {
+    display: block; /* Ensure each link is a block element */
+    width: 100%; /* Full width */
+    padding: 2px 0; /* Padding for better click area */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    color: #ddd; /* Text color */
+    font-size: 10px; /* Font size */
+}
+
+.nav-buttons {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-buttons:hover {
+    color: #000;
+}
+
+/* Animation for the bars */
+.bar1.active {
+    transform: rotate(45deg) translate(6px, 6px); /* Adjusted for better X shape */
+    width: 20px;
+}
+
+.bar2.active {
+    opacity: 0; /* Fade out */
+}
+
+.bar3.active {
+    transform: rotate(-45deg) translate(6px, -6px); /* Adjusted for better X shape */
+ }
+}
+/* Initially hide the hamburger button */
+@media screen and (min-width: 1276px) {
+    .hamburger {
+        display: none; /* Hide hamburger button */
+    }
+}
+
+
+
 
 
 @media screen and (max-width:384px) {

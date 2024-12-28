@@ -26,14 +26,9 @@ html{
     scroll-behavior: smooth;
 }
  
-body, html{
-    height:100%;
-    margin: 0;
-}
-
 html, body{
+    height:100%;
     color: black;
-    /*background-color: rgb(138, 246, 44);*/
     background-color:var(--bg-secondary);
     padding: 0;
     margin: 0;
@@ -72,10 +67,21 @@ header{
     background-color: #24252A;
 }
 
+/*geoffstengel.com text in header*/
 #logo{
     cursor: pointer;
     margin-right: auto;
-    margin-left: 30px;
+    margin-left: 10%;
+    color: #ddd;
+    font-family: Montserrat, sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+}
+#logo a, #logo p{
+    color: #ddd;
+    font-family: Montserrat, sans-serif;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 #nav-links li{
@@ -86,9 +92,9 @@ header{
 #nav-links a:hover{
     color:#0088a9;
 }
-
-/***test****/
-
+.nav-links p{
+	display: none;
+} 
 
 #connect-button{
     width: 60px;
@@ -115,9 +121,7 @@ header{
     width: 20px;
     height: 20px;
     margin: 0 auto;
-    
 }
-
 
 body, html, .tacos, h1, h2, #wrapper, .wrapper h2, .nav, .box, #creative_projects, .img_item, .youtube,
  .box.youtube, .img_item_youtube, #shop_grid, .sprouting_grid, .solar_grid, .music_grid{
@@ -275,7 +279,7 @@ nav{
 .box0{background-image: url(../images/home-rickety.svg);}
 .box1{background-image: url(../images/house-W-leafs.svg);}
 .box2{background-image: url(../images/chat-icon.svg);}
-.box3{background-image: url(../images/cash_giving_icon.svg);}
+.box3{background-image: url(../images/taco.svg);}
 .box4{background-image: url(../images/sun-emoji-svg.svg);}
 .box5{background-image: url(../images/seedling-emoji.png);}
 .box6{background-image: url(../images/music-note-blue-bkgd.svg);}
@@ -386,13 +390,13 @@ img{
 /**Sidebar START***/
 /*SIDEBAR STYLING START*/
 /*******************/
-/* Sidebar styles */
+/***
 main{
     margin-left: 5rem;
     margin-top: 0;
     padding: 1rem;
     padding-top: 0;
-}
+}**/
 
 .aside{
     position: fixed;
@@ -496,11 +500,10 @@ main{
         scale: 1;
     }
 }
+
+/**Bottom icon bar end*/
 /*SIDEBAR STYLING END*/
 /*******************/
-/**Bottom icon bar end*/
-/*******************/
-/**Sidebar END***/
 
 .homepage_grid_01, .homepage_grid_02, .homepage_grid_03{
     display: grid;
@@ -527,7 +530,9 @@ main{
 	border-radius: 10px;
     margin-left: 10%;
 }
-
+#shop_grid a{
+    text-decoration: none;
+}
 .sprouting_grid, .solar_grid, .music_grid{
     display: grid;
 	height: 100%;
@@ -585,7 +590,6 @@ main{
 /****Info For Items Name Price Buy Now Button***START***/
 #item_info_grid{
 	display: grid;
-	margin: 0 auto;
 	grid-template-columns: repeat(1, minmax(20px, auto));
 	grid-template-rows: 60px 20px 23px;
 	grid-gap: 5px;
@@ -598,18 +602,18 @@ main{
 	box-shadow: 0px;
 	box-shadow: 0 0 0 rgb(214, 17, 152);
 	padding:  5px;
-}
-
-#item_info_grid img, #item_info_grid p{
-	margin: 0 auto;
-}
-
-#item_info_grid{
-	margin: 0 auto;
+    margin: 0 auto;
 	padding-top: 0;
 	margin-top: 8px;
 }
 
+#item_info_grid img, #item_info_grid p{
+	margin: 0 auto;
+    text-decoration: none;
+}
+#item_info_grid a{
+    text-decoration: none;
+}
 #item_name{
 	font-size: 14px;
 	text-shadow: 1px 1px 2px #7dabd2;
@@ -617,7 +621,9 @@ main{
 	margin-top: 0;
 	line-height: 18px;
 	word-spacing: 1px;
+    color: #000;
 }
+
 /****Info For Items Name Price Buy Now Button***END***/
 
 /*****Prices On Items Says Check Best Price atm********/
@@ -631,7 +637,43 @@ main{
 	width: 50%;
 }
 /************************/
-
+/**Tooltip Popup Explains What Tab Is START**/
+.box0::before, .box1::before, .box2::before, .box3::before, .box4::before, .box5::before, .box6::before{
+	content: attr(data-tooltip);
+	position: absolute;
+	background-color: #23232e84;
+	color: #ddd;
+	padding: 0.5em .8em;
+	border-radius: 100px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+	transform: translateY(-30) rotate(25deg);
+	opacity: 0;
+	transition: 200ms cubic-bezier(.42,0,.44,1.68);
+	font-size: 10px;
+	margin-left: 15px;
+}
+.box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover{
+	background-color: var(--accent-color);
+	fill: #ddd;
+}
+.box0::after, .box1::after, .box2::after, .box3::after, .box4::after, .box5::after, .box6::after{
+	content: '';
+	position: absolute;
+	height: 0;
+	width: 0;
+	transform: translateY(0) rotate(25deg);
+	opacity: 0;
+	transition: 200ms cubic-bezier(.42,0,.44,1.68);
+}
+.box0:hover::before, .box1:hover::before, .box2:hover::before, .box3:hover::before, .box4:hover::before, .box5:hover::before, .box6:hover::before{
+	transform: translateY(0) rotate(0);
+	opacity: 1;
+}
+.box0:hover::after, .box1:hover::after, .box2:hover::after, .box3:hover::after, .box4:hover::after, .box5:hover::after, .box6:hover::after{
+	transform: translateY(-42px) rotate(0);
+	opacity: 1;
+}
+/**Tooltip Popup Explains What Tab Is START**/
 /*****FOOTER*SECTION*START**In Base.html*****/
 /************************/
 footer {
@@ -665,11 +707,8 @@ footer {
     text-decoration: none;
     text-align: right;
 }
-
 /***FOOTER*SECTION*END**In Base.html***/
 /************************/
-
-
 
 @media screen and (max-width: 1224px){
 #logo{
@@ -680,8 +719,13 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 0;
 }
-
+.nav-links p{
+	display: flex;
+    text-align: center;
+    justify-content: center;
+} 
     /**********************************/
     /*****Hamburger START*************/
 nav {
@@ -759,6 +803,7 @@ img.logo {
     max-width: 250px;
     height: 100%;
 }
+
 
 .nav-links.show {
     display: flex;
@@ -870,8 +915,8 @@ main {
 
 @media screen and (max-width:500px) {
 #Layer_1{
-    width: 90%;
-    height: 90%;
+    width: 150px;
+    
 }
 .social_grid svg{
     justify-content: center;
@@ -897,20 +942,22 @@ body{
 .youtube p{
     font-size: 10px;
  }
+h1{
+    font-size: 12px;
+} 
 }
 
 @media screen and (max-width:411px){
     /***The Box around Cards For Projects ********/
 #creative_projects{
     grid-template-columns: repeat(4, minmax(20px, 80px));
-}
+ }
 }
 
 @media screen and (max-width:383px) {
-
 h1{
     height: 30px;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 h2{
@@ -924,13 +971,45 @@ h2{
 .sidebar-link svg{
     min-width: .5rem;
     margin: 0 1.0rem;
-} 
+ } 
+}
+
+@media screen and (max-width:362px) {
+.sprouting_grid, .solar_grid, .music_grid{
+    display: grid;
+	height: 100%;
+	max-width: 100%;
+	grid-template-columns: repeat(auto-fill, minmax(120px, auto));
+	grid-gap: 15px;
+	grid-column-gap: 15px;
+	padding: .5em; /***Space Between Card & Outer Grid****/ 
+}
+
+}
+
+@media screen and (max-width:350px) {
+.top_banner_grid{
+    width: 100%;
+    max-height: 350px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: .5em;
+}
+.social_grid{
+    grid-template-rows: auto;
+    row-gap: 10px;
+    padding: 5px;
+    justify-items: center;
+ }
 }
 
 @media screen and (max-width:320px) {
 #creative_projects{
     grid-template-columns: repeat(3, minmax(20px, 80px));
     padding: 5px;
+}
+h4{
+    font-size: 22px;
 }
 }
 @media screen and (max-width:269px) {
@@ -941,7 +1020,7 @@ body{
 }
 
 h1{
-    font-size: 14px;
+    font-size: 12px;
 }
 
 h2{
@@ -968,12 +1047,17 @@ h2{
     margin: 0 auto;
     grid-gap:1px;
 }
-
+.top_banner_grid{
+    width: 100%;
+    max-height: 350px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: .5em;
+}
 .wrapper{
-    padding: 0;
-    width:100vw;
-    border: none;
+    display: none;
  }
+
  #creative_projects{
     padding: 0;
  }
@@ -1009,29 +1093,17 @@ h2{
     margin-top: 3px;
 }
 
-.wrapper{
-    max-height: 300px;
-    max-width: 180em;
-    padding: 10px;
-    grid-template-columns: repeat(1, minmax(30px, auto));
-    grid-template-rows: 20px 120px auto 20px;
-    border: none;
-    padding:0;
-}
 
-.youtube{
-    grid-row: 4;
-}
 
 /****Grid For Projects Youtube BitcoinDavida Twitter etc..*******/
 #creative_projects{
     width: 100%;
     height: 100%;
-    grid-template-columns: repeat(4, minmax(30px, 50px));
+    grid-template-columns: repeat(auto-fit, minmax(30px, 60px));
     grid-template-rows:2;
-    font-size: 12px;
+    font-size: 10px;
     grid-gap: 5px;
-    grid-row: 3;
+    grid-row: 4;
 }
 
  .tacos a{

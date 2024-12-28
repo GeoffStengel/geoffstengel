@@ -38,7 +38,6 @@ body{
 
 /****Main Background Section Behind Content and Nav*****/
 section{
-	background-color: #ddd; /***background**/
 	background-position: center;
 	height: 100%;
 	max-width: 1900px;
@@ -47,7 +46,7 @@ section{
     margin: 0 auto;
 	margin-top: 1px;
 	margin-bottom: 10px;
-	padding: 10px 1% 10px 1%; /***Space inbetween Main Grid Container - Nav - Grid Space***/
+	padding: 0 1% 10px 1%; /***Space inbetween Main Grid Container - Nav - Grid Space***/
 	border-radius: 10px;
     box-shadow: 0 0 10px black;
 }
@@ -57,22 +56,17 @@ header{
 	height: 65px;
 	max-width: 100%;
 	margin: 0 auto;
-	/**grid-template-columns: repeat(auto-fit, minmax(40px, auto));**/
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr auto auto;
 	grid-auto-rows: repeat(1, minmax(80px, .4fr));
 	grid-gap: 2%;
 	text-align: center;
 	padding: 3px;
-	
 	justify-content: center;
 	align-content: center;
-	border-radius: 10px;
-	background-color: #0075D9;
+	background-color: #24252A;
     box-shadow: 0 0 10px black;
-	border-style: outset;
-	border-width:4px;
-	border-color: #ad097e;
 }
+
 
 #nav-links li{
 	background-color: none;
@@ -80,9 +74,14 @@ header{
 #nav-links a:hover{
     color:#0088a9;
 }
- 
+.nav-links p{
+	display: none;
+} 
 h4{
 	font-size:12px;
+}
+h3{
+	color: #ddd;
 }
 /***Shop Harmonicas Text*****/
 h1{
@@ -102,9 +101,8 @@ h1{
 	 margin:0 auto;
 	 align-self: center;
 	 grid-column: 1;
-	 
  }
-  
+
  p{
 	 font-size: 16px;
 	 line-height: 24px;
@@ -112,9 +110,7 @@ h1{
 	 color: black;
 	 font-family: 18century;
 	 margin-top: 10px;
-	/*** box-shadow: 10px 10px 30px rgba(0,0,0,0.1); /**special for text* from gary**/
  }
-
 
 /**Nav Bar Holding Main Page Buttons***/
 .nav{
@@ -126,7 +122,6 @@ h1{
     justify-content: right;
 }
 
-
 .nav a{
     text-align: center;
     text-decoration: none;
@@ -134,19 +129,41 @@ h1{
 
 .nav p{
 	font-size: 10px;
-  justify-content: center;
-  align-items: center;
-  color: #ddd; 
-  margin-top: 1px;
+    justify-content: center;
+    align-items: center;
+    color: #ddd; 
+    margin-top: 1px;
 }
-/***
-.nav div{
-    background-color: #ddd;
-    padding: 5px;
-}**/
-
-
 /********Nav**Area**Finish*******************************/
+/*geoffstengel.com text in header*/
+
+.logo_grid{
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr;
+	grid-template-rows: 20px 45px;
+}
+
+#logo{
+	width: 100%;
+	display: flex;
+    color: #ddd;
+    font-family: Montserrat, sans-serif;
+	justify-content: center;
+	grid-row: 1;
+}
+#logo a, #logo p{
+    color: #ddd;
+    font-family: Montserrat, sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+	justify-content: center;
+	font-size: 14px;
+	margin-top: 0;
+}
+#page_title_solar, #page_title_sprout, #page_title_music, #page_title{
+	grid-row: 2;
+}
 .box{
 	border-radius: 10px;
 	background-position: center;
@@ -162,9 +179,10 @@ h1{
 	height: 30px;
 	width: 30px;
 	margin: 0 auto;
-	box-shadow: 2px 2px 2px 2px rgb(26, 26, 26);
-	border-width:3px;
-	border-color: #3aad09;
+	box-shadow: 2px 2px 2px 2px rgb(26, 26, 26); 
+	border-width:2px;
+	border-color: #0075D9;
+	
 }
  
 .box0:active, .box1:active, .box2:active, .box3:active, .box4:active, .box5:active, .box6:active {
@@ -172,8 +190,10 @@ h1{
 	width: 30px;
 }
 .box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover {
-	height: 33px;
-	width: 33px;
+	border-style: solid;
+	background-color: hotpink;
+	border-width:2px;
+	border-color: #DCF506;
 }
 
 .box:hover{	
@@ -188,11 +208,49 @@ h1{
 	border-color: #DCF506;
 }
 
+/**Tooltip Popup Explains What Tab Is START**/
+.box0::before, .box1::before, .box2::before, .box3::before, .box4::before, .box5::before, .box6::before{
+	content: attr(data-tooltip);
+	position: absolute;
+	background-color: #23232e84;
+	color: #ddd;
+	padding: 0.5em .8em;
+	border-radius: 100px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+	transform: translateY(-30) rotate(25deg);
+	opacity: 0;
+	transition: 200ms cubic-bezier(.42,0,.44,1.68);
+	font-size: 10px;
+	margin-left: 15px;
+}
+.box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover{
+	background-color: var(--accent-color);
+	fill: #ddd;
+}
+.box0::after, .box1::after, .box2::after, .box3::after, .box4::after, .box5::after, .box6::after{
+	content: '';
+	position: absolute;
+	height: 0;
+	width: 0;
+	transform: translateY(0) rotate(25deg);
+	opacity: 0;
+	transition: 200ms cubic-bezier(.42,0,.44,1.68);
+}
+.box0:hover::before, .box1:hover::before, .box2:hover::before, .box3:hover::before, .box4:hover::before, .box5:hover::before, .box6:hover::before{
+	transform: translateY(0) rotate(0);
+	opacity: 1;
+}
+.box0:hover::after, .box1:hover::after, .box2:hover::after, .box3:hover::after, .box4:hover::after, .box5:hover::after, .box6:hover::after{
+	transform: translateY(-42px) rotate(0);
+	opacity: 1;
+}
+/**Tooltip Popup Explains What Tab Is START**/
+
 /*****Nav Images**Start***/
 .box0{background-image: url(../images/home-rickety.svg);}
 .box1{background-image: url(../images/house-W-leafs.svg);}
 .box2{background-image: url(../images/chat-icon.svg);}
-.box3{background-image: url(../images/cash_giving_icon.svg);}
+.box3{background-image: url(../images/taco.svg);}
 .box4{background-image: url(../images/sun-emoji-svg.svg);}
 .box5{background-image: url(../images/seedling-emoji.png);}
 .box6{background-image: url(../images/music-note-blue-bkgd.svg);}	  
@@ -205,7 +263,7 @@ img{
 	background-repeat: no-repeat;
 	box-shadow: 0 0 5px black;
 }
-/****Test dropdown****/
+/****Test dropdown START****/
 ul {
 	list-style: none;
 }
@@ -256,19 +314,8 @@ ul ul li{
 .dropdown a{
 	color: #fbb505;
 }
-.dropdown{
-	background: #22438c;
-}
-/**
-ul li a:hover{
-	background: #112c66;
-}
 
-ul li:hover ul.dropdown {
-	display:flex; 
-} **/
-
-/****Test dropdown****/
+/****Test dropdown END****/
 
 .container{
 	display: grid;
@@ -279,7 +326,6 @@ ul li:hover ul.dropdown {
 	grid-column-gap: 20px;
 	padding: 1em 1% 1em 1%; /***Space Between Card & Outer Grid****/ 
 	margin: 0 auto;
-	margin-top: 1%;
 	text-align: center;
 	justify-content: center;
 	border-radius: 10px;
@@ -367,16 +413,13 @@ ul li:hover ul.dropdown {
 	box-shadow: 0px;
 	box-shadow: 0 0 0 rgb(214, 17, 152);
 	padding:  5px;
+	margin: 0 auto;
+	padding-top: 0;
+	margin-top: 8px;
 }
 
 #item_info_grid img, #item_info_grid p{
 	margin: 0 auto;
-}
-
-#item_info_grid{
-	margin: 0 auto;
-	padding-top: 0;
-	margin-top: 8px;
 }
 
 #item_name{
@@ -416,6 +459,14 @@ ul li:hover ul.dropdown {
 	margin-top: 10px;
 }
 
+.start {
+	color: #000;
+	font-size: 16px;
+}
+.end {
+	color: red;
+	font-size: 32px;
+}
 @media screen and (max-width: 1275px){
 #logo{
     cursor: pointer;
@@ -426,7 +477,9 @@ ul li:hover ul.dropdown {
     justify-content: center;
     align-items: center;
 }
-
+.nav-links p{
+	display: flex;
+} 
     /**********************************/
     /*****Hamburger START*************/
 nav {
@@ -634,7 +687,7 @@ h1{
 @media screen and (max-width: 477px) {
 
 header{
-	grid-template-columns: 40% 1fr;
+	/*grid-template-columns: 40% 1fr;*/
 	grid-auto-rows: repeat(1, minmax(80px, .4fr));
 	grid-gap: 2%;
 }
@@ -657,20 +710,16 @@ header{
 
 h1{
 	font-size: 18px;
-	display: none;
 }
-
-header{
-	height: 60px;
-	grid-template-columns: 1fr;
-	grid-auto-rows: 30px 85px;
-	grid-gap: 2%;
- }
 
  .box0, .box1, .box2, .box3, .box4, .box5, .box6 {
 	height: 28px;
 	width: 28px;
-} 
+}
+.container{
+	grid-template-columns: repeat(auto-fill, minmax(140px, auto));
+	padding: 5px; /***Space Between Card & Outer Grid****/ 
+ }
 }
 
 /*****Media Queries***378px***/
@@ -692,28 +741,40 @@ h1{
 	font-size: 13px;
  }
 }
-
+@media screen and (max-width: 366px) {
+span.end{
+	font-size: 24px;
+}
+}
 /*****Media Queries***340px***/
 @media screen and (max-width: 340px) {
 body{
 	padding: 0; 
 }
 
-h1{
-	font-size: 20px;
-}
-
-h1{
-	display: none;
- }
-
 .nav{
 	grid-gap:8%;
 }
 
 section{
-	padding: 5px 1% 10px 1%; /***Space inbetween Main Grid Container - Nav - Grid Space***/
+	padding: 0 0 10px 0; /***Space inbetween Main Grid Container - Nav - Grid Space***/
  } 	
+
+/****Info For Items Name Price Buy Now Button***START***/
+#item_info_grid{
+	grid-template-columns: repeat(1, minmax(20px, auto));
+	grid-template-rows: 80px 20px 23px;
+	grid-gap: 5px;
+	box-shadow: 0px;
+	box-shadow: 0 0 0 rgb(214, 17, 152);
+	padding:  0;
+	margin: 0 auto;
+	padding-top: 0;
+	margin-top: 2px;
+ } 
+ #item_info_grid p{
+	line-height: 16px;
+ } 
 }
 
 /*****Media Queries***310px*****/
@@ -727,15 +788,13 @@ h1{
 	display: grid;
 	max-height: 100%;
 	max-width: 100%;
-	grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+	grid-template-columns: repeat(auto-fit, minmax(110px, auto));
 	grid-auto-rows: repeat(auto-fit, minmax(250px, auto));
 }
 
 .container p{
 	font-size: 16px;
-}
-
-
+ }
 }
 
 /*****Media Queries***258px***/
@@ -746,6 +805,13 @@ h1{
 }
 .nav p{
 	font-size: 12px;
+}
+span.end{
+	font-size: 20px;
+}
+.dropdown a{
+	font-size: 10px;
+	padding: 5px;
 }
 }	
 /*****Media Queries***203px***/

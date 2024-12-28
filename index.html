@@ -38,6 +38,7 @@
         
 <div id="main_wrapper_grid">               
     <header>
+        <div id="logo"><a href="index.html"><p>geoffstengel.com</p></a></div>
         <nav class="nav">
         <div class="hamburger" id="hamburger" onclick="toggleMenu()">
             <div class="bar bar1"></div>
@@ -45,13 +46,13 @@
             <div class="bar bar3"></div>
         </div>
             <ul class="nav-links" id="nav-links">
-                <li><a href="index.html"><div class="box box0 nav-buttons"></div><p>Home</p></a></li>
-                <li><a href="shop.html"><div class="box box1"></div><p>Shop</p></a></li>		
-                <li><a href="blog.html"><div class="box box2"></div><p>Blog</p></a></li>
-                <li><a href="solar.html"><div class="box box4"></div><p>Solar</p></a></li>
-                <li><a href="sprout.html"><div class="box box5"></div><p>Sprout</p></a></li>
-                <li><a href="music.html"><div class="box box6"></div><p>Musical</p></a></li>
-                <li><a href="https://square.link/u/yu9hDSBt"><div class="box box3"></div><p>Tip</p></a></li>
+                <li><a href="index.html"><div data-tooltip="Home Page" class="box box0"></div><p>Home</p></a></li>
+                <li><a href="shop.html"><div data-tooltip="Shop Items" class="box box1"></div><p>Shop</p></a></li>		
+                <li><a href="solar.html"><div data-tooltip="Shop Solar" class="box box4"></div><p>Solar</p></a></li>
+                <li><a href="sprout.html"><div data-tooltip="Shop Sprouts" class="box box5"></div><p>Sprout</p></a></li>
+                <li><a href="music.html"><div data-tooltip="Shop Music" class="box box6"></div><p>Musical</p></a></li>
+                <li><a href="blog.html"><div data-tooltip="Blog" class="box box2"></div><p>Blog</p></a></li>
+                <li><a href="https://square.link/u/yu9hDSBt"><div data-tooltip="Tip a Taco" class="box box3"></div><p>Tip</p></a></li>
             </ul>
         </nav>
     </header>   
@@ -110,7 +111,7 @@
 </div>
 
 <div class="social_grid">
-<a href="https://www.youtube.com/@eugeneglassmenagerie"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" width="250"  height="170" viewBox="0 0 250 160"><path d="M229.763 25.817c-2.699-10.162-10.65-18.165-20.748-20.881C190.716 0 117.333 0 117.333 0S43.951 0 25.651 4.936C15.553 7.652 7.6 15.655 4.903 25.817 0 44.236 0 82.667 0 82.667s0 38.429 4.903 56.85C7.6 149.68 15.553 157.681 25.65 160.4c18.3 4.934 91.682 4.934 91.682 4.934s73.383 0 91.682-4.934c10.098-2.718 18.049-10.72 20.748-20.882 4.904-18.421 4.904-56.85 4.904-56.85s0-38.431-4.904-56.85" fill="red"/><path d="M93.333 117.559l61.333-34.89-61.333-34.894z" fill="#fff"/></svg></a>
+<a href="https://www.youtube.com/@eugeneglassmenagerie"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"id="Layer_1"  width="165"  height="130" viewBox="0 0 238 160"><path d="M229.763 25.817c-2.699-10.162-10.65-18.165-20.748-20.881C190.716 0 117.333 0 117.333 0S43.951 0 25.651 4.936C15.553 7.652 7.6 15.655 4.903 25.817 0 44.236 0 82.667 0 82.667s0 38.429 4.903 56.85C7.6 149.68 15.553 157.681 25.65 160.4c18.3 4.934 91.682 4.934 91.682 4.934s73.383 0 91.682-4.934c10.098-2.718 18.049-10.72 20.748-20.882 4.904-18.421 4.904-56.85 4.904-56.85s0-38.431-4.904-56.85" fill="red"/><path d="M93.333 117.559l61.333-34.89-61.333-34.894z" fill="#fff"/></svg></a>
 
 <a href="https://www.tiktok.com/@stengelgeoff"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     width="250px"  viewBox="0 0 1000 291.379" enable-background="new 0 0 1000 291.379" xml:space="preserve">
@@ -156,7 +157,7 @@
 <div id="shop_grid">
 
 <div class="homepage_grid_01">
-    <h4><a href="sprout.html">Sprouting Products From Our Youtube</a></h4>
+    <h4 id="sprouts_section_title"><a href="sprout.html">Sprouting Products From Our Youtube</a></h4>
 
 <div class="sprouting_grid">
     <!------  Sprouting Lids Start ------->
@@ -216,7 +217,7 @@
 	<a href="https://amzn.to/42NFgjZ" target="_blank">
 	<img class="img_item" src="img_shop/aurora_natural_french_lentils.png" alt="Aurora Products Organic French Lentils 24 OZ">	 
 <div id="item_info_grid">	
-    <p id="item_name">Aurora Products Organic French Lentils, 24 OZ</p> 	
+    <p id="item_name">Aurora Organic French Lentils, 24 OZ</p> 	
 	<p id="prices">View Prices</p>
 	<img class="buy_now" src="images/buy_now.png" alt="buy now image">
 </div>
@@ -302,7 +303,7 @@
 	<a href="https://amzn.to/4bHIIAN" target="_blank">
 	<img class="img_item" src="img_shop/bougerv_Y_adapter.png" alt="BougeRV Solar Connectors Y Branch Parallel Adapter Cable Wire Plug Tool Kit for Solar Panel">	 
 <div id="item_info_grid">	
-    <p id="item_name">BougeRV Solar Connectors Y Branch Parallel Adapter</p> 	
+    <p id="item_name">BougeRV Solar Y Connectors Parallel Adapter</p> 	
 	<p id="prices">View Prices</p>	
 	<img class="buy_now" src="images/buy_now.png" alt="buy now image">
 </div>
@@ -328,7 +329,6 @@
 
 <div class="homepage_grid_03">
     <h4><a href="music.html">Music Instruments For Your Travels</a></h4>
-    <h5><a href="music.html">Click Here</a></h5>
 <div class="music_grid">
 <!------Hohner Special 20 Harmonica - Key of C-Start ------->		 
 <div class="item_frame hohner_special20_keyC">
@@ -482,7 +482,9 @@
         
 </div> 
 <!--main_wrapper_grid END---->
-
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+<script src="js/typewriter.js"></script>
     <script src="js/hamburger.js"></script> <!--footer.js-Added This For Google Tag Manager--->
 </body>
 </html>

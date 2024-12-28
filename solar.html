@@ -31,13 +31,18 @@
 	<link rel="shortcut icon" type="image/png" href="images/harmonica.svg">
 	<!----Thumbnail Image In Index----Finish--------->	
 	<!-- <script src="js/index.js" type="module"></script> ---->
-    <title>🌞 Solar Gear Used In My Youtube Videos Or Recommended Products </title>
+    <title>🌞 Shop Solar Gear Used In My Youtube Videos Or Recommended Products </title>
 </head> 
     <body>
         <section>
 
         	<!-------------Nav--Icons--Start---------------------------->	
             <header>
+                <div class="logo_grid">
+                    <div id="logo"><a href="index.html"><p>geoffstengel.com</p></a>
+                    </div>
+                    <h1 id="page_title_solar"></h1>
+                </div>
                 <nav class="nav">
                 <div class="hamburger" id="hamburger" onclick="toggleMenu()">
                     <div class="bar bar1"></div>
@@ -45,16 +50,16 @@
                     <div class="bar bar3"></div>
                 </div>
                     <ul class="nav-links" id="nav-links">
-                        <li><a href="index.html"><div class="box box0 nav-buttons"></div><p>Home</p></a></li>
-                        <li><a href="shop.html"><div class="box box1"></div><p>Shop</p></a></li>		
-                        <li><a href="blog.html"><div class="box box2"></div><p>Blog</p></a></li>
-                        <li><a href="solar.html"><div class="box box4"></div><p>Solar</p></a></li>
-                        <li><a href="sprout.html"><div class="box box5"></div><p>Sprout</p></a></li>
-                        <li><a href="music.html"><div class="box box6"></div><p>Musical</p></a></li>
-                        <li><a href="https://square.link/u/yu9hDSBt"><div class="box box3"></div><p>Tip</p></a></li>
+                        <li><a href="index.html"><div data-tooltip="Home Page" class="box box0"></div><p>Home</p></a></li>
+                        <li><a href="shop.html"><div data-tooltip="Shop Items" class="box box1"></div><p>Shop</p></a></li>		
+                        <li><a href="solar.html"><div data-tooltip="Shop Solar" class="box box4"></div><p>Solar</p></a></li>
+                        <li><a href="sprout.html"><div data-tooltip="Shop Sprouts" class="box box5"></div><p>Sprout</p></a></li>
+                        <li><a href="music.html"><div data-tooltip="Shop Music" class="box box6"></div><p>Musical</p></a></li>
+                        <li><a href="blog.html"><div data-tooltip="Blog" class="box box2"></div><p>Blog</p></a></li>
+                        <li><a href="https://square.link/u/yu9hDSBt"><div data-tooltip="Tip a Taco" class="box box3"></div><p>Tip</p></a></li>
                     </ul>
                 </nav>
-           <h1>🌞 Solar Gear 🌞</h1>
+                
         </header>
            	<!-------------Nav--Icons--Finish---------------------------->
                <div>
@@ -309,16 +314,16 @@
     </a>
 </div>
 <!------  Anker Solar Battery END ------->
-
-
 <!-----Solar Gear END------->
  
-
     </div>
     <div class="amazon_disclaimer"> <h3>On Certain Products We Are Amazon Associates, As An Amazon Associate, I Earn From Qualifying Purchases FYI</h3> </div>
     <br>
     <a href="blogs/disclaimer.html" class="disclaimer">DISCLAIMER</a>
 </section>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+<script src="js/typewriter.js"></script>
     <script src="js/hamburger.js"></script> <!--footer.js-Added This For Google Tag Manager--->
 </body>
 </html>
