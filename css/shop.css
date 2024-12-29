@@ -718,8 +718,13 @@ h1{
 }
 .container{
 	grid-template-columns: repeat(auto-fill, minmax(140px, auto));
+	grid-column-gap: 15px;
 	padding: 5px; /***Space Between Card & Outer Grid****/ 
  }
+ .dropdown a{
+	font-size: 12px;
+	padding: 5px;
+} 
 }
 
 /*****Media Queries***378px***/
