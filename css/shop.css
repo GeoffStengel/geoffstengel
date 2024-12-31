@@ -34,8 +34,6 @@ body{
 	padding-top: 0;
 }
 
-
-
 /****Main Background Section Behind Content and Nav*****/
 section{
 	background-position: center;
@@ -66,7 +64,6 @@ header{
 	background-color: #24252A;
     box-shadow: 0 0 10px black;
 }
-
 
 #nav-links li{
 	background-color: none;
@@ -182,7 +179,6 @@ h1{
 	box-shadow: 2px 2px 2px 2px rgb(26, 26, 26); 
 	border-width:2px;
 	border-color: #0075D9;
-	
 }
  
 .box0:active, .box1:active, .box2:active, .box3:active, .box4:active, .box5:active, .box6:active {
