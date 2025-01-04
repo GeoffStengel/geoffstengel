@@ -86,7 +86,7 @@ header{
 
 #nav-links li{
     display: inline-block;
-    padding: 0px 20px;
+    
 }
 
 #nav-links a:hover{
@@ -493,7 +493,6 @@ img{
         scale: 1;
     }
 }
-
 /**Bottom icon bar end*/
 /*SIDEBAR STYLING END*/
 /*******************/
@@ -667,6 +666,65 @@ img{
 	opacity: 1;
 }
 /**Tooltip Popup Explains What Tab Is START**/
+
+
+/****Test dropdown START****/
+ul {
+	list-style: none;
+}
+
+ul li {
+	display: inline-block;
+	position: relative;
+}
+
+ul li a {
+	display: block;
+	padding: 10px 15px;
+	color: #fff; 
+	text-decoration: none;
+	text-align: center;
+	font-size: 16px;
+}
+
+li a {
+	text-decoration: none;
+	color: #3aad09;
+}
+
+ul li ul.dropdown li { 
+	display: block;
+}  
+
+ul li ul.dropdown {
+	width: 100%;
+	background: #22438c;
+	position: absolute;
+	z-index: 999;
+	display: none;
+} 
+
+ul li:hover > ul{
+	background: #112c66;
+	display: inherit;
+}
+
+ul ul li{
+	width: 150px;
+	float: none;
+	display: list-item;
+	position: relative;
+}
+
+.dropdown a{
+	color: #fbb505;
+}
+
+/****Test dropdown END****/
+
+
+
+
 /*****FOOTER*SECTION*START**In Base.html*****/
 /************************/
 footer {

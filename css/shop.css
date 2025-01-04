@@ -218,6 +218,7 @@ h1{
 	transition: 200ms cubic-bezier(.42,0,.44,1.68);
 	font-size: 10px;
 	margin-left: 15px;
+	
 }
 .box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover{
 	background-color: var(--accent-color);
@@ -434,8 +435,6 @@ ul ul li{
 	color: #0075D9;
 	text-shadow: 1px 1px 2px #7dabd2;
 }
-
-
 
 /***Images Showing Items*********/
 .img_item{
