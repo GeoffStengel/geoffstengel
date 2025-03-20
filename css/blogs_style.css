@@ -1,7 +1,8 @@
-/***Styling for Indididual Blog Articles*GEoffStengel Website***/
+/***Styling for Individual Blog Articles*GEoffStengel Website***/
 * {
 	margin: 0;
 	padding: 0;
+	
 }
  
 body{
@@ -24,11 +25,12 @@ section{
 }
 
 /**Nav Bar Holding Main Page Buttons***/
+/**
 .nav{ 
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-columns: repeat(4, minmax(50px, auto));
+    grid-template-columns: repeat(7, minmax(50px, auto));
     grid-template-rows: auto;
     column-gap: 5%;
     margin: 0 auto;
@@ -45,13 +47,22 @@ section{
 	margin: 0 auto;
 	text-justify: center;
 }
-
+***/
 p, a{
 	margin: 0 auto;
 	color:black;
 	text-align: center;
 }
 
+/*adjust around nav boxes icons on trash blog*/
+ul li a {
+	display: block;
+	padding: 10px 15px;
+	color: #fff; 
+	text-decoration: none;
+	text-align: center;
+	font-size: 16px;
+}
 ul{
 	margin: 0 auto;
 	color:black;
@@ -66,41 +77,18 @@ ul{
 	font-family: sans-serif;
 	text-shadow: 1px 1px 2px #7dabd2;
 }
-/**
-#content{
-	display: grid;
-	max-height: 96%;
-	max-width: 920px;
-	grid-template-columns: repeat(4, minmax(60px, 60px));
-	grid-auto-rows: repeat(10, minmax(80px, .4fr));
-	margin: 0 auto;
-	grid-gap: 15px;
-	text-align: center;
-	padding: 10px;
-	justify-content: center;
-	box-shadow: 0 0 20px black;
-	padding-top: 10px;
-}**/
 
 #content div{
 	padding: 8px;
 }
 
-/**
-.header_img{
-	width: 50%;
-	height: 50%; 
-	margin: 0 auto;
-	box-shadow: 0 0 10px black; 
-} **/
-
 /***Header Wraps Nav & Logo*****/
 header{
 	display: grid;
 	max-width: 900px;
-	height: 110px;
+	height: 80px;
 	grid-template-columns: 1fr;
-	grid-template-rows: 70px 30px;
+	grid-template-rows: 60px;
 	align-content: center;
 	border-radius: 10px;
 	text-align: center;
@@ -111,6 +99,38 @@ header{
 	background: #0075D9;
 	box-shadow: 0 0 10px black;
 }
+
+#nav-links li{
+    display: inline-block;
+}
+
+#nav-links a:hover{
+    color:#0088a9;
+}
+.nav-links p{
+	display: none;
+} 
+/**Nav Bar Holding Main Page Buttons***/
+
+nav{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    float: right;
+    align-items: center;
+    justify-content: right;
+}
+.nav a{
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.nav p{
+    margin-top: 3px;
+}
+
+
+
 
 h1{
 	font-size: 45px;
@@ -134,6 +154,30 @@ h3{
 	font-size: 12px;
 	color: #0075D9;
 }
+
+.contractAddress{
+	font-size: 16px;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+/***Text At Top Of Page With Contract Address***/
+#contract_info{
+	max-width: 400px;
+	margin: 0 auto;
+	text-align: center;
+	text-indent: 0%;
+	margin-bottom: 10px;
+	box-shadow: 0 0 10px black;
+	background-color: rgba(214, 213, 213, 0.918);
+	border-radius: 10px;
+	
+}
+#contract_info a:hover{
+	border-radius: 10px;
+	box-shadow: 0 0 10px black;
+	cursor: pointer;
+}
 /**Color For Text Links In Blog****/
 a{
 	color:#0075D9;
@@ -154,8 +198,8 @@ p{
 
 /***Adjust Boxes For Nav Buttons******/
 .box {
-    height: 45px;
-    width: 45px;
+    height: 35px;
+    width: 35px;
     border-radius: 10px;
 	margin: 0 auto;
 	margin-top: 10px;
@@ -184,7 +228,7 @@ p{
 	text-align: center;
 }
 
-.box0, .box1, .box2, .box3{
+.box0, .box1, .box2, .box3, .box4, .box5, .box6{
 	border-style: solid;
 	border-width: 2px;
 	border-color: #3aad09;
@@ -193,7 +237,14 @@ p{
 .box0{background-image: url(../images/home-rickety.svg);}
 .box1{background-image: url(../images/house-W-leafs.svg);}
 .box2{background-image: url(../images/chat-icon.svg);}
-.box3{background-image: url(../images/cash_giving_icon.svg);}
+.box3{background-image: url(../images/taco.svg);}
+.box4{background-image: url(../images/sun-emoji-svg.svg);}
+.box5{background-image: url(../images/seedling-emoji.png);}
+.box6{background-image: url(../images/music-note-blue-bkgd.svg);}
+
+
+
+
 
 .blog1{
 	align-content: center;
@@ -289,6 +340,141 @@ img{
 	font-size: 16px;
 }
 /*******Mobile Devices ***************************/
+  /**********************************/
+    /*****Hamburger START*************/
+@media screen and (max-width: 1224px){	
+.nav-links p{
+	display: flex;
+    text-align: center;
+    justify-content: center;font-size: 12px;
+	color: #ddd;
+	margin: 0 auto;
+	
+} 
+.nav-links a{
+	height: 75px;
+	
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.hamburger {
+    cursor: pointer;
+    width: 20px;
+    height: 25px;
+    margin: 10px;
+    position: fixed;
+    top: 10px; 
+    right: 10px; 
+    margin: 10px;
+    margin-top: 0px;
+    z-index: 1000;
+}
+
+.bar {
+    height: 2px;
+    margin: 6px 0;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+}
+
+.bar1 {
+    background: orange; /* Orange */
+}
+
+.bar2 {
+    background: #00c853; /* Green */
+}
+
+.bar3 {
+    background: #2979ff; /* Blue */
+}
+
+#nav-links{
+    margin-top: 0px;
+}
+
+.nav-links {
+    display: none;
+    position: fixed;
+    top: 50px; 
+    right: 0;
+    background-color: #23232ecd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    z-index: 1000;
+    opacity: 0; /* Start hidden */
+    transform: translateY(-10px); /* Initial position */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    flex-direction: column;
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+}
+
+
+.nav-links.show {
+    display: flex;
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+    padding-top: 5px;
+}
+
+.nav-links li {
+    width: 100%; /* Each link takes full width */
+    margin-bottom: 0px; /* Space between links */
+}
+
+.nav-links a {
+    display: block; /* Ensure each link is a block element */
+    width: 100%; /* Full width */
+    padding: 2px 0; /* Padding for better click area */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    color: #ddd; /* Text color */
+    font-size: 10px; /* Font size */
+}
+
+.nav-buttons {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-buttons:hover {
+    color: #000;
+}
+
+/* Animation for the bars */
+.bar1.active {
+    transform: rotate(45deg) translate(6px, 6px); /* Adjusted for better X shape */
+    width: 20px;
+}
+
+.bar2.active {
+    opacity: 0; /* Fade out */
+}
+
+.bar3.active {
+    transform: rotate(-45deg) translate(6px, -6px); /* Adjusted for better X shape */
+ }
+}
+/* Initially hide the hamburger button */
+@media screen and (min-width: 1225px) {
+    .hamburger {
+        display: none; /* Hide hamburger button */
+    }
+}
+
+
 @media screen and (max-width: 930px) {
 section{
 	width: 95%;	
@@ -349,6 +535,12 @@ h2{
 .click_here{
 	font-size: 12px;
 }
+.contractAddress{
+	font-size: 14px;
+	padding-left: 0%;
+	padding-right: 0%;
+}
+
 }
 @media screen and (max-width: 400px) {
 .box{
@@ -358,7 +550,6 @@ h2{
 
 @media screen and (max-width: 350px) {
 	p{
-	
 		text-indent: 17px;
 		line-height: 30px;
 		text-align: left;
@@ -366,6 +557,9 @@ h2{
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+.contractAddress{
+	font-size: 12px;
+}	
 }
 /**************************************************/
 /*******Small Devices ***************************/

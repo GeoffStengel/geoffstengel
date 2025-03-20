@@ -30,12 +30,22 @@
 
         <header>
             <nav class="nav">
-                <a href="../index.html"><div class="box box0"></div><p>Home</p></a>
-                <a href="../shop.html"><div class="box box1"></div><p>Shop</p></a>		
-                <a href="../blog.html"><div class="box box2"></div><p>Blog</p></a>
-                <a href="../donate.html"><div class="box box3"></div><p>Tip</p></a>
+                <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="../index.html"><div data-tooltip="Home Page" class="box box0"></div><p>Home</p></a></li>
+                        <li><a href="../shop.html"><div data-tooltip="Shop All" class="box box1"></div><p>Shop</p></a></li>		
+                        <li><a href="../solar.html"><div data-tooltip="Shop Solar" class="box box4"></div><p>Solar</p></a></li>
+                        <li><a href="../sprout.html"><div data-tooltip="Shop Sprouts" class="box box5"></div><p>Sprout</p></a></li>
+                        <li><a href="../music.html"><div data-tooltip="Shop Music" class="box box6"></div><p>Musical</p></a></li>
+                        <li><a href="../blog.html"><div data-tooltip="Blog" class="box box2"></div><p>Blog</p></a></li>
+                        <li><a href="https://square.link/u/yu9hDSBt"><div data-tooltip="Tip a Taco" class="box box3"></div><p>Tip</p></a></li>
+                    </ul>
             </nav>
-            <a class="tacos" href="https://square.link/u/yu9hDSBt" target="_blank">🌮</a>
+            <!---<a class="tacos" href="https://square.link/u/yu9hDSBt" target="_blank">🌮</a>--->
         </header>
 <h1>Tire Cleanups🛞</h1>
 
@@ -161,6 +171,6 @@ if that's still the idea lol, but i have palying the project and being involved 
 
 
 </section> 		
-
+<script src="../js/hamburger.js"></script>
 </body>
 </html>

@@ -221,7 +221,7 @@ h4 a{
     border-radius: 10px;
     grid-template-columns: repeat(1, minmax(50px, auto));
     grid-template-rows: 15px 90px 1fr;
-    background: url('../images/geoff_stengel_chicago_by_Zouhair_bkgd.png') no-repeat;
+    background: url('../images/geoff_stengel_chicago_by_Zouhair_bkgd_03.png') no-repeat;
     background-position: center;
 	background-size: cover;
     box-shadow: 0 0 10px black;
@@ -575,7 +575,6 @@ img{
     background-color: none;
     background: none;
     border: none;
-    box-shadow: 0px;
     box-shadow: 0 0 0 rgb(214, 17, 152);
     padding:  5px;
 }
@@ -591,9 +590,8 @@ img{
 	background-color: none;
 	background: none;
 	border: none;
-	box-shadow: 0px;
 	box-shadow: 0 0 0 rgb(214, 17, 152);
-	padding:  5px;
+	padding: 5px;
     margin: 0 auto;
 	padding-top: 0;
 	margin-top: 8px;
@@ -722,7 +720,14 @@ ul ul li{
 
 /****Test dropdown END****/
 
-
+.view_all_text{
+    width: 65px;
+    font-size: 14px;
+    padding: 2px;
+    border-radius: 40px;
+    border: solid 4px #ad097e;
+    background-color: yellow;
+}
 
 
 /*****FOOTER*SECTION*START**In Base.html*****/
