@@ -4,7 +4,23 @@
 	padding: 0;
 	
 }
- 
+:root {
+    --primary-color: #003366;
+    --secondary-color: #f9f9f9;
+    --accent-color: rgb(238, 28, 175); 
+    --bkgd-color: #ffffff;
+    --card-bkgd: #f9f9f9;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --box-shadow-light: 0 4px 10px rgba(0, 0, 0, 0.1);
+    --text-1: #eaf9fa;
+    --text-2: #555555;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    --transition-speed: 600ms;
+}   
 body{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.5em;
@@ -134,7 +150,7 @@ nav{
 
 h1{
 	font-size: 45px;
-	font-family: fantasy, sans-serif;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	color: #0075D9;
 	padding-bottom:  2%;
 	margin-top: 10px;
@@ -142,13 +158,18 @@ h1{
 	box-shadow: 0 0 20px black;
 	text-align: center;
 	padding: 0;
+	-webkit-text-stroke-color: #fbb505;
+	-webkit-text-stroke-width: .02rem;
+	stroke: solid;
+	text-shadow: 10px 10px 30px rgba(0,0,0,0.1);
 }
 
 h2{
-	font-size: 35px;
+	font-size: 34px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	color: #ff8000;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 h3{
 	font-size: 12px;
@@ -546,6 +567,9 @@ h2{
 .box{
 	border-radius: 12px;
  }
+h1{
+	font-size: 28px;
+}
 }
 
 @media screen and (max-width: 350px) {
@@ -569,10 +593,7 @@ section{
 }
 
 p{
-	
 	text-indent: 16px;
-
-
 }
 	
 .box{
