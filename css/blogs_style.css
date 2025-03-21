@@ -2,7 +2,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	
+	box-sizing: border-box;
 }
 :root {
     --primary-color: #003366;
@@ -41,29 +41,7 @@ section{
 }
 
 /**Nav Bar Holding Main Page Buttons***/
-/**
-.nav{ 
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: repeat(7, minmax(50px, auto));
-    grid-template-rows: auto;
-    column-gap: 5%;
-    margin: 0 auto;
-    justify-content: center;
-    align-content: center;
-    border-radius: 10px;
-    grid-row: 1;
-}
 
-.nav p{
-    font-size: 12px;
-    color: #ddd;
-    text-decoration: none;
-	margin: 0 auto;
-	text-justify: center;
-}
-***/
 p, a{
 	margin: 0 auto;
 	color:black;
@@ -73,13 +51,26 @@ p, a{
 /*adjust around nav boxes icons on trash blog*/
 ul li a {
 	display: block;
-	padding: 10px 15px;
+	padding: 10px;
 	color: #fff; 
 	text-decoration: none;
 	text-align: center;
 	font-size: 16px;
 }
 ul{
+	margin: 0 auto;
+	color:black;
+	text-align: center;
+	font-size: 20px;
+	line-height: 15px;
+	text-align: center;
+	margin-bottom: 8px;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-family: sans-serif;
+	text-shadow: 1px 1px 2px #7dabd2;
+}
+.trashanomics, .cleanup_locations {
 	margin: 0 auto;
 	color:black;
 	text-align: center;
@@ -102,7 +93,7 @@ ul{
 header{
 	display: grid;
 	max-width: 900px;
-	height: 80px;
+	height: 65px;
 	grid-template-columns: 1fr;
 	grid-template-rows: 60px;
 	align-content: center;
@@ -184,7 +175,7 @@ h3{
 
 /***Text At Top Of Page With Contract Address***/
 #contract_info{
-	max-width: 400px;
+	max-width: 450px;
 	margin: 0 auto;
 	text-align: center;
 	text-indent: 0%;
@@ -241,8 +232,8 @@ p{
 
 /****Box*Presses*In*Effect*When*Pressed**Start***/
 .box:active{
-	height: 40px;
-	width: 40px;
+	height: 34px;
+	width: 34px;
 }
 .box p{
 	margin: 0 auto;
@@ -263,9 +254,47 @@ p{
 .box5{background-image: url(../images/seedling-emoji.png);}
 .box6{background-image: url(../images/music-note-blue-bkgd.svg);}
 
+/************************/
+/**Tooltip Popup Explains What Tab Is START**/
+.box0::before, .box1::before, .box2::before, .box3::before, .box4::before, .box5::before, .box6::before{
+	content: attr(data-tooltip);
+	position: absolute;
+	display: flex;
+	background-color: #23232e84;
+	color: #ddd;
+	padding: 0;
+	border-radius: 100px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+	transform: translateY(-30) rotate(25deg);
+	opacity: 0;
+	transition: 200ms cubic-bezier(.42,0,.44,1.68);
+	font-size: 10px;
+	padding: 5px;
+	
+}
 
-
-
+.box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover{
+	background-color: var(--accent-color);
+	fill: #ddd;
+}
+.box0::after, .box1::after, .box2::after, .box3::after, .box4::after, .box5::after, .box6::after{
+	content: '';
+	position: absolute;
+	height: 0;
+	width: 0;
+	transform: translateY(0) rotate(25deg);
+	opacity: 0;
+	transition: 200ms cubic-bezier(.42,0,.44,1.68);
+}
+.box0:hover::before, .box1:hover::before, .box2:hover::before, .box3:hover::before, .box4:hover::before, .box5:hover::before, .box6:hover::before{
+	transform: translateY(0) rotate(0);
+	opacity: 1;
+}
+.box0:hover::after, .box1:hover::after, .box2:hover::after, .box3:hover::after, .box4:hover::after, .box5:hover::after, .box6:hover::after{
+	transform: translateY(-42px) rotate(0);
+	opacity: 1;
+}
+/**Tooltip Popup Explains What Tab Is START**/
 
 .blog1{
 	align-content: center;
