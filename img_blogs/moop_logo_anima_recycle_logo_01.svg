@@ -1,0 +1,69 @@
+<svg width="200" height="200" viewBox="0 0 125 125" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="62" cy="62" r="56" stroke="#E004B4" stroke-width="8" fill="Non" />
+  <!-- MOOP text with continuous fade in/out -->
+ <text x="62" y="75" text-anchor="middle" fill="#E004B4" font-size="28" font-family="monospace" opacity="0">
+  MOOP
+  <animate 
+    attributeName="opacity" 
+    values="1;0.8;0;1"
+    keyTimes="0;0.1;0.6;1"
+    dur="6s" 
+    begin="draw1.begin" 
+    repeatCount="indefinite"
+    fill="freeze"
+  />
+</text>
+  <g transform="translate(15, 12)">
+    <path
+      d="M90.65,60.07,83.94,48.45l-8.63,5L82,65.06a6.57,6.57,0,0,1-5.66,9.84H52.25v-5L35,79.84l17.27,10v-5H76.36a16.47,16.47,0,0,0,14.29-24.7ZM16.53,84.77H30V74.9H16.53a6.56,6.56,0,0,1-5.66-9.83L23,44.14l4.33,2.49v-20L10,36.65l4.31,2.5L2.24,60.07a16.47,16.47,0,0,0,14.29,24.7ZM32.15,8.25l-6.7,11.62,8.63,5,6.71-11.62a6.52,6.52,0,0,1,11.31,0L64.18,34.16l-4.34,2.49,17.26,10v-20l-4.3,2.49L60.73,8.25a16.5,16.5,0,0,0-28.58,0Z"
+      fill="none"
+      stroke="#00E5FF"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      stroke-dasharray="300"
+      stroke-dashoffset="600"
+    >
+      <!-- First stroke-dash animation -->
+      <animate 
+        id="draw1"
+        attributeName="stroke-dashoffset" 
+        from="600" 
+        to="0" 
+        dur="6s" 
+        begin="-2s;draw2.end" 
+        repeatCount="indefinite"
+        fill="freeze"
+      />
+      <!-- First color animation -->
+      <animate 
+        attributeName="stroke" 
+        values="#00E5FF; #E004B4; #00E5FF" 
+        dur="6s" 
+        begin="draw1.begin" 
+        repeatCount="indefinite"
+        fill="freeze"
+      />
+
+      <!-- Second stroke-dash animation -->
+      <animate 
+        id="draw2"
+        attributeName="stroke-dashoffset" 
+        from="-600" 
+        to="0"  
+        dur="5.8s" 
+        begin="draw1.begin+3s" 
+        repeatCount="indefinite"
+        fill="freeze"
+      />
+      <!-- Second color animation -->
+      <animate 
+        attributeName="stroke" 
+        values="#E004B4; #00E5FF; #E004B4" 
+        dur="3s" 
+        begin="draw2.begin+4s" 
+        repeatCount="indefinite"
+        fill="freeze"
+      />
+    </path>
+  </g>
+</svg>
