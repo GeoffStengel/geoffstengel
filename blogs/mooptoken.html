@@ -48,16 +48,35 @@
             <!---<a class="tacos" href="https://square.link/u/yu9hDSBt" target="_blank">🌮</a> -->
         </header>
 <h1>🪙MOOP🪙</h1>
-
+<!-- Shortened Contract Address with Copy Icon -->
+<div id="contract_info_short">
+    <div class="copy-container">
+      <p class="contractAddress" id="shortAddress" data-full-address="0x75965be2a4c8ba0e9003a512c1914b71e4101ef0">0x7596...1ef0</p>
+      <svg class="copy-icon" onclick="copyShortAddress(this)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
+        <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+      </svg>
+    </div>
+</div>
+<!-- Contract Address with Copy Icon END-->
 <div class="blog blog1">
 	<h2>Matter Out Of Place</h2>
     
-<a href="https://www.dextools.io/app/en/ether/pair-explorer/0x75965be2a4c8ba0e9003a512c1914b71e4101ef0" target="_blank">
+<a href="#">
 	<img class="youtube_logo" src="../img_blogs/moop_logo_05.jpeg" style="width:100px; height:100px; box-shadow: 0 0 10px black; border-radius:20px;" alt="(1st Blog Pic Should 🐝 Here)"></a>
-</br>    
-<p id="contract_info">
-    💡 MOOP Contract Address: <a class="contractAddress" href="https://etherscan.io/token/0x75965be2a4c8ba0e9003a512c1914b71e4101ef0">0x75965be2a4c8ba0e9003a512c1914b71e4101ef0</a>
-</p>
+</br>
+<!-- Contract Address with Copy Icon START-->    
+<div class="fullContractAddress" id="contract_info">
+    <h4>💡MOOP Contract Address:</h4> 
+    <div class="copy-container">
+      <p class="contractAddress fullAddress" id="contractAddress">0x75965be2a4c8ba0e9003a512c1914b71e4101ef0</p>
+      <svg class="copy-icon" onclick="copyContractAddress()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
+        <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+      </svg>
+    </div>
+  </div>
+  
+  
+
 <p>
     MOOP - Matter Out Of Place - Restoring Nature One Token At A Time! Where Hodling Or Trading Helps
     Sponsor Tire Cleanups.
@@ -140,7 +159,7 @@
 <br>
 <p>
     Above we mention Contract Address: 
-    <a class="contractAddress" href="https://etherscan.io/address/0x93792e646ded3c397665d1cf6d93c0b9598957a2">0x93792e646ded3c397665d1cf6d93c0b9598957a2</a>
+    <a class="contractAddress  fullAddress" href="https://etherscan.io/address/0x93792e646ded3c397665d1cf6d93c0b9598957a2">0x93792e646ded3c397665d1cf6d93c0b9598957a2</a>
     which is a record of this specific Token on the Blockchain of the Smart Contract, that
     with those series of numbers & letters you 
     can view it on <a href="https://etherscan.io/token/0x93792e646ded3c397665d1cf6d93c0b9598957a2">Etherscan</a>
@@ -342,5 +361,6 @@ if that's still the idea lol, but i have playing the project and being involved 
 
 </section> 		
 <script src="../js/hamburger.js"></script>
+<script src="../js/copy_btn.js"></script>
 </body>
 </html>

@@ -29,7 +29,6 @@ body{
     color: #ffffff;
 	background: #0052a5;
 }
-
 /*******Section Main Grid Area*********/
 section{
 	max-width: 700px;
@@ -39,15 +38,12 @@ section{
 	background-color: #ddd;
 	box-shadow: 0 0 20px black;
 }
-
 /**Nav Bar Holding Main Page Buttons***/
-
 p, a{
 	margin: 0 auto;
 	color:black;
 	text-align: center;
 }
-
 /*adjust around nav boxes icons on trash blog*/
 ul li a {
 	display: block;
@@ -84,11 +80,9 @@ ul{
 	font-family: sans-serif;
 	text-shadow: 1px 1px 2px #7dabd2;
 }
-
 #content div{
 	padding: 8px;
 }
-
 /***Header Wraps Nav & Logo*****/
 header{
 	display: grid;
@@ -106,11 +100,9 @@ header{
 	background: #0075D9;
 	box-shadow: 0 0 10px black;
 }
-
 #nav-links li{
     display: inline-block;
 }
-
 #nav-links a:hover{
     color:#0088a9;
 }
@@ -118,7 +110,6 @@ header{
 	display: none;
 } 
 /**Nav Bar Holding Main Page Buttons***/
-
 nav{
     display: flex;
     width: 100%;
@@ -135,10 +126,6 @@ nav{
 .nav p{
     margin-top: 3px;
 }
-
-
-
-
 h1{
 	font-size: 45px;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -154,7 +141,6 @@ h1{
 	stroke: solid;
 	text-shadow: 10px 10px 30px rgba(0,0,0,0.1);
 }
-
 h2{
 	font-size: 34px;
 	margin-top: 10px;
@@ -166,16 +152,60 @@ h3{
 	font-size: 12px;
 	color: #0075D9;
 }
-
-.contractAddress{
+/*Text Above shortAddress*/
+h4{
 	font-size: 16px;
+	color:black;
+	font-family: monospace;
+	text-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+	text-shadow: 1px 1px 2px #7dabd2;
+}
+.contractAddress{
+	font-size: 14px;
+	letter-spacing: 2px;
 	padding-left: 1%;
 	padding-right: 1%;
 }
-
+#contractAddress{
+	display: flex;
+	align-self: center;
+	margin: 0 auto;
+}
+/*COPY BTN SECTION START*/
+.contract_info {
+	display: flex;
+	align-items: center;
+	background-color: #1a1a1a; /* Dark background to match TikTok logo theme */
+	padding: 10px;
+	border-radius: 5px;
+	width: fit-content;
+  }
+  /*Hold Copy Icon & Contract Address*/
+  .copy-container{
+	display: grid;
+	height: 50px;
+	width: 100%;
+	grid-template-columns: 1fr 30px;
+	column-gap: 2px;
+  }
+  .copy-icon {
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	transition: fill 0.3s;
+	margin: 0 auto;
+	align-self: center;
+  }
+  .copy-icon:hover {
+	fill: #69C9D0; /* Cyan on hover to match TikTok theme */
+  }
+  .copied {
+	fill: #28a745; /* Green when copied */
+  }
+/*COPY BTN SECTION END*/
 /***Text At Top Of Page With Contract Address***/
 #contract_info{
-	max-width: 450px;
+	max-width: 475px;
 	margin: 0 auto;
 	text-align: center;
 	text-indent: 0%;
@@ -183,19 +213,36 @@ h3{
 	box-shadow: 0 0 10px black;
 	background-color: rgba(214, 213, 213, 0.918);
 	border-radius: 10px;
-	
 }
+.fullContractAddress{
+	padding: 12px;
+	background-color: #00c853;
+ }
 #contract_info a:hover{
 	border-radius: 10px;
 	box-shadow: 0 0 10px black;
 	cursor: pointer;
 }
+
+/*ShortAddress START*/
+#contract_info_short{
+	display: flex;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	width: 200px;
+	margin: 0 auto;
+}
+#shortAddress{
+	display: flex;
+	align-self: center;
+	margin: 0 auto;
+}
+/*ShortAddress END*/
 /**Color For Text Links In Blog****/
 a{
 	color:#0075D9;
 	text-decoration: none;
 }
-
 p{
 	font-size: 20px;
 	text-indent: 17px;
@@ -207,7 +254,6 @@ p{
 	font-family: sans-serif;
 	text-shadow: 1px 1px 2px #7dabd2;
 }
-
 /***Adjust Boxes For Nav Buttons******/
 .box {
     height: 35px;
@@ -225,11 +271,9 @@ p{
     background-repeat: no-repeat;
    /** box-shadow: 2px 2px 2px 2px rgb(26, 26, 26);**/
 }
-
 .box:hover{
 	background-color: hotpink;
 }
-
 /****Box*Presses*In*Effect*When*Pressed**Start***/
 .box:active{
 	height: 34px;
@@ -239,7 +283,6 @@ p{
 	margin: 0 auto;
 	text-align: center;
 }
-
 .box0, .box1, .box2, .box3, .box4, .box5, .box6{
 	border-style: solid;
 	border-width: 2px;
@@ -270,7 +313,6 @@ p{
 	transition: 200ms cubic-bezier(.42,0,.44,1.68);
 	font-size: 10px;
 	padding: 5px;
-	
 }
 
 .box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover{
@@ -309,15 +351,12 @@ img{
 	justify-content: center;
 	margin: 0 auto;
 }
-
 .disclaimerish p{
 	font-size: 16px;
 }
-
 .youtube_logo{
 	width: 100%;
 }
-
 .rarible_logo{   /**Trezor ** Ad ** Logo ** At ** Bottom***/
 	width: 25%;
 	height: 25%;
@@ -329,7 +368,6 @@ img{
 	background-repeat: no-repeat;
 	box-shadow: 0 0 20px black;
 }
-
 /**********Tipbot settings**start**********/
 .baconwrap{
 	display: grid;
@@ -345,12 +383,10 @@ img{
 	grid-gap: 10px;
 	margin: 0 auto;
 }
-
 .baconwrap div{
 	padding: 10px;
 	border-radius: 10px;
 }
-
 .tacos {
 	width: 50px;
 	height: 20px;
@@ -372,14 +408,12 @@ img{
 	height: 30px;
 	margin: 0 auto;
 }
-
 #title_emojis{
 	margin: 0 auto;
 	text-align: center;
 	padding: 10px;
 	text-indent: 0;
 }
-
 .section-titles{
 	font-family: sans-serif;
 	text-shadow: 1px 1px 2px #ff00dd;
@@ -389,6 +423,8 @@ img{
 .click_here{
 	font-size: 16px;
 }
+
+
 /*******Mobile Devices ***************************/
   /**********************************/
     /*****Hamburger START*************/
@@ -410,9 +446,6 @@ nav {
     justify-content: center;
     align-items: center;
 }
-
-
-
 .hamburger {
     cursor: pointer;
     width: 20px;
@@ -425,30 +458,24 @@ nav {
     margin-top: 0px;
     z-index: 1000;
 }
-
 .bar {
     height: 2px;
     margin: 6px 0;
     transition: all 0.3s ease;
     border-radius: 12px;
 }
-
 .bar1 {
     background: orange; /* Orange */
 }
-
 .bar2 {
     background: #00c853; /* Green */
 }
-
 .bar3 {
     background: #2979ff; /* Blue */
 }
-
 #nav-links{
     margin-top: 0px;
 }
-
 .nav-links {
     display: none;
     position: fixed;
@@ -467,20 +494,16 @@ nav {
     max-width: 250px;
     height: 100%;
 }
-
-
 .nav-links.show {
     display: flex;
     opacity: 1; /* Fade in */
     transform: translateY(0); /* Move to original position */
     padding-top: 5px;
 }
-
 .nav-links li {
     width: 100%; /* Each link takes full width */
     margin-bottom: 0px; /* Space between links */
 }
-
 .nav-links a {
     display: block; /* Ensure each link is a block element */
     width: 100%; /* Full width */
@@ -490,7 +513,6 @@ nav {
     color: #ddd; /* Text color */
     font-size: 10px; /* Font size */
 }
-
 .nav-buttons {
     display: block;
     padding: 10px;
@@ -498,21 +520,17 @@ nav {
     text-decoration: none;
     transition: background 0.3s, color 0.3s;
 }
-
 .nav-buttons:hover {
     color: #000;
 }
-
 /* Animation for the bars */
 .bar1.active {
     transform: rotate(45deg) translate(6px, 6px); /* Adjusted for better X shape */
     width: 20px;
 }
-
 .bar2.active {
     opacity: 0; /* Fade out */
 }
-
 .bar3.active {
     transform: rotate(-45deg) translate(6px, -6px); /* Adjusted for better X shape */
  }
@@ -524,7 +542,6 @@ nav {
     }
 }
 
-
 @media screen and (max-width: 930px) {
 section{
 	width: 95%;	
@@ -532,11 +549,26 @@ section{
 }
 /**************************************************/
 /*******Mobile Devices ***************************/
+@media screen and (max-width: 488px) {
+/*Hold Copy Icon & Contract Address*/
+.copy-container{
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr 20px;
+	column-gap: 2px;
+  }
+.contractAddress{
+	font-size: 12px;
+	letter-spacing: .1em;
+	padding-left: 0;
+	padding-right: 0;
+}  
+}
+
 @media screen and (max-width: 450px) {
 section{
   width: 95%;	
  }
-
  p{
 	font-size: 16px;
 	text-indent: 17px;
@@ -544,14 +576,11 @@ section{
 	text-align: left;
 	margin-bottom: 8px;
  }
-
 #title_emojis{
 	margin: 0 auto;
 	padding: 10px 0px 10px 0px;
 	text-indent: 0px;
 }
-
-
 ul{
 	margin: 0 auto;
 	color:black;
@@ -585,12 +614,6 @@ h2{
 .click_here{
 	font-size: 12px;
 }
-.contractAddress{
-	font-size: 14px;
-	padding-left: 0%;
-	padding-right: 0%;
-}
-
 }
 @media screen and (max-width: 400px) {
 .box{
@@ -599,8 +622,13 @@ h2{
 h1{
 	font-size: 28px;
 }
+.contractAddress{
+	margin: 0 auto;
+ }
+ .fullAddress{
+	font-size: 10px;
+ }
 }
-
 @media screen and (max-width: 350px) {
 	p{
 		text-indent: 17px;
@@ -612,7 +640,11 @@ h1{
 	}
 .contractAddress{
 	font-size: 12px;
-}	
+}
+.fullAddress{
+	font-size: 8px;
+ }
+ 	
 }
 /**************************************************/
 /*******Small Devices ***************************/
@@ -620,15 +652,12 @@ h1{
 section{
 	width: 16em;
 }
-
 p{
 	text-indent: 16px;
 }
-	
 .box{
     border-radius: 10px;		
 }
-	
 #adlogo{
 	background-image: url(/images/trezor_ad.jpg);
 	width: 10em;
@@ -645,7 +674,6 @@ p{
 body{
     background: #333;	
 }
-	
 section{
 	background-color: chocolate;
 	background-position: center;
@@ -654,7 +682,6 @@ section{
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-
 p{
 	font-size: 20px;	
  }
