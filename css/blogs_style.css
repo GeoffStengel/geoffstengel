@@ -143,7 +143,6 @@ h1{
 }
 h2{
 	font-size: 34px;
-	margin-top: 10px;
 	margin-bottom: 10px;
 	color: #ff8000;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -183,7 +182,7 @@ h4{
   /*Hold Copy Icon & Contract Address*/
   .copy-container{
 	display: grid;
-	height: 50px;
+	height: 35px;
 	width: 100%;
 	grid-template-columns: 1fr 30px;
 	column-gap: 2px;
@@ -296,6 +295,7 @@ p{
 .box4{background-image: url(../images/sun-emoji-svg.svg);}
 .box5{background-image: url(../images/seedling-emoji.png);}
 .box6{background-image: url(../images/music-note-blue-bkgd.svg);}
+.box7{background-image: url(../svg/moop_logo_anima_recycle_logo_01.svg);}
 
 /************************/
 /**Tooltip Popup Explains What Tab Is START**/
