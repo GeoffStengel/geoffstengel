@@ -31,7 +31,7 @@ html{
 }
 /*Holding All The Grids The Main Wrapper At The Moment  */
 body{
-    max-width: 450px; /*Max Width Of Body Frame*/
+    max-width: 420px; /*Max Width Of Body Frame*/
     min-height: 100%;
 	text-align: center;
     background-color: var(--bg-secondary);
