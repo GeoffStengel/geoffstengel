@@ -270,7 +270,7 @@ nav{
 	border-style: solid;
 }
 
-.box0, .box1, .box2, .box3, .box4, .box5, .box6{
+.box0, .box1, .box2, .box3, .box4, .box5, .box6, .box7{
     border-style: solid;
 	border-width:2px;
 	border-color: #0075D9;
@@ -628,7 +628,7 @@ img{
 }
 /************************/
 /**Tooltip Popup Explains What Tab Is START**/
-.box0::before, .box1::before, .box2::before, .box3::before, .box4::before, .box5::before, .box6::before{
+.box0::before, .box1::before, .box2::before, .box3::before, .box4::before, .box5::before, .box6::before, .box7::before{
 	content: attr(data-tooltip);
 	position: absolute;
 	background-color: #23232e84;
@@ -642,11 +642,11 @@ img{
 	font-size: 10px;
 	margin-left: 15px;
 }
-.box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover{
+.box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover{
 	background-color: var(--accent-color);
 	fill: #ddd;
 }
-.box0::after, .box1::after, .box2::after, .box3::after, .box4::after, .box5::after, .box6::after{
+.box0::after, .box1::after, .box2::after, .box3::after, .box4::after, .box5::after, .box6::after, .box7::after{
 	content: '';
 	position: absolute;
 	height: 0;
@@ -655,11 +655,11 @@ img{
 	opacity: 0;
 	transition: 200ms cubic-bezier(.42,0,.44,1.68);
 }
-.box0:hover::before, .box1:hover::before, .box2:hover::before, .box3:hover::before, .box4:hover::before, .box5:hover::before, .box6:hover::before{
+.box0:hover::before, .box1:hover::before, .box2:hover::before, .box3:hover::before, .box4:hover::before, .box5:hover::before, .box6:hover::before, .box7:hover::before{
 	transform: translateY(0) rotate(0);
 	opacity: 1;
 }
-.box0:hover::after, .box1:hover::after, .box2:hover::after, .box3:hover::after, .box4:hover::after, .box5:hover::after, .box6:hover::after{
+.box0:hover::after, .box1:hover::after, .box2:hover::after, .box3:hover::after, .box4:hover::after, .box5:hover::after, .box6:hover::after, .box7:hover::after{
 	transform: translateY(-42px) rotate(0);
 	opacity: 1;
 }

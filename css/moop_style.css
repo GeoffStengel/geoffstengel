@@ -32,12 +32,13 @@ html{
 /*Holding All The Grids The Main Wrapper At The Moment  */
 body{
     max-width: 420px; /*Max Width Of Body Frame*/
-    min-height: 100%;
+    max-height: 675px;
 	text-align: center;
     background-color: var(--bg-secondary);
     margin: 0 auto;
     border-radius: 20px;
     box-shadow: 0 0 5px var(--bkgd-secondary);
+   
     
 }
 
