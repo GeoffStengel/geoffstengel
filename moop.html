@@ -128,11 +128,42 @@ Matter Out Of Place - Cleaning Nature One Token At A Time - GS
                 </g>
               </svg>
             </a>
-            <!--MOOP LOGO SVG CODE END--> 
+            <!--MOOP LOGO SVG CODE END-->
+           
+            <!--QUESTION MARK SVG START-->
+            <button class="questionmark_btn" aria-label="Learn about MOOP" title="What is MOOP?">
+              <svg class="questionmark_icon" width="20" height="20" viewBox="0 0 24 24" fill="#e8eaed">
+                  <path d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"/>
+              </svg>
+            </button>
+            <!--QUESTION MARK SVG END-->
+<!-- Modal -->
+<div class="modal" id="moopModal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-content">
+        <button class="modal-close" aria-label="Close modal">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#E004B4">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+        </svg>
+        </button>
+        <h2 id="modalTitle" style="color: var(--accent-color);">About MOOP</h2>
+        <div class="modal-text">
+            <!-- Placeholder ~450 words -->
+            <p>MOOP, or Matter Out Of Place, is a groundbreaking initiative to restore nature by tackling environmental pollution through blockchain technology. Built on Ethereum as an ERC20 token, MOOP funds tire cleanups by allocating transfer fees to the MOOP Recycling Fund. Every transaction—whether hodling or trading—contributes to removing tires and microplastics from rivers, lakes, and landscapes, creating a cleaner planet.</p>
+            <p>Founded by Geoff Stengel, MOOP combines cryptocurrency with environmental activism. Tires, a major pollutant, degrade into microplastics that harm ecosystems. By leveraging Ethereum’s secure smart contracts, MOOP ensures transparency in how fees are collected and used. The project partners with cleanup organizations to maximize impact, with progress shared via YouTube vlogs and the MOOP blog.</p>
+            <p>Unlike traditional charities, MOOP empowers its community. Token holders drive the mission by trading on platforms like Uniswap or DEXtools, with each swap supporting cleanups. The contract address (0x75965be2a4c8ba0e9003a512c1914b71e4101ef0) is verified on Etherscan, ensuring trust. MOOP’s decentralized approach means no single entity controls the funds—community participation fuels the change.</p>
+            <p>The vision extends beyond local tires. MOOP aims to address broader “matter out of place,” like ocean plastics from tire dumping. By integrating with Coingecko and GitHub, the project stays transparent and open-source. Join the movement by hodling, trading, or spreading the word. Together, we can restore nature, one token at a time.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
         </div>
 
 <!-- Contract Address with Copy Icon START-->
-     
 <div class="fullContractAddress" id="contract_info">
     <h4>MOOP Contract Address:</h4> 
     <div class="copy-container">
@@ -149,19 +180,23 @@ Matter Out Of Place - Cleaning Nature One Token At A Time - GS
         <!--Logo & Text Header Area Kinda END--> 
         <div  class="social_grid">
             
-            <a href="blogs/mooptoken.html"><div title="MOOP Blog" class="social_links">About MOOP</div></a>
+            <a href="blogs/mooptoken.html"><div title="MOOP BLOG" class="social_links">About MOOP</div></a>
             <a href="https://github.com/GeoffStengel/moop"><div title="Github Code"  class="social_links">Github</div></a>
             <a href="https://etherscan.io/token/0x75965be2a4c8ba0e9003a512c1914b71e4101ef0"><div class="social_links" title="MOOP Address">Etherscan</div></a>
             <a href="https://www.dextools.io/app/en/ether/pair-explorer/0xc7de0b5e955a58f69e01e45470f5a8dc52eafc43"><div title="DEXtools Swap" class="social_links">DEXtools</div></a>
             <a href="https://app.uniswap.org/explore/tokens/ethereum/0x75965be2a4c8ba0e9003a512c1914b71e4101ef0"><div  title="Swap MOOP" class="social_links">Uniswap</div></a>
-            <a href="https://www.geckoterminal.com/eth/pools/0xc7de0b5e955a58f69e01e45470f5a8dc52eafc43"><div title="Check Charts" class="social_links">Coingecko</div></a>
+            <a href="https://www.geckoterminal.com/eth/pools/0xc7de0b5e955a58f69e01e45470f5a8dc52eafc43"><div title="MOOP Charts" class="social_links">Coingecko</div></a>
         </div>
     </div>
     <!--The Grid Inside <Body> Tag Holding Your Project  END-->
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
         <script src="js/gsap_animation.js"></script>
         <script src="../js/copy_btn.js"></script>
-    <!-- <script src="../js/data-tooltips"></script>-->
-    <!-- <script src="js/main.js"></script> -->
+    <!--<script src="../js/data-tooltips"></script>-->
+        <script src="../js/modal.js"></script>
+
+
+
+
 </body>
 </html>
