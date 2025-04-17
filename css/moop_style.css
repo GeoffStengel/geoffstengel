@@ -130,7 +130,7 @@ h4{
 .contract_info {
 	display: flex;
 	align-items: center;
-	background-color: #1a1a1a; /* Dark background to match TikTok logo theme */
+	background-color: #1a1a1a;
 	padding: 10px;
 	border-radius: 5px;
 	width: fit-content;
@@ -143,6 +143,7 @@ h4{
 	grid-template-columns: 1fr 20px;
 	column-gap: 2px;
   }
+  
   .copy-icon {
 	cursor: pointer;
 	width: 20px;
