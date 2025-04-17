@@ -43,12 +43,12 @@ Matter Out Of Place - Cleaning Nature One Token At A Time - GS
         <!--Logo & Text Header Area Kinda START--> 
         <div class="top_logo_grid">
           <div class="icon_grid">  
-            <a href="https://etherscan.io/token/0x75965be2a4c8ba0e9003a512c1914b71e4101ef0" id="tooltips" title="View Contract"><img class="icons" src="svg/etherscan_icon_200x200_svg.svg"></a>
-            <a href="https://www.dextools.io/app/en/ether/pair-explorer/0xc7de0b5e955a58f69e01e45470f5a8dc52eafc43" id="tooltips" title="Trade MOOP"><img class="icons" src="svg/dextools_icon.svg"></a>
-            <a href="https://youtu.be/9kVv39mnkfg?si=Fw70-vdpD4dJeXVg" id="tooltips" title="Vlogs"><img class="icons" src="svg/youtube_logo_02.svg"></a>
+            <a href="https://etherscan.io/token/0x75965be2a4c8ba0e9003a512c1914b71e4101ef0" title="View Contract"><img class="icons" src="svg/etherscan_icon_200x200_svg.svg"></a>
+            <a href="https://www.dextools.io/app/en/ether/pair-explorer/0xc7de0b5e955a58f69e01e45470f5a8dc52eafc43" title="Trade MOOP"><img class="icons" src="svg/dextools_icon.svg"></a>
+            <a href="https://youtu.be/9kVv39mnkfg?si=Fw70-vdpD4dJeXVg" title="Vlogs"><img class="icons" src="svg/youtube_logo_02.svg"></a>
           </div>
-            <!--LOGO SVG CODE START-->
-            <a id="tooltips" title="Home" href="index.html" >
+            <!--MOOP LOGO SVG CODE START-->
+            <a title="Home" href="index.html" >
             <svg class="logo" width="80" height="80" viewBox="0 0 125 125" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="62" cy="62" r="56" stroke="#E004B4" stroke-width="8" fill="Non" />
                 <!-- MOOP text with continuous fade in/out -->
@@ -119,23 +119,40 @@ Matter Out Of Place - Cleaning Nature One Token At A Time - GS
                 </g>
               </svg>
             </a>
-            <!--LOGO SVG CODE END--> 
-         
+            <!--MOOP LOGO SVG CODE END--> 
         </div>
+
+<!-- Contract Address with Copy Icon START-->
+     
+<div class="fullContractAddress" id="contract_info">
+    <h4>MOOP Contract Address:</h4> 
+    <div class="copy-container">
+      <p class="contractAddress fullAddress" id="contractAddress">0x75965be2a4c8ba0e9003a512c1914b71e4101ef0</p>
+      <svg class="copy-icon" onclick="copyContractAddress()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
+        <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+      </svg>
+    </div>
+  </div>
+  <!-- Contract Address Full with Copy Icon END-->
+
+
+
         <!--Logo & Text Header Area Kinda END--> 
         <div  class="social_grid">
             
-            <a href="blogs/mooptoken.html" target="_blank"><div id="tooltips" title="Our Mission" class="social_links">About MOOP</div></a>
-            <a href="https://github.com/GeoffStengel/moop"><div id="tooltips" title="Github Code"  class="social_links">Github</div></a>
-            <a href="https://etherscan.io/token/0x75965be2a4c8ba0e9003a512c1914b71e4101ef0"><div class="social_links" id="tooltips" title="MOOP Address">Etherscan</div></a>
-            <a href="https://www.dextools.io/app/en/ether/pair-explorer/0xc7de0b5e955a58f69e01e45470f5a8dc52eafc43"><div id="tooltips" title="DEXtools Swap" class="social_links">DEXtools</div></a>
-            <a href="https://app.uniswap.org/explore/tokens/ethereum/0x75965be2a4c8ba0e9003a512c1914b71e4101ef0"><div id="tooltips" title="Swap MOOP" class="social_links">Uniswap</div></a>
-            <a href="https://www.geckoterminal.com/eth/pools/0xc7de0b5e955a58f69e01e45470f5a8dc52eafc43"><div id="tooltips" title="Check Charts" class="social_links">Coingecko</div></a>
+            <a href="blogs/mooptoken.html" target="_blank"><div title="MOOP Blog" class="social_links">About MOOP</div></a>
+            <a href="https://github.com/GeoffStengel/moop"><div title="Github Code"  class="social_links">Github</div></a>
+            <a href="https://etherscan.io/token/0x75965be2a4c8ba0e9003a512c1914b71e4101ef0"><div class="social_links" title="MOOP Address">Etherscan</div></a>
+            <a href="https://www.dextools.io/app/en/ether/pair-explorer/0xc7de0b5e955a58f69e01e45470f5a8dc52eafc43"><div title="DEXtools Swap" class="social_links">DEXtools</div></a>
+            <a href="https://app.uniswap.org/explore/tokens/ethereum/0x75965be2a4c8ba0e9003a512c1914b71e4101ef0"><div  title="Swap MOOP" class="social_links">Uniswap</div></a>
+            <a href="https://www.geckoterminal.com/eth/pools/0xc7de0b5e955a58f69e01e45470f5a8dc52eafc43"><div title="Check Charts" class="social_links">Coingecko</div></a>
         </div>
     </div>
     <!--The Grid Inside <Body> Tag Holding Your Project  END-->
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
         <script src="js/gsap_animation.js"></script>
+        <script src="../js/copy_btn.js"></script>
+    <!-- <script src="../js/data-tooltips"></script>-->
     <!-- <script src="js/main.js"></script> -->
 </body>
 </html>
