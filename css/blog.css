@@ -171,7 +171,7 @@ h1{
 	background-color: #ddd;
 }
 
-.box0, .box1, .box2, .box3, .box4, .box5, .box6 {
+.box0, .box1, .box2, .box3, .box4, .box5, .box6, .box7 {
 	height: 40px;
 	width: 40px;
 	margin: 0 auto;
@@ -181,11 +181,11 @@ h1{
 	
 }
  
-.box0:active, .box1:active, .box2:active, .box3:active, .box4:active, .box5:active, .box6:active {
+.box0:active, .box1:active, .box2:active, .box3:active, .box4:active, .box5:active, .box6:active, .box7:active {
 	height: 30px;
 	width: 30px;
 }
-.box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover {
+.box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover {
 	border-style: solid;
 	background-color: hotpink;
 	border-width:2px;
@@ -199,13 +199,13 @@ h1{
 	border-color: #DCF506;
 }
 
-.box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover {
+.box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover {
 	border-width:2px;
 	border-color: #DCF506;
 }
 
 /**Tooltip Popup Explains What Tab Is START**/
-.box0::before, .box1::before, .box2::before, .box3::before, .box4::before, .box5::before, .box6::before{
+.box0::before, .box1::before, .box2::before, .box3::before, .box4::before, .box5::before, .box6::before, .box7::before{
 	content: attr(data-tooltip);
 	position: absolute;
 	background-color: #23232e84;
@@ -219,11 +219,11 @@ h1{
 	font-size: 10px;
 	margin-left: 15px;
 }
-.box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover{
+.box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover{
 	background-color: var(--accent-color);
 	fill: #ddd;
 }
-.box0::after, .box1::after, .box2::after, .box3::after, .box4::after, .box5::after, .box6::after{
+.box0::after, .box1::after, .box2::after, .box3::after, .box4::after, .box5::after, .box6::after, .box7::after{
 	content: '';
 	position: absolute;
 	height: 0;
@@ -236,7 +236,7 @@ h1{
 	transform: translateY(0) rotate(0);
 	opacity: 1;
 }
-.box0:hover::after, .box1:hover::after, .box2:hover::after, .box3:hover::after, .box4:hover::after, .box5:hover::after, .box6:hover::after{
+.box0:hover::after, .box1:hover::after, .box2:hover::after, .box3:hover::after, .box4:hover::after, .box5:hover::after, .box6:hover::after, .box7:hover::before{
 	transform: translateY(-42px) rotate(0);
 	opacity: 1;
 }
@@ -249,7 +249,7 @@ h1{
 .box4{background-image: url(../images/sun-emoji-svg.svg);}
 .box5{background-image: url(../images/seedling-emoji.png);}
 .box6{background-image: url(../images/music-note-blue-bkgd.svg);}	  
-
+.box7{background-image: url(../svg/moop_logo_anima_recycle_logo_01.svg);}
 img{
 	width: 100%;
 	border-radius: 10px;
