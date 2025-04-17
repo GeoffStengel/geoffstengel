@@ -57,7 +57,7 @@ body{
     padding: 5px;
     margin-top: 10px;
 }
-
+ 
 /*Scrollbar Effects Start*/
 body::-webkit-scrollbar {
     width: .4rem;
