@@ -16,6 +16,7 @@
     --box-shadow-light: 0 4px 10px rgba(0, 0, 0, 0.1);
     --text-1: #eaf9fa;
     --text-2: #555555;
+    --text-3: #f9f9f9;
     --text-primary: #b6b6b6;
     --text-secondary: #ececec;
     font-size: 16px;
@@ -73,12 +74,12 @@ header{
     cursor: pointer;
     margin-right: auto;
     margin-left: 10%;
-    color: #ddd;
+    color: var(--text-3);
     text-decoration: none;
     font-weight: 700;
 }
 #logo a, #logo p{
-    color: #ddd;
+    color: var(--text-3);
     font-family: Montserrat, sans-serif;
     text-decoration: none;
     font-weight: 700;
@@ -116,7 +117,7 @@ body, html, .tacos, h1, h2, #wrapper, .wrapper h2, .nav, .box, #creative_project
 }
 
 h1, h2, h4, .tacos, .nav a, #creative_projects{
-    color: #ddd;
+    color: var(--text-3);
 }
 
 h1{
@@ -151,7 +152,7 @@ h4{
 }
 h4 a{
     text-decoration: none;
-    color: #ddd;
+    color: var(--text-3);
 }
 
 .top_banner_grid{
@@ -161,7 +162,7 @@ h4 a{
     margin-left: 10%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    background-color: #ddd;
+    background-color: var(--text-3);
     box-shadow: 0 0 10px black;
     border-radius: 10px;
     justify-items: center;
@@ -201,7 +202,7 @@ h4 a{
     box-shadow: 0 0 10px black;
     border-style: solid;
 	border-width:5px;
-	border-color: #ddd;
+	border-color: var(--text-3);
     justify-self: left;
 }
 
@@ -267,7 +268,7 @@ nav{
 	justify-content: center;
 	align-content: center;
 	box-shadow: 0 0 10px black;
-	background-color: #ddd;
+	background-color: var(--text-3);
     text-align: center;	
     background-position: center;
     background-size: cover;
@@ -308,7 +309,7 @@ nav{
 
 .thank_you{
     height: 100px;
-    color: #ddd;
+    color: var(--text-3);
     text-align: center;
     text-justify: center;
     margin: 0 auto;
@@ -358,7 +359,7 @@ img{
     height:55%;
     justify-content: center;
 	align-content: center;
-    background-color: #ddd;
+    background-color: var(--text-3);
 }
 
 /**Sidebar START***/
@@ -483,7 +484,7 @@ img{
     display: grid;
     height: 360px;
     grid-template-columns: 1fr 1fr;
-    background-color: var(--card-bkgd);
+    background-color: var(--text-3);
     border-radius: 20px;
     margin-left: 10%;
     padding: 5px;
@@ -492,7 +493,6 @@ img{
 }
 /*Tire Grid END*/
 .tire_mission_text{
-    
     max-width:400px ;
     margin: 0 auto;
     padding: 10px;
@@ -551,7 +551,7 @@ img{
     height: 100%;
     padding: 10px; /**Adjust Space Between Image & Card Section***/ 
     box-shadow: 0 0 20px black;
-    background-color: #ddd;
+    background-color: var(--text-3);
 	border-style: solid;
 	border-width:4px;
 	border-color: #3aad09;
@@ -638,7 +638,7 @@ img{
 	content: attr(data-tooltip);
 	position: absolute;
 	background-color: #23232e84;
-	color: #ddd;
+	color: var(--text-3);
 	padding: 0.5em .8em;
 	border-radius: 100px;
 	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
@@ -650,7 +650,7 @@ img{
 }
 .box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover{
 	background-color: var(--accent-color);
-	fill: #ddd;
+	fill: var(--text-3);
 }
 .box0::after, .box1::after, .box2::after, .box3::after, .box4::after, .box5::after, .box6::after, .box7::after{
 	content: '';
@@ -685,7 +685,7 @@ ul li {
 ul li a {
 	display: block;
 	padding: 10px 15px;
-	color: #fff; 
+	color: var(--text-3); 
 	text-decoration: none;
 	text-align: center;
 	font-size: 16px;
@@ -742,7 +742,7 @@ footer {
     background: #333;
     padding: 10px;
     text-align: center;
-    color: white;
+    color: var(--text-3);
     width: 100%;
 }
 
@@ -1080,6 +1080,12 @@ h2{
     padding: 5px;
     justify-items: center;
  }
+ .tire_mission_text{
+    padding: 10px;
+    font-size: 18px;
+    line-height: 23px;
+    color: black;
+}
 }
 
 @media screen and (max-width:320px) {
