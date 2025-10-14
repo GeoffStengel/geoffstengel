@@ -50,7 +50,7 @@ body::-webkit-scrollbar-thumb {
 #main_wrapper_grid {
     display: grid;
     height: 100%;
-    max-width: 1200px;
+    max-width: 1800px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
     margin: 0 auto;
@@ -62,7 +62,7 @@ body::-webkit-scrollbar-thumb {
 header{
     display: flex;
     width: 100%;
-    height: 65px;
+    height: 50px;
     justify-content: center;
     align-items: center;
     padding: 5px;
@@ -157,7 +157,8 @@ h4 a{
 
 .top_banner_grid{
     display: grid;
-    min-width: 90%;
+    /*min-width: 90%; */
+    max-width: 1200px;
     max-height: 350px;
     margin-left: 10%;
     grid-template-columns: 1fr 1fr;
@@ -251,7 +252,7 @@ nav{
 	border-color: #0075D9;
 }
 
-.box0{background-image: url(../images/home-rickety.svg);}
+/*.box0{background-image: url(../images/home-rickety.svg);} */
 .box1{background-image: url(../images/house-W-leafs.svg);}
 .box2{background-image: url(../images/chat-icon.svg);}
 .box3{background-image: url(../images/taco.svg);}
@@ -287,7 +288,10 @@ nav{
 	height: 37px;
 	width: 37px;
 } 
-
+.box7{
+    height: 25px;
+    width: 25px;
+}
 /****Grid For Projects Youtube BitcoinDavida Twitter etc..*******/
 #creative_projects{
     display: grid;
@@ -346,6 +350,7 @@ img{
     height:90px;
     color: blue;
     background-color:#dddddd88;
+    font-size: 10px;
 }
 
 .youtube a, .youtube p{
@@ -367,6 +372,7 @@ img{
 /*******************/
 
 .aside{
+    height: 100vh;
     position: fixed;
     background-color: var(--bg-primary);
     transition: width 200ms ease;
@@ -406,6 +412,10 @@ img{
     filter: grayscale(0%) opacity(1);
     background: var(--bg-secondary);
     color: var(--text-secondary);
+}
+.icon-links{
+    height: 55px;
+    justify-items: center;
 }
 
 /*Text Next To Icons Sidebar*/
@@ -483,6 +493,7 @@ img{
 #tire_mission_grid{
     display: grid;
     height: 360px;
+    max-width: 1200px;
     grid-template-columns: 1fr 1fr;
     background-color: var(--text-3);
     border-radius: 20px;
@@ -493,7 +504,8 @@ img{
 }
 /*Tire Grid END*/
 .tire_mission_text{
-    max-width:400px ;
+    max-width:100% ;
+    height: 100%;
     margin: 0 auto;
     padding: 10px;
     font-size: 20px;
@@ -503,18 +515,25 @@ img{
     text-shadow: 1px 1px 2px #7dabd2;
     align-content: center;
 }
-.tire_mission_text p{
+
+.tire_mission_text p {
+    height: 100%;
     margin-top: 15px;
     line-height: 22px;
+    line-height: 1.5; /* Adjust line height */
+    margin: 0 auto; /* Remove default margin */
+    border-radius: 15px;
+    text-align: center;
 }
+
 .tire_mission_img_01{
-    width: 430px;
-    height: 340px;
+    width: 100%;
+    max-height: 340px;
 }
 /**Shopping Items On Homepage START***/
 #shop_grid{
     display: grid;
-    min-width: 90%;
+    min-width: 87%;
     height: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -727,12 +746,14 @@ ul ul li{
 /****Test dropdown END****/
 
 .view_all_text{
-    width: 65px;
-    font-size: 14px;
-    padding: 2px;
+    width: 80px;
+    font-size: 12px;
+    padding: 6px;
     border-radius: 40px;
     border: solid 4px #ad097e;
     background-color: yellow;
+    margin-left: 25px;
+    font-family: monospace;
 }
 
 
@@ -771,6 +792,8 @@ footer {
 }
 /***FOOTER*SECTION*END**In Base.html***/
 /************************/
+
+
 
 @media screen and (max-width: 1224px){
 #logo{
@@ -914,6 +937,9 @@ img.logo {
 .bar3.active {
     transform: rotate(-45deg) translate(6px, -6px); /* Adjusted for better X shape */
  }
+.sidebar-link{
+    align-content: center;
+} 
 }
 /* Initially hide the hamburger button */
 @media screen and (min-width: 1225px) {
