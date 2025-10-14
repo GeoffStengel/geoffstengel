@@ -157,10 +157,10 @@ h4 a{
 
 .top_banner_grid{
     display: grid;
-    min-width: 90%;
-   /* max-width: 1200px; */
+    /*min-width: 90%; */
+    
     max-height: 350px;
-    margin-left: 10%;
+    /*margin-left: 10%; */
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     background-color: var(--text-3);
@@ -175,6 +175,17 @@ h4 a{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.center_content_grid{
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    row-gap: 20px;
+   /* background-color: #6b92b4;*/
+    border-radius: 20px;
+    padding: 10px;
+}
+
 .social_grid{
     display: grid;
     width: 100%;
@@ -499,6 +510,7 @@ img{
     background-color: var(--text-3);
     border-radius: 20px;
     margin-left: 10%;
+    margin: 0 auto;
     padding: 5px;
     justify-items: center;
     align-items: center; 
@@ -534,7 +546,7 @@ img{
 /**Shopping Items On Homepage START***/
 #shop_grid{
     display: grid;
-    min-width: 87%;
+    min-width: 100%;
     height: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -546,7 +558,7 @@ img{
 	text-align: center;
 	justify-content: center;
 	border-radius: 10px;
-    margin-left: 10%;
+   /* margin-left: 10%; */
 }
 #shop_grid a{
     text-decoration: none;
@@ -947,6 +959,9 @@ img.logo {
     .hamburger {
         display: none; /* Hide hamburger button */
     }
+    .center_content_grid{
+       float: right;
+    }
 }
     /**NAV*BAR*END**/
     @media screen and (max-width: 980px) {
@@ -1013,6 +1028,9 @@ main {
     margin-left: 0;
     padding: 0;
 }
+ .center_content_grid{
+       width: 90%;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -1051,6 +1069,9 @@ h1{
     width: 100%;
     height: 100%;
 }
+  .center_content_grid{
+       width: 95%;
+    }
 }
 
 @media screen and (max-width:411px){
@@ -1058,6 +1079,7 @@ h1{
 #creative_projects{
     grid-template-columns: repeat(4, minmax(20px, 80px));
  }
+
 }
 
 @media screen and (max-width:383px) {
