@@ -157,8 +157,8 @@ h4 a{
 
 .top_banner_grid{
     display: grid;
-    /*min-width: 90%; */
-    max-width: 1200px;
+    min-width: 90%;
+   /* max-width: 1200px; */
     max-height: 350px;
     margin-left: 10%;
     grid-template-columns: 1fr 1fr;
@@ -493,6 +493,7 @@ img{
 #tire_mission_grid{
     display: grid;
     height: 360px;
+    min-width: 90%;
     max-width: 1200px;
     grid-template-columns: 1fr 1fr;
     background-color: var(--text-3);
