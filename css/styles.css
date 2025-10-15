@@ -232,7 +232,7 @@ h4 a{
     display: grid;
     width: 90%;
     margin: 0 auto;
-    row-gap: 80px;
+    row-gap: 60px;
    /* background-color: #6b92b4;*/
     border-radius: 20px;
     padding: 10px;
@@ -640,7 +640,7 @@ img{
     display: grid;
 	height: 100%;
 	max-width: 100%;
-	grid-template-columns: repeat(auto-fill, minmax(150px, auto));
+	grid-template-columns: repeat(auto-fit, minmax(150px, auto));
     grid-template-rows: auto;
 	grid-gap: 15px;
 	grid-column-gap: 20px;
