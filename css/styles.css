@@ -22,6 +22,10 @@
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     --transition-speed: 600ms;
+
+      --accent-glow: #39ff14;           /* neon green */
+  --glow-o: 0;                      /* animated via GSAP */
+  --glow-s: 1;                      /* animated via GSAP */
 }  
 html{
     background-color: var(--bg-secondary);
@@ -34,7 +38,48 @@ body{
     background-color:var(--bg-secondary);
     padding: 0;
     margin: 0;
+
+padding: 0;
+  background: transparent;   /* important */
+  overflow-x: hidden;
 }
+
+/* diagonal silver sweep that ping-pongs (no cut) */
+body::before{
+  content: "";
+  position: fixed;
+  inset: -25vmax;            /* overscan so edges never show */
+  z-index: -1;
+  pointer-events: none;
+
+  background:
+    /* the moving silver beam */
+    linear-gradient(120deg,
+      transparent 30%,
+      rgba(225,230,235,0.16) 48%,
+      rgba(225,230,235,0.18) 52%,
+      transparent 70%),
+    /* soft vignette for depth */
+    radial-gradient(120% 120% at 50% 50%,
+      rgba(0,0,0,0) 0%,
+      rgba(0,0,0,0.20) 70%,
+      rgba(0,0,0,0.32) 100%);
+
+  background-repeat: no-repeat;
+  background-size: 180% 180%, 100% 100%;
+  background-position: -60% 0, 50% 50%;
+
+  filter: blur(6px) saturate(108%);
+  transform: translateZ(0);
+
+  /* key change: alternate so it ping-pongs instead of snapping back */
+  animation: silverSweep 30s linear infinite alternate;
+}
+
+@keyframes silverSweep{
+  to { background-position: 60% 0, 50% 50%; }
+}
+
 
 body::-webkit-scrollbar {
     width: .4rem;
@@ -46,6 +91,12 @@ body::-webkit-scrollbar-thumb {
     background: #8eb2d151;
     border-radius: 20px;
 }
+
+
+
+
+
+
 
 /***main wrapper grid**/
 #main_wrapper_grid {
@@ -179,12 +230,14 @@ h4 a{
 
 .center_content_grid{
     display: grid;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
-    row-gap: 20px;
+    row-gap: 80px;
    /* background-color: #6b92b4;*/
     border-radius: 20px;
     padding: 10px;
+    padding-left: 80px;
+   
 }
 
 .social_grid{
@@ -498,7 +551,8 @@ img{
     display: grid;
     height: 100%;
     background-color: #0075D9;
-    box-shadow: 0 0 10px black;
+     box-shadow: 0 0 10px rgb(110, 185, 235);
+     border: solid 1px rgb(110, 185, 235);
     border-radius: 10px;
 }
 /*Tire Grid START*/
@@ -515,6 +569,8 @@ img{
     padding: 5px;
     justify-items: center;
     align-items: center; 
+    border:3px solid rgb(110, 185, 235);
+
 }
 /*Tire Grid END*/
 .tire_mission_text{
@@ -562,11 +618,24 @@ img{
 	text-align: center;
 	justify-content: center;
 	border-radius: 10px;
+    box-shadow: 0 0 20px rgb(110, 185, 235);
    /* margin-left: 10%; */
 }
 #shop_grid a{
     text-decoration: none;
 }
+
+#shop_grid,
+.homepage_grid_01,
+.homepage_grid_02,
+.homepage_grid_03 {
+  transform-origin: 50% 0%;
+  will-change: transform;
+}
+
+
+
+
 .sprouting_grid, .solar_grid, .music_grid{
     display: grid;
 	height: 100%;
@@ -812,6 +881,9 @@ footer {
 
 
 
+
+
+
 @media screen and (max-width: 1224px){
 #logo{
     cursor: pointer;
@@ -1034,7 +1106,11 @@ main {
 }
  .center_content_grid{
        width: 90%;
+       margin-left: 0px auto;
+       padding: 10px;
+       row-gap: 20px;
     }
+
 }
 
 @media screen and (max-width:500px) {

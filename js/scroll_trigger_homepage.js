@@ -83,13 +83,14 @@ function revealGrid(gridSel) {
 revealGrid(".homepage_grid_01");
 revealGrid(".homepage_grid_02");
 revealGrid(".homepage_grid_03");
+revealGrid("#tire_mission_grid");
 
 // ---------- .items: grouped stagger reveal + hover ----------
 (() => {
   const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   // Grids that contain your product cards
-  const containerSelectors = [".sprouting_grid", ".solar_grid", ".music_grid"];
+  const containerSelectors = [".sprouting_grid", ".solar_grid", ".music_grid", "#tire_mission_grid"];
   const containers = containerSelectors.map(sel => $(sel)).filter(Boolean);
   if (!containers.length) return;
 
@@ -150,6 +151,38 @@ revealGrid(".homepage_grid_03");
     });
   });
 })();
+
+
+// ---------- #shop_grid: container-only reveal (no opacity; avoids double-fade) ----------
+// ---------- Section containers: scrubbed settle-in with subtle 3D ----------
+["#shop_grid", ".homepage_grid_01", ".homepage_grid_02", ".homepage_grid_03", "#tire_mission_grid"].forEach(sel => {
+  const section = $(sel);
+  if (!section || section.dataset.gsapContainerFX) return;
+  section.dataset.gsapContainerFX = "1";
+
+  // give transforms depth
+  gsap.set(section, { transformPerspective: 900, transformStyle: "preserve-3d" });
+
+  gsap.fromTo(
+    section,
+    { y: 36, scale: 0.975, rotateX: 3, skewY: 0.3 },
+    {
+      y: 0,
+      scale: 1,
+      rotateX: 0,
+      skewY: 0,
+      ease: "none",
+      immediateRender: false,
+      scrollTrigger: {
+        trigger: section,
+        start: "top bottom",
+        end:   "top 45%",
+        scrub: 0.55,
+        markers: DEBUG
+      }
+    }
+  );
+});
 
 
 
